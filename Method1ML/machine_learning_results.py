@@ -7,11 +7,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score
 
-
-# =====================================================
-# POSTAVKE
-# =====================================================
-
 OWN_TRAIN_FILE = "train_3.csv"
 COMBINED_TRAIN_FILE = "TRAIN.csv"
 
@@ -27,10 +22,6 @@ VALID_LABELS = ["positive", "negative", "neutral", "mixed", "sarcasm"]
 MODELS_DIR = "models"
 os.makedirs(MODELS_DIR, exist_ok=True)
 
-
-# =====================================================
-# FUNKCIJE
-# =====================================================
 
 def read_dataset(path):
    
@@ -165,10 +156,6 @@ def format_scores(scores):
     )
 
 
-# =====================================================
-# UČITAVANJE PODATAKA
-# =====================================================
-
 own_train = clean_dataset(read_dataset(OWN_TRAIN_FILE))
 combined_train = clean_dataset(read_dataset(COMBINED_TRAIN_FILE))
 
@@ -184,9 +171,6 @@ for name, dataset in test_datasets.items():
     print(name, "rows:", len(dataset))
 
 
-# =====================================================
-# MODELI
-# =====================================================
 
 experiments = [
     {
@@ -232,10 +216,6 @@ experiments = [
 ]
 
 
-# =====================================================
-# TRENIRANJE I EVALUACIJA
-# =====================================================
-
 result_rows = []
 
 for experiment in experiments:
@@ -263,10 +243,6 @@ for experiment in experiments:
 
     result_rows.append(row)
 
-
-# =====================================================
-# RESULTS.MD
-# =====================================================
 
 results_df = pd.DataFrame(result_rows)
 
