@@ -1,6 +1,6 @@
 import os
 import re
-import csv
+import copy
 import pickle
 import random
 import numpy as np
@@ -19,7 +19,17 @@ from sklearn.metrics import (
 )
 
 
+# SETTINGS
+
+
 TRAIN_FILE = "TRAIN.csv"
+
+VALIDATION_FILES = {
+    "Validation 1: group 1": "validation-1.xlsx",
+    "Validation 2: group 2": "validation-2.xlsx",
+    "Validation 3: group 3 (OURS)": "validation-3.csv",
+    "Validation 4: group 4": "validation-4.tsv",
+}
 
 TEST_FILES = {
     "Test 1: group 1": "test_1.xlsx",
@@ -28,7 +38,7 @@ TEST_FILES = {
     "Test 4: group 4": "test_4.tsv",
 }
 
-FASTTEXT_FILE = "cc.hr.300.vec"   # Croatian FastText embeddings
+FASTTEXT_FILE = "cc.hr.300.vec"
 
 VALID_LABELS = [
     "positive",
@@ -40,10 +50,19 @@ VALID_LABELS = [
 
 MAX_LEN = 60
 BATCH_SIZE = 32
-EPOCHS = 8
-LEARNING_RATE = 0.001
+EPOCHS = 30
+PATIENCE = 3
+MIN_DELTA = 0.0001
+
+# tuned anti-overfitting settings
+LEARNING_RATE = 0.0005
 EMBEDDING_DIM = 300
-MIN_FREQ = 1
+MIN_FREQ = 2
+DROPOUT = 0.6
+FREEZE_EMBEDDINGS = True
+
+CNN_FILTERS = 64
+GRU_HIDDEN_SIZE = 64
 
 RANDOM_SEED = 42
 
@@ -56,6 +75,10 @@ os.makedirs(CONFUSION_DIR, exist_ok=True)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
+# =====================================================
+# REPRODUCIBILITY
+# =====================================================
+
 random.seed(RANDOM_SEED)
 np.random.seed(RANDOM_SEED)
 torch.manual_seed(RANDOM_SEED)
@@ -64,11 +87,13 @@ if torch.cuda.is_available():
     torch.cuda.manual_seed_all(RANDOM_SEED)
 
 
+# DATA LOADING
+
 
 def read_dataset(path):
     ext = os.path.splitext(path)[1].lower()
 
-    if ext == ".xlsx":
+    if ext in [".xlsx", ".xls"]:
         df = pd.read_excel(path)
 
     elif ext == ".tsv":
@@ -129,13 +154,39 @@ def clean_dataset(df):
     return df.reset_index(drop=True)
 
 
+def load_multiple_datasets(file_dict):
+    datasets = []
+
+    for dataset_name, file_path in file_dict.items():
+        print("Loading:", dataset_name, "from", file_path)
+
+        df = clean_dataset(
+            read_dataset(file_path)
+        )
+
+        print(dataset_name, "rows:", len(df))
+
+        datasets.append(df)
+
+    combined = pd.concat(
+        datasets,
+        ignore_index=True
+    )
+
+    return combined.reset_index(drop=True)
+
+
+
+# TOKENIZATION AND VOCAB
+
+
 def tokenize(text):
     text = str(text).lower()
     tokens = re.findall(r"\b\w+\b", text, flags=re.UNICODE)
     return tokens
 
 
-def build_vocab(texts, min_freq=1):
+def build_vocab(texts, min_freq=2):
     freq = {}
 
     for text in texts:
@@ -169,6 +220,7 @@ def encode_text(text, vocab, max_len):
         ids.append(vocab["<PAD>"])
 
     return ids
+
 
 
 # FASTTEXT EMBEDDINGS
@@ -215,6 +267,7 @@ def load_fasttext_embeddings(vocab, embedding_file, embedding_dim=300):
     return torch.tensor(embedding_matrix, dtype=torch.float32)
 
 
+
 # DATASET CLASS
 
 
@@ -243,6 +296,27 @@ class SentimentDataset(Dataset):
         )
 
 
+
+# CLASS WEIGHTS
+
+
+def get_class_weights(df, label_to_id):
+    counts = df["label"].value_counts()
+
+    weights = []
+
+    for label, idx in sorted(label_to_id.items(), key=lambda x: x[1]):
+        count = counts.get(label, 1)
+        weights.append(1.0 / count)
+
+    weights = torch.tensor(weights, dtype=torch.float32)
+
+    weights = weights / weights.sum() * len(weights)
+
+    return weights.to(device)
+
+
+
 # MODELS
 
 
@@ -254,23 +328,23 @@ class CNNTextClassifier(nn.Module):
 
         self.embedding = nn.Embedding.from_pretrained(
             embedding_matrix,
-            freeze=False,
+            freeze=FREEZE_EMBEDDINGS,
             padding_idx=0
         )
 
         self.convs = nn.ModuleList([
             nn.Conv1d(
                 in_channels=embedding_dim,
-                out_channels=128,
+                out_channels=CNN_FILTERS,
                 kernel_size=k
             )
             for k in [3, 4, 5]
         ])
 
-        self.dropout = nn.Dropout(0.5)
+        self.dropout = nn.Dropout(DROPOUT)
 
         self.fc = nn.Linear(
-            128 * 3,
+            CNN_FILTERS * 3,
             num_classes
         )
 
@@ -304,21 +378,21 @@ class GRUTextClassifier(nn.Module):
 
         self.embedding = nn.Embedding.from_pretrained(
             embedding_matrix,
-            freeze=False,
+            freeze=FREEZE_EMBEDDINGS,
             padding_idx=0
         )
 
         self.gru = nn.GRU(
             input_size=embedding_dim,
-            hidden_size=128,
+            hidden_size=GRU_HIDDEN_SIZE,
             batch_first=True,
             bidirectional=True
         )
 
-        self.dropout = nn.Dropout(0.5)
+        self.dropout = nn.Dropout(DROPOUT)
 
         self.fc = nn.Linear(
-            128 * 2,
+            GRU_HIDDEN_SIZE * 2,
             num_classes
         )
 
@@ -343,19 +417,50 @@ class GRUTextClassifier(nn.Module):
 # TRAINING AND EVALUATION
 
 
-def train_model(model, train_loader):
+def compute_loss(model, data_loader, criterion):
+    model.eval()
+
+    total_loss = 0
+
+    with torch.no_grad():
+        for batch_texts, batch_labels in data_loader:
+            batch_texts = batch_texts.to(device)
+            batch_labels = batch_labels.to(device)
+
+            outputs = model(batch_texts)
+
+            loss = criterion(outputs, batch_labels)
+
+            total_loss += loss.item()
+
+    avg_loss = total_loss / len(data_loader)
+
+    return avg_loss
+
+
+def train_model(model, train_loader, val_loader, class_weights):
     model.to(device)
 
-    criterion = nn.CrossEntropyLoss()
+    criterion = nn.CrossEntropyLoss(
+        weight=class_weights
+    )
+
     optimizer = torch.optim.Adam(
         model.parameters(),
         lr=LEARNING_RATE
     )
 
-    model.train()
+    best_val_loss = float("inf")
+    best_model_state = None
+    patience_counter = 0
+
+    history = []
 
     for epoch in range(EPOCHS):
-        total_loss = 0
+
+        model.train()
+
+        total_train_loss = 0
 
         for batch_texts, batch_labels in train_loader:
             batch_texts = batch_texts.to(device)
@@ -365,19 +470,58 @@ def train_model(model, train_loader):
 
             outputs = model(batch_texts)
 
-            loss = criterion(outputs, batch_labels)
+            train_loss = criterion(outputs, batch_labels)
 
-            loss.backward()
+            train_loss.backward()
 
             optimizer.step()
 
-            total_loss += loss.item()
+            total_train_loss += train_loss.item()
 
-        avg_loss = total_loss / len(train_loader)
+        avg_train_loss = total_train_loss / len(train_loader)
 
-        print(f"Epoch {epoch + 1}/{EPOCHS}, Loss: {avg_loss:.4f}")
+        avg_val_loss = compute_loss(
+            model,
+            val_loader,
+            criterion
+        )
 
-    return model
+        history.append({
+            "epoch": epoch + 1,
+            "train_loss": avg_train_loss,
+            "val_loss": avg_val_loss
+        })
+
+        print(
+            f"Epoch {epoch + 1}/{EPOCHS} | "
+            f"Train loss: {avg_train_loss:.4f} | "
+            f"Val loss: {avg_val_loss:.4f}"
+        )
+
+        if avg_val_loss < best_val_loss - MIN_DELTA:
+            best_val_loss = avg_val_loss
+            best_model_state = copy.deepcopy(model.state_dict())
+            patience_counter = 0
+
+        else:
+            patience_counter += 1
+
+            print(
+                f"Validation loss did not improve. "
+                f"Patience: {patience_counter}/{PATIENCE}"
+            )
+
+        if patience_counter >= PATIENCE:
+            print(
+                f"Early stopping triggered at epoch {epoch + 1}. "
+                f"Best validation loss: {best_val_loss:.4f}"
+            )
+            break
+
+    if best_model_state is not None:
+        model.load_state_dict(best_model_state)
+
+    return model, history
 
 
 def evaluate_model(model, data_loader, num_classes):
@@ -447,24 +591,34 @@ def format_scores(scores):
     )
 
 
+
 # MAIN
 
 
 print("Device:", device)
 
-train_df = clean_dataset(read_dataset(TRAIN_FILE))
+train_df = clean_dataset(
+    read_dataset(TRAIN_FILE)
+)
+
+validation_df = load_multiple_datasets(
+    VALIDATION_FILES
+)
 
 test_datasets = {}
 
 for test_name, test_file in TEST_FILES.items():
-    test_datasets[test_name] = clean_dataset(read_dataset(test_file))
+    test_datasets[test_name] = clean_dataset(
+        read_dataset(test_file)
+    )
 
+print()
 print("TRAIN rows:", len(train_df))
+print("VALIDATION rows:", len(validation_df))
 
 for name, df_test in test_datasets.items():
     print(name, "rows:", len(df_test))
 
-# label mapping
 labels_sorted = sorted(VALID_LABELS)
 
 label_to_id = {
@@ -479,7 +633,13 @@ id_to_label = {
 
 print("Labels:", label_to_id)
 
-# vocab
+class_weights = get_class_weights(
+    train_df,
+    label_to_id
+)
+
+print("Class weights:", class_weights)
+
 vocab = build_vocab(
     train_df["text"],
     min_freq=MIN_FREQ
@@ -487,14 +647,12 @@ vocab = build_vocab(
 
 print("Vocab size:", len(vocab))
 
-# embeddings
 embedding_matrix = load_fasttext_embeddings(
     vocab,
     FASTTEXT_FILE,
     EMBEDDING_DIM
 )
 
-# save vocab and labels
 with open(os.path.join(MODELS_DIR, "vocab.pkl"), "wb") as f:
     pickle.dump(vocab, f)
 
@@ -504,9 +662,14 @@ with open(os.path.join(MODELS_DIR, "label_to_id.pkl"), "wb") as f:
 with open(os.path.join(MODELS_DIR, "id_to_label.pkl"), "wb") as f:
     pickle.dump(id_to_label, f)
 
-# data loaders
 train_dataset = SentimentDataset(
     train_df,
+    vocab,
+    label_to_id
+)
+
+validation_dataset = SentimentDataset(
+    validation_df,
     vocab,
     label_to_id
 )
@@ -515,6 +678,12 @@ train_loader = DataLoader(
     train_dataset,
     batch_size=BATCH_SIZE,
     shuffle=True
+)
+
+validation_loader = DataLoader(
+    validation_dataset,
+    batch_size=BATCH_SIZE,
+    shuffle=False
 )
 
 test_loaders = {}
@@ -531,6 +700,7 @@ for test_name, df_test in test_datasets.items():
         batch_size=BATCH_SIZE,
         shuffle=False
     )
+
 
 
 # EXPERIMENTS
@@ -564,9 +734,25 @@ for experiment in experiments:
         num_classes=len(label_to_id)
     )
 
-    model = train_model(
+    model, history = train_model(
         model,
-        train_loader
+        train_loader,
+        validation_loader,
+        class_weights
+    )
+
+    history_df = pd.DataFrame(history)
+
+    history_path = os.path.join(
+        MODELS_DIR,
+        f"{experiment['algorithm'].lower()}_training_history.csv"
+    )
+
+    history_df.to_csv(
+        history_path,
+        index=False,
+        encoding="utf-8-sig",
+        sep=";"
     )
 
     model_path = os.path.join(
@@ -655,6 +841,12 @@ Training set:
 
 - TRAIN
 
+Validation set:
+
+- VALIDATION = validation-1 + validation-2 + validation-3 + validation-4
+- Validation loss was computed after every epoch.
+- Early stopping was applied based on validation loss.
+
 Evaluation metrics:
 
 - weighted precision
@@ -674,28 +866,41 @@ Evaluation metrics:
 - max_len: {MAX_LEN}
 - batch_size: {BATCH_SIZE}
 - epochs: {EPOCHS}
+- early_stopping_patience: {PATIENCE}
+- min_delta: {MIN_DELTA}
 - learning_rate: {LEARNING_RATE}
 - embedding_dim: {EMBEDDING_DIM}
+- min_freq: {MIN_FREQ}
+- dropout: {DROPOUT}
+- freeze_embeddings: {FREEZE_EMBEDDINGS}
+- class_weights: True
 
 ### Embeddings
 
 - embedding source: Croatian FastText
 - embedding file: `{FASTTEXT_FILE}`
-- embeddings fine-tuned during training: True
+- embeddings fine-tuned during training: {not FREEZE_EMBEDDINGS}
 
 ### CNN
 
 - filter sizes: 3, 4, 5
-- number of filters per size: 128
-- dropout: 0.5
+- number of filters per size: {CNN_FILTERS}
+- dropout: {DROPOUT}
 - optimizer: Adam
 
 ### GRU
 
-- hidden size: 128
+- hidden size: {GRU_HIDDEN_SIZE}
 - bidirectional: True
-- dropout: 0.5
+- dropout: {DROPOUT}
 - optimizer: Adam
+
+## Training History
+
+Training and validation losses were saved in:
+
+- `dl_models/cnn_training_history.csv`
+- `dl_models/gru_training_history.csv`
 
 ## Confusion Matrices
 
@@ -716,9 +921,18 @@ results_df.to_csv(
     sep=";"
 )
 
+validation_df.to_csv(
+    "VALIDATION.csv",
+    index=False,
+    encoding="utf-8-sig",
+    sep=";"
+)
+
 print()
 print("Gotovo.")
 print("Napravljen je results_deep_learning.md")
 print("Napravljen je deep_learning_results.csv")
+print("Napravljen je VALIDATION.csv")
 print("Modeli su spremljeni u folder dl_models/")
+print("Training histories su spremljene u folder dl_models/")
 print("Confusion matrices su spremljene u folder confusion_matrices/")
