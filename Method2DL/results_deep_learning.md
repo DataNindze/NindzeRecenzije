@@ -21,6 +21,12 @@ Training set:
 
 - TRAIN
 
+Validation set:
+
+- VALIDATION = validation-1 + validation-2 + validation-3 + validation-4
+- Validation loss was computed after every epoch.
+- Early stopping was applied based on validation loss.
+
 Evaluation metrics:
 
 - weighted precision
@@ -32,8 +38,8 @@ Evaluation metrics:
 
 | #   | method                | algorithm   | train   | Test 1: group 1                           | Test 2: group 2                           | Test 3: group 3 (OURS)                    | Test 4: group 4                           |
 |:----|:----------------------|:------------|:--------|:------------------------------------------|:------------------------------------------|:------------------------------------------|:------------------------------------------|
-| 2.a | Shallow Deep Learning | CNN         | TRAIN   | P: 0.625, R: 0.624, F1: 0.551, Acc: 0.624 | P: 0.617, R: 0.413, F1: 0.398, Acc: 0.413 | P: 0.607, R: 0.646, F1: 0.585, Acc: 0.646 | P: 0.619, R: 0.622, F1: 0.577, Acc: 0.622 |
-| 2.b | Shallow Deep Learning | GRU         | TRAIN   | P: 0.648, R: 0.655, F1: 0.607, Acc: 0.655 | P: 0.616, R: 0.476, F1: 0.471, Acc: 0.476 | P: 0.651, R: 0.670, F1: 0.633, Acc: 0.670 | P: 0.646, R: 0.644, F1: 0.606, Acc: 0.644 |
+| 2.a | Shallow Deep Learning | CNN         | TRAIN   | P: 0.712, R: 0.509, F1: 0.588, Acc: 0.509 | P: 0.594, R: 0.388, F1: 0.441, Acc: 0.388 | P: 0.709, R: 0.584, F1: 0.632, Acc: 0.584 | P: 0.752, R: 0.535, F1: 0.609, Acc: 0.535 |
+| 2.b | Shallow Deep Learning | GRU         | TRAIN   | P: 0.714, R: 0.568, F1: 0.621, Acc: 0.568 | P: 0.624, R: 0.550, F1: 0.579, Acc: 0.550 | P: 0.738, R: 0.646, F1: 0.682, Acc: 0.646 | P: 0.746, R: 0.556, F1: 0.624, Acc: 0.556 |
 
 ## Hyperparameters
 
@@ -42,29 +48,42 @@ Evaluation metrics:
 - random_seed: 42
 - max_len: 60
 - batch_size: 32
-- epochs: 8
-- learning_rate: 0.001
+- epochs: 30
+- early_stopping_patience: 3
+- min_delta: 0.0001
+- learning_rate: 0.0005
 - embedding_dim: 300
+- min_freq: 2
+- dropout: 0.6
+- freeze_embeddings: True
+- class_weights: True
 
 ### Embeddings
 
 - embedding source: Croatian FastText
 - embedding file: `cc.hr.300.vec`
-- embeddings fine-tuned during training: True
+- embeddings fine-tuned during training: False
 
 ### CNN
 
 - filter sizes: 3, 4, 5
-- number of filters per size: 128
-- dropout: 0.5
+- number of filters per size: 64
+- dropout: 0.6
 - optimizer: Adam
 
 ### GRU
 
-- hidden size: 128
+- hidden size: 64
 - bidirectional: True
-- dropout: 0.5
+- dropout: 0.6
 - optimizer: Adam
+
+## Training History
+
+Training and validation losses were saved in:
+
+- `dl_models/cnn_training_history.csv`
+- `dl_models/gru_training_history.csv`
 
 ## Confusion Matrices
 
