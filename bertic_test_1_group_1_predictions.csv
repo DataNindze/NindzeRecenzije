@@ -1,0 +1,392 @@
+﻿model;id;text;predicted_label;original_label;a==b
+BERTić TRAIN;825_1;Dr. Knego ostavlja dojam smušene osobe,ali ono što me je posebno zasmetalo je ponašanje gospođe Višnje na prijemu koja je izuzetno neljubazna a svoj posao obavlja ofrlje.;negative;negative;True
+BERTić TRAIN;825_2;Dr.Rudi radi svoj posao preko neke stvari i bahat je.;negative;negative;True
+BERTić TRAIN;825_3;Ne pokušava pacijentu objasniti što će mu raditi odnosno što trenutno radi i sa sestrom se raspravlja i svađa.;negative;negative;True
+BERTić TRAIN;825_4;Svi su u najmanju ruku čudni i ne preporučam ovu ordinaciju.;negative;negative;True
+BERTić TRAIN;826_1;Dr. Knego je vrhunski stručnjak te vrlo strpljiva osoba spremna pravilno savjetovati i napraviti stvarno vrhunski rad.;positive;positive;True
+BERTić TRAIN;826_2;Sve preporuke.;positive;positive;True
+BERTić TRAIN;827_1;Dr. Knego izuzetno je draga, stručna i pristupacna doktorica za svakog pacijenta.;positive;positive;True
+BERTić TRAIN;827_2;Iz mog iskustva, dočekuje svakog pacijenta sa osmijehom na licu, sto je u danasnje vrijeme vrlo rijetko.;positive;positive;True
+BERTić TRAIN;827_3;Za svaki zakazani termin dođem sa punim povjerenjem i bez ikakvog straha.;positive;positive;True
+BERTić TRAIN;827_4;Dr. Knego prema svakom posveti dovoljno vremena i daje si truda oko pacijenta.;positive;positive;True
+BERTić TRAIN;827_5;Ukoliko i Vi imate strah od stomatologa kao što sam ga i ja sama imala, vjerujte da ulaskom u ovu ordinaciju, osjetit ce te toplinu, pozitivnu energiju, osoblje koje ispunjava ovaj posao.;positive;positive;True
+BERTić TRAIN;827_6;Imati stomatologa poput dr.Knego čast je i zadovoljstvo, ne samo kao stomatologicu, vec i kao osobu koja zraci pozitivnom energijom svakim mojim dolaskom.;positive;positive;True
+BERTić TRAIN;827_7;Osmijeh i lijepa riječ, svakom čovjeku mogu podariti nadu i ohrabrenje, a za one najmlađe strah!;positive;positive;True
+BERTić TRAIN;827_8;Vi ste to uspijeli i hvala Vam od srca!❤;positive;positive;True
+BERTić TRAIN;827_9;Preporučujem Vas i Vaš tim sa ocjenom 10 + :) Veliko hvala od srca!;positive;positive;True
+BERTić TRAIN;828_1;Za dr Knego sam se odlučila zbog nekoliko preporuka, viđenih radova i pozitivnih komentara i moram priznati da sam jako oduševljena radom dr Knego, dobila sam ljuskice vrhunske estetike, prirodnog izgleda.;positive;positive;True
+BERTić TRAIN;828_2;Zahvat je prošao brzo i bezbolno.;positive;positive;True
+BERTić TRAIN;828_3;Preporučujem svima.;positive;positive;True
+BERTić TRAIN;829_1;Doktorica je vrhunski stručnjak, a također jako strpljiva i pažljiva.;positive;positive;True
+BERTić TRAIN;829_2;Preporuka za predivne ljuskice koje mi je napravila doktorica Knego i njezin tim.;positive;positive;True
+BERTić TRAIN;829_3;Jako sam zadovoljan.;positive;positive;True
+BERTić TRAIN;829_4;Hvala vam.;positive;positive;True
+BERTić TRAIN;830_1;Doktorica je izrazito neljubazna, bezobrazna i hladna prema pacijentu, pri čemu daje vrlo neprofesionalne komentare.;negative;negative;True
+BERTić TRAIN;830_2;Vrlo neugodno iskustvo zbog ponašanja dr, potpuno neuobičajenog za privatnika.;negative;negative;True
+BERTić TRAIN;830_3;Preporuka izbjegavati ako niste celebrity jer očito samo oni dobiju pošteni i ljudski tretman, kakvom se doktorica predstavlja u medijima.;negative;negative;True
+BERTić TRAIN;831_1;Preporuke za dr.Knego sam pronašla na webu te sam se odlučila krenuti k njoj.;neutral;neutral;True
+BERTić TRAIN;831_2;Na prvom pregledu bila je poprilično ugodna i ljubazna, no već na idućem stvari su se počele mijenjati.;negative;mixed;False
+BERTić TRAIN;831_3;Bila je bezobrazna i jako neprofesionalna, no zbog toga što je stvarno na dobrom glasu odlučila sam nastaviti dolaziti k njoj.;negative;negative;True
+BERTić TRAIN;831_4;Danas sam imala iskustvo koje me poprilično šokiralo.;negative;neutral;False
+BERTić TRAIN;831_5;Doktorica me pred pacijentom ogovarala s ostatkom osoblja, pri čemu je spominjala sve moje dijagnoze (ne samo stomatološke prirode).;negative;negative;True
+BERTić TRAIN;831_6;Izuzetno neprofesionalno i neetično od nje, nikako je ne preporučam.;negative;negative;True
+BERTić TRAIN;832_1;U ordaniciji dr Knego dobila sam vrhunsku,profesionalnu uslugu.;positive;positive;True
+BERTić TRAIN;832_2;Budući sam trebala potpuni makeover koji je uključivao implatante,popravke starih ispuna,endodontsk zahvat (hvala divnoj prof Barabi !),krunice…;positive;neutral;False
+BERTić TRAIN;832_3;nije bilo lako odlučiti se u moru stomatoloških ordinacija i poliklinika.;neutral;neutral;True
+BERTić TRAIN;832_4;Izuzetno sam zadovoljna dobivenim rezultatom,a to je potpuno prirodan izgled -to je ujedno i najbolja reklama dr Knego.;positive;positive;True
+BERTić TRAIN;832_5;U nekim prethodnim komentarima kritizirane su cijene-vrhunska usluga ne može biti jeftina,a cjenovno ova ordinacija ne odskače od nekih drugih koje nude slične usluge,tako da komentari vezano za cijene su bespotrebni.;negative;neutral;False
+BERTić TRAIN;832_6;Uz uslugu koja je na visokom nivou,cijeli dojam upotpunjuje ljubazno osoblje i ambijent.;positive;positive;True
+BERTić TRAIN;833_1;Danas sam bila kod doktorice Knego na pomotivnom besplatnom pregledu.;neutral;neutral;True
+BERTić TRAIN;833_2;Doktorica je tijekom cijelog desetominutnog pregleda govorila povišenim i iz nepoznatog razloga, bezobraznim tonalitetom.;negative;negative;True
+BERTić TRAIN;833_3;Bila sam kod puno zubara na pregledu, i privatnih i drzavnih, jer trazim misljenje za moju situaciju tako da sam uistinu vidjela svasta ali ovakvu neljubaznost uistinu nikada nisam dozivjela.;negative;negative;True
+BERTić TRAIN;833_4;Shvaćam i savršeno mi je jasno da svi mi imamo loš dan, ali i tada se možemo barem donekle ljudski ponašati, pogotovo u slučaju kada će baš osoba s kojom pričate možda postati vaš dugogodišnji klijent.;neutral;negative;False
+BERTić TRAIN;833_5;Nakon pregledala ustala sam a doktorica je cijelo vrijeme tijekom njega zapisivala bilješke o mojim zubima, ljubazno sam pitala mogu li možda uzeti taj papir, predpostavljajući da su bilješke za mene na što je ona bezobrazno i odgovorila NE!!;negative;negative;True
+BERTić TRAIN;833_6;To su moje bilješke!!.;neutral;negative;False
+BERTić TRAIN;833_7;I rekla bih vrhunac cijele situacije - već na izlasku i samom kraju pregleda pitala me da li mi mogu napraviti slikanje zubi, na što sam ja pitala koliko to košta.;negative;neutral;False
+BERTić TRAIN;833_8;Rekla je 250 kn, ali ako to uzmete ne morate platiti pregled.;negative;neutral;False
+BERTić TRAIN;833_9;"Rekla sam pa ne moram ga ionako platiti ako je ""promotivno razdoblje te sam naručena na BESPLATNI pregled"".";neutral;neutral;True
+BERTić TRAIN;833_10;"Nadodala sam da mi je ""ženska"", misleći na gospođu za recepcije, rekla da je pregled besplatan i da sam zato i došla.";negative;neutral;False
+BERTić TRAIN;833_11;"Ona se na najbezobrazniji mogući način podrugljivo nasmijala te rekla ""Ne znam samo koja vam je ""ŽENSKA"" to rekla"".";negative;negative;True
+BERTić TRAIN;833_12;Ostala sam u čudu jer nikako nisam mogla shvatiti čemu takav ton, takve riječi, takav bezobazluk.;negative;negative;True
+BERTić TRAIN;833_13;"Izašla sam van te otišla do recepcije do ""ženske"", rekla joj da sam gotova sa pregledom te me pitala gdje su mi papiri.";neutral;neutral;True
+BERTić TRAIN;833_14;Rekla sam joj da ih nisam dobila te pitala jesam li ih trebala dobiti, znajući da se obično dobije nekakva dokumentacija pregled, nebitno je li besplatan ili ne.;negative;neutral;False
+BERTić TRAIN;833_15;"Dignula se i otišla do doktorice u susjednu sobu te samo izašla i rekla mi""gospođo, slobodni ste.""";neutral;neutral;True
+BERTić TRAIN;833_16;Na što mogu predpostaviti da je zubarica Knego rekla da neće ništa dati.;negative;neutral;False
+BERTić TRAIN;833_17;Ovaj dio sa dokumentacijom je zapravo nebitan, bitna je nula od usluge, bilo kakve ljudskosti i normalnog ponašanja koje prema mojem mišljenju, zaslužuje svatko.;negative;negative;True
+BERTić TRAIN;834_1;Bilo je pravo zadovoljstvo surađivati sa doktoricom Knego.;positive;positive;True
+BERTić TRAIN;834_2;Poslušala sam sve njezine savjete i bez sraha sam se prepustila u njene ruke.;positive;positive;True
+BERTić TRAIN;834_3;Nikad do sad nisam bila u tako super sređenoj ordinaciji a po Njemačkoj sam ih nekoliko obišla.;positive;positive;True
+BERTić TRAIN;834_4;Od sad sam njen pacijent.;neutral;neutral;True
+BERTić TRAIN;834_5;Sledeći put ću povesti i moju malu ćerkicu.;neutral;neutral;True
+BERTić TRAIN;834_6;Doktorica je tako nježna i pažljiva.;positive;positive;True
+BERTić TRAIN;835_1;Ortodontska terapija mi je završena u roku kako smo planirali još od našeg prvog susreta.;positive;positive;True
+BERTić TRAIN;835_2;Zubi su mi sad lijepo ravni i sa ljuskicama na mojim malim dvojkama dobila sam full smile.;positive;positive;True
+BERTić TRAIN;835_3;Baš ono što sam si željela!;positive;positive;True
+BERTić TRAIN;835_4;Na kontrole nisam nikada dugo čekala i uvijek su me svi dočekali sa smješkom.;positive;positive;True
+BERTić TRAIN;835_5;Jako su srdačne cure.;positive;positive;True
+BERTić TRAIN;836_1;Nedavno sam bila na pregledu kod doktorice i oduševila me svojim pristupom i stručnošću.;positive;positive;True
+BERTić TRAIN;836_2;Detaljno me pregledala i sve mi lijepo objasnila, što bi se i zašto trebalo raditi.;positive;positive;True
+BERTić TRAIN;836_3;Nakon što su mi popravljeni svi zubi i promijenjeni stari i loši ispuni (jako lijepo,kao da na zubima nikada ništa nije rađeno), odlučila sam se za 6 ljuskica na gornjim zubima i izbjeljivanje ostalih zuba.;neutral;positive;False
+BERTić TRAIN;836_4;Konačnim rezultatom sam prezadovoljna, ljuskice su prekrasne i skroz prirodne.;positive;positive;True
+BERTić TRAIN;836_5;Jako sam zadovoljna sa kompletnom uslugom, kako dr.Knego, tako i ostalim doktoricama i osobljem.;positive;positive;True
+BERTić TRAIN;837_1;I love my doctor Knego.;positive;positive;True
+BERTić TRAIN;837_2;When I came from Ukraine to Croatia for work I did not even hoped that both quality make-over with veneers and crowns can be done just in Zagreb.;neutral;positive;False
+BERTić TRAIN;837_3;Foreigners patients who come to Zagreb to fix teeth recommend Dental Estetic Studio;neutral;positive;False
+BERTić TRAIN;838_1;Sve pohvale cijelom timu doktorice Knego.;positive;positive;True
+BERTić TRAIN;838_2;Ja sam prezadovoljna, imala sam jako tešku situaciju, prošla sam nekoliko faza, od vađenja zuba s kojim sam imala stalno probleme zatim nošenja aparatića jer su mi zubi bili totalno krivi do stavljanja implantata i sada prekrasnog osmijeha.;positive;positive;True
+BERTić TRAIN;838_3;Presretna sam .;positive;positive;True
+BERTić TRAIN;838_4;Na kraju se sve isplatilo.;positive;positive;True
+BERTić TRAIN;838_5;Znala sam da sam u sigurnim rukama jer uz doktoricu rade specijalisti koji imaju jako puno iskustva i obavila sam sve na jednom mjestu.;positive;positive;True
+BERTić TRAIN;838_6;Od početka do kraja su bili uz mene.;positive;positive;True
+BERTić TRAIN;839_1;Doktoricu Knego pronašao sam kad su ju anketom Jutarnjeg lista kolege stomatolozi izabrali kao prvu ordinaciju i stavili nju kao prvo mjesto gdje bih oni išli popravljati sebi zube a njen kirurg kojeg sam isto upoznao radi mojih velikih problema je tada proglašen najboljim.;positive;neutral;False
+BERTić TRAIN;839_2;Kada bih sami stomatolozi išli tamo pomislio sam zašto nebih i ja.;neutral;neutral;True
+BERTić TRAIN;839_3;I nikako nisam pogriješio.;positive;neutral;False
+BERTić TRAIN;839_4;Iskustvo, temeljitost , ljubaznost i vrhunska estetika svega što sam radio.;positive;positive;True
+BERTić TRAIN;840_1;Svima bih preporučila moju doktoricu jer se svima jako detaljno posveti, ima najbolje oko za estetiku, osoblje joj je izuzetno stručno i prekrasno.;positive;positive;True
+BERTić TRAIN;840_2;Ona tamo nije samo menager nego sve protetike njeno su djelo.;neutral;neutral;True
+BERTić TRAIN;840_3;Kada sam ostala bez donje šestice mislila sam sa 34g. da je to tragedija međutim kod doktorice Knego ugradili su mi implantat novim 3D sistemom bez ikakve kirurgije, rezova krvi i potpuno bez boli.;positive;positive;True
+BERTić TRAIN;840_4;Kada sam se vratila kući popodne nisam više niti znala da sam bila na zahvatu jer nije bilo nikakve boli.;positive;positive;True
+BERTić TRAIN;840_5;Svakom bih preporučila ovu ordinaciju.;positive;positive;True
+BERTić TRAIN;840_6;I kako se bavim arhitekturom uvijek sam iznenađena svjetskim interijerom ordinacije.;positive;positive;True
+BERTić TRAIN;840_7;SAMO MISLIM DA STE VI POGREŠNO NAPISALI JER DOKTORICA KNEGO NIJE U ILICI NEGO U DEŽMANOVOJ ULICI 5.;neutral;neutral;True
+BERTić TRAIN;841_1;Možda je 5% skuplja od zubara u mom kvartu, ali se svaka kuna isplati.;positive;positive;True
+BERTić TRAIN;841_2;Doktorica Knego ima ogromno iskustvo i to se vidi već na prvom pregledu kada ti ukaže na probleme sa kojima sam se mučila a nikada mi nitko nije objasnio zašto su bili.;positive;positive;True
+BERTić TRAIN;841_3;Ima u timu najjače specijaliste tako da sam ortodontski aparatić zaista nosila kako je obećala profesorica ortodoncije godinu dana,a doktorica Knego mi je nakon aparatića i super posloženih zubi po planu napravila 4 ljuskice i 1 navlaku na potamnjele i istrošene zube.;positive;positive;True
+BERTić TRAIN;841_4;To je žena odradila tako prirodno da fakat nitko niti ne sluti da to nisu moji zubi.;positive;positive;True
+BERTić TRAIN;841_5;Baš sam ponosna na moj novi osmjeh i sebe samu da sam to sve tako pametno odradila!;positive;positive;True
+BERTić TRAIN;841_6;Hvala portalu najdoktor jer sam o doktorici Knego pročitala upravo kod vas prekrasne pohvale i zato otišla kod nje!;positive;positive;True
+BERTić TRAIN;842_1;Iako redovito njegujem zube, neke stvari se ne mogu izbjeći.;neutral;neutral;True
+BERTić TRAIN;842_2;Osim toga imao sam problem koji nije velik ali me smetao.;neutral;neutral;True
+BERTić TRAIN;842_3;Istovremeno sam želio da zubi izgledaju vrlo prirodno i zaoravicmalocljrpsrbjego prije.;neutral;neutral;True
+BERTić TRAIN;842_4;Obišao sam nekoliko ordinacija dok ovdje nisam nasao sto sam tražio.;neutral;neutral;True
+BERTić TRAIN;842_5;Vrhunska usluga, odlični materijali, brzo rješavanje problema, maksimalno respektiranje želja i prilagodljivost.;positive;positive;True
+BERTić TRAIN;842_6;Ništa nije boljelo.;positive;positive;True
+BERTić TRAIN;842_7;Lijepo je bilo dolaziti u tu ordinaciju.;positive;positive;True
+BERTić TRAIN;842_8;Odlicna vrijednost za novac.;positive;positive;True
+BERTić TRAIN;843_1;Došla sam s jednim hitnim problemom (i naglasila isto više puta), a iz ordinacije izašla s predračunom od više tisuća kuna za još tri (više estetska nego hitna).;neutral;negative;False
+BERTić TRAIN;843_2;Nimalo mi se nije svidjela ta gramzivost, a još manje njezina nepristupačnost i hladnoća.;negative;negative;True
+BERTić TRAIN;843_3;Tijekom pregleda sam osjećala nelagodu, a nakon toga me počastila neprofesionalnim komentarima.;negative;negative;True
+BERTić TRAIN;843_4;Ne bih poželjela drugima slično iskustvo te se nadam da će dr.Knego malo reevaluirati svoj pristup pacijentima.;negative;negative;True
+BERTić TRAIN;844_1;Bahata i puna sebe.;negative;negative;True
+BERTić TRAIN;844_2;Nisam stomatolog, pa neću komentirati stručnost, ali kod nje sam išla po mišljenje vezano za jednu stvar dok je ona rekla da moram raditi još hrpu drugih, koje ni jedan drugi stomatolog nije rekao.;negative;negative;True
+BERTić TRAIN;844_3;Pretpostavljam da je htjela izvući što više novaca.;negative;negative;True
+BERTić TRAIN;844_4;Također, cijelo vrijeme je imala neprimjerene komentare koje ni jedna normalna osoba (ne stomatolog, osoba) ne bi imala.;negative;negative;True
+BERTić TRAIN;844_5;Uglavnom, prošla sam puno stomatologa, ovako nešto ni približno nisam doživjela.;neutral;neutral;True
+BERTić TRAIN;845_1;Ja definitivno ne preporučujem ovu doktoricu.;negative;negative;True
+BERTić TRAIN;845_2;osim sto naplačuje prvi pregled, što ostale vodeće poliklinikene rade, jako sam ražočarana u doktoričinu nestručnost.;negative;negative;True
+BERTić TRAIN;845_3;Na pregledu mi je rekla da mi je implantat jedino rješenje a ja sam bila toliko pametna i otišla po još par mišljenja.;neutral;neutral;True
+BERTić TRAIN;845_4;Ostali doktori su rekli da implantat nije nikakvo rješenje i da se zub moze spasit!;negative;neutral;False
+BERTić TRAIN;845_5;Moj zaključak je da je doktorica htjela od mene izvuči što veću količinu novaca.;negative;negative;True
+BERTić TRAIN;845_6;Ako to nije to onda je jako nestručna u postavljanju dijagnoze.;negative;negative;True
+BERTić TRAIN;845_7;što god bilo od tog dvoje ne preporučam je nikome jer zaključak je vrlo jasan!!;negative;negative;True
+BERTić TRAIN;846_1;Dr. Tatjana Knego je zaslužna za moje najljepše zube na svijetu i implantate koje su mi jako promijenili život.;positive;positive;True
+BERTić TRAIN;846_2;Počela sam se smijati i na poslu i privatno i svi su me pitali zašto sam postala šarmantna i vesela, a razlog su zubi.;neutral;neutral;True
+BERTić TRAIN;846_3;Hvala doktorici Knego i svima ju jako preporučam.;positive;positive;True
+BERTić TRAIN;846_4;Odlične su joj sve cure i doktori u ordinaciji.;positive;positive;True
+BERTić TRAIN;846_5;Ima najbolju ortodonciju u Hrvatskoj jer joj je ortodontica profesorica i sada je moj brat isto pred kraj ortodoncije nakon 11 mjeseci i isto je happy;positive;positive;True
+BERTić TRAIN;847_1;Dr.Tatjana Knego sigurno nije osoba ni stručnjak koji zaslužuje ovakve lažne negativne komentare.;negative;positive;False
+BERTić TRAIN;847_2;Njen sam pacijent kao i niz mojih prijatelja.;neutral;neutral;True
+BERTić TRAIN;847_3;Oduševljen sam radom doktorice, stručnošću i najvišim nivoom estetike i prirodnosti.;positive;positive;True
+BERTić TRAIN;847_4;O estetici i nivou aparature nove ordinacije želim reći samo kratko - svjetski.;positive;positive;True
+BERTić TRAIN;847_5;Saznao sam za ovo jer sam prijateljici preporučio dr.Tatjanu Knego i ona je tražila internetski njen broj.M.;neutral;neutral;True
+BERTić TRAIN;848_1;Tražila sam hitno otorinca i naišla na ovo o mojoj doktorici.;neutral;neutral;True
+BERTić TRAIN;848_2;Kod doktorice Knego dolazi cijela moja obitelj, a sada i dečko i ona nam je svima zakooooonnnn!;positive;positive;True
+BERTić TRAIN;848_3;Kako netko ako nje zločest može napasti cure iz njene ordinacije koje su super,ljubazne i drage.;positive;positive;True
+BERTić TRAIN;848_4;Doktorica zadnjih godinu ima nove cure koje su mi posebno drage i sve mi organiziraju kad nešto trebam.;positive;positive;True
+BERTić TRAIN;848_5;Moju prijateljicu prvi puta,a izbjeljivala je zube pet puta drugdje,nije ništa bolijelo sa nekom najnovijom lampom.;neutral;positive;False
+BERTić TRAIN;848_6;Halllooooo, ljudi tu nešto nije pravedno!!!!!;negative;neutral;False
+BERTić TRAIN;849_1;Zadnjih 5 godina sam kod doktorice, radila sam i izbjeljivanje, ugradila mi je gornje obje jedinice od keramike perfektno,sve crne plombe mi promijenila u prelijepe bijele,svakih par mjeseci idem na kontrolu.;neutral;positive;False
+BERTić TRAIN;849_2;I super mi je sto poslika zub na stolcu dok nesto radi, ne moram ici nekud dalje pa natrag u ordinaciju...;positive;positive;True
+BERTić TRAIN;849_3;To mi je gubljenje vremena, prezadovoljna sam!!;positive;positive;True
+BERTić TRAIN;849_4;Tako je puna strpljenja i mirna sam jer zna sto radi. A.;positive;positive;True
+BERTić TRAIN;850_1;Doktorice iz ordinacije Knego su mi prije 2 mjeseca spasile dva zuba koji su mi htjeli vaditi.;positive;positive;True
+BERTić TRAIN;850_2;Ja sam oduševljen radom ordinacije, pristupom pacijentima, a plombe su mi prvi puta napravljene zaista u boji zuba,glatko i prirodno.;positive;positive;True
+BERTić TRAIN;850_3;Sve pohvale!!!!!;positive;positive;True
+BERTić TRAIN;851_1;Ovo je stvarno užas koliko je nepravedno napadnuta dr T.Knego, prije pet godina mi je napravila ljuskice na svim prednjim zubima jer su bili užas.;negative;positive;False
+BERTić TRAIN;851_2;To je toliko lijepo i prirodno da dan danas nitko ni ne sluti da imam ljuskice i svi se dive mom osmijehu.;positive;positive;True
+BERTić TRAIN;851_3;Čovječe, ona je uvijek toliko draga i svi se tamo beskrajno trude oko pacijenta..;positive;positive;True
+BERTić TRAIN;851_4;Maja;neutral;neutral;True
+BERTić TRAIN;852_1;jako neljubazan personal.;negative;negative;True
+BERTić TRAIN;852_2;posebno sestre na prijemu;positive;neutral;False
+BERTić TRAIN;853_1;LJubazna, profesionalna, empatična, pažljivo sluša i iskreno se trudi pomoći svakom pacijentu, sve svoje znanje i bogato iskustvo iskreno i predano koristi u svom radu.;positive;positive;True
+BERTić TRAIN;854_1;Prije više od 6 godina jedan drugi liječnik u državnoj bolnici je posumnjao da sam doživio epileptični napad.;neutral;neutral;True
+BERTić TRAIN;854_2;Iako nije bio siguran u to, usprkos EEG nalazu koji je bio u granicama urednog, mimo svih protokola je dijagnosticirao G40-epilepsiju i uveo terapiju u dozi za koju je sam rekao da je u dojenačkoj dozi i u slučaju napada ne će mi pomoći niti može spriječiti napad, jer je doza preniska.;negative;neutral;False
+BERTić TRAIN;854_3;Brojne druge stvari su mi bile sumnjive (govorio mi je da sam zdrav, a u nalaz pisao dijagnozu i terapiju) i odlučio sam potražiti drugo mišljenje.;negative;neutral;False
+BERTić TRAIN;854_4;Otišao sam na pregled kod prof. dr. Brinar, potražiti drugo mišljenje.;neutral;neutral;True
+BERTić TRAIN;854_5;Prof. Brinar je strpljivo i temeljito pogledala brojne nalaze.;positive;positive;True
+BERTić TRAIN;854_6;Izvršila je detaljan neurološki pregled kako bi isključila druge neurološke bolesti.;neutral;positive;False
+BERTić TRAIN;854_7;Strpljivo je odgovarala na sva moja pitanja, uz detaljne argumente, objašnjenja i primjere iz dugogodišnjeg rada, kako u predavaonici Medicinskog fakulteta, tako i u liječničkoj ordinaciji.;positive;positive;True
+BERTić TRAIN;854_8;Sam pregled je trajao više od jednog sata.;negative;neutral;False
+BERTić TRAIN;854_9;Na temelju pregledanih nalaza i neurološkog pregleda zaključila je da sam neurološki zdrav, nikad nisam imao napad i EEG-ovi su u granici normale.;positive;positive;True
+BERTić TRAIN;854_10;Sve mi je detaljno objasnila i argumentirala.;positive;positive;True
+BERTić TRAIN;854_11;Većina mojih sumnji, zbog kojih sam potražio drugo mišljenje, pokazale su se točne.;neutral;positive;False
+BERTić TRAIN;854_12;Liječnik u državnoj bolnici nije odmah prepoznao da nisam doživio napad (a trebao je), a EEG smatra urednim samo kad je toliko savršen da takav nalaz zapravo kod nikoga niti ne postoji.;negative;neutral;False
+BERTić TRAIN;854_13;Veliko HVALA prof. Brinar što me je spasila nakon 6 i pol godina nepotrebnog liječenja i kontroliranja u državnoj bolnici.;positive;positive;True
+BERTić TRAIN;854_14;Moram naglasiti i pohvaliti njeno poštenje: iako me mogla naručivati na razne kontrole i pretrage i tako zaraditi novac, nije to učinila, nego je moje zdravlje i svoje poštenje, obraz i čistu savjest stavila ispred novca i profita.;positive;positive;True
+BERTić TRAIN;854_15;Nažalost, sve je manje takvih ljudi.;negative;neutral;False
+BERTić TRAIN;854_16;Profesorice Brinar i našeg susreta sjećat ću se do kraja života s velikom radošću i zahvalnošću.;positive;positive;True
+BERTić TRAIN;854_17;Još jednom najiskrenije HVALA.;positive;positive;True
+BERTić TRAIN;854_18;P. S. Pozdrav uredništvu stranice i zahvala jer sam upravo na ovoj stranici prvi put doznao za dr. Brinar.;positive;neutral;False
+BERTić TRAIN;855_1;Pristupa osobno i vrlo profesionalno, uvijek je raspoložena, jednostavno se kod nje se osjećam kao kod vrlo dragog prijatelja.;positive;positive;True
+BERTić TRAIN;855_2;Najviše kod doktorice cijenim holistički pristup problemu, lijekove prepisuje samo kada su nužni i vrlo rado dati će savjet kako poraditi na prevenciji bolesti mijenjanjem nekih životnih navika ili unosom određenih prehrambenih namirnica.;positive;positive;True
+BERTić TRAIN;856_1;Vrhunska doktorica i čovjek, više puta sam dolazila zbog sebe i djece zbog migrenskih glavobolja, uvijek ljubazna, empatična, detaljna, topla, da o stručnosti ne govorim, preporučila sam ju velikom broju osoba, svi prezadovoljni, neurolog broj 1;positive;positive;True
+BERTić TRAIN;857_1;U nastavku prenosimo odgovor prof.dr.sc. Vesna Brinar na komentar napisan 10.3.2025. u 16:20 SATI od korisnik56508: Da I ja kažem par riječi o događaju koji je tako ružno opisala o meni gospođa, da sam je ja zaboga gurala iz ordinacije.;negative;neutral;False
+BERTić TRAIN;857_2;Nije napisala da sam ja vidjeviši da dolazi električnim kolicima požurila po stepenicama da joj pomognem, no ona mi kaže “ pa mogu ja hodati” a dobro ponesite mi torbu, koju sam ponijela- torbu tesku više od 2 kg. nalaza.;negative;neutral;False
+BERTić TRAIN;857_3;Boluje od 14 godine od različitih simptoma - ne vidi a uredno no sve pretrage koje vadi iz hrpe papira vadi točno.;positive;neutral;False
+BERTić TRAIN;857_4;Navodno kako nitko nije znao kod nas u HR od čega boluje kasnije je utvrđeno u Sarajevu da boluje od Neuroborelioze.;neutral;neutral;True
+BERTić TRAIN;857_5;Nikada nije utvrđen ugriz krpelja.;neutral;neutral;True
+BERTić TRAIN;857_6;U Sarajevu je kod liječnice koju ja ne poznam ali imam višegodišnje iskustvo s njenim liječenjem bolesnika s neuroboreliozom koji su imali multiplu sklerozu ili serotonergičke poremećaje.;neutral;neutral;True
+BERTić TRAIN;857_7;I ja sam komentirala da nisam sigurna da se radi o neuroboreliozi ali s time se ja ne bavim, već je to područje infektologije.;neutral;neutral;True
+BERTić TRAIN;857_8;No kako je na dobivenu terapiju antibioticima bila dobro, onda je to očito bila uredna dijagnoza.;neutral;neutral;True
+BERTić TRAIN;857_9;Kako je ponovno tražila liječenje zbog pogoršanja u klinici za infektologiju u Zagrebu, tamo joj je objašnjeno da neuroborelioza prema našim stručnjacima infektolozima nije recidivirajuće kronično stanje.;neutral;neutral;True
+BERTić TRAIN;857_10;Gospođa se nastavila liječiti i kontrolirati u Sarajevu gdje radi pretrage i sada dobiva terapiju prema uputi liječnice iz Sarajeva.;neutral;neutral;True
+BERTić TRAIN;857_11;Vozi se električnim kolicima jer se osjeća nesigurnost u vanjskom prostoru.;neutral;neutral;True
+BERTić TRAIN;857_12;Unutar prostora se uredno kreće.;positive;neutral;False
+BERTić TRAIN;857_13;Zbog navedenog je 2022 godine u potpunosti obrađena u KB Dubrava na Neurologiji - zbog ataka nestabilnosti.;neutral;neutral;True
+BERTić TRAIN;857_14;Inače i prema samoj njenoj izjavi uredno hoda, ima troje djece i supruga, radi, ali koristi štake izvan zatvorenog prostora jer je nesigurnau hodu.;negative;neutral;False
+BERTić TRAIN;857_15;Neurološki nalaz je bio u potpunosti uredan.;positive;neutral;False
+BERTić TRAIN;857_16;Sve pretrage na prema opisu na povremenu nestabilnost (ataksiju) učinjene u KB Dubrava bile su uredne i negative na bolest živčanog sustava.;neutral;neutral;True
+BERTić TRAIN;857_17;MR pretrage mozga su uredne.;neutral;neutral;True
+BERTić TRAIN;857_18;Gospođi sam objasnila da joj ne mogu pomoći nakon svih navedenih pretraga koje je učinila.;negative;neutral;False
+BERTić TRAIN;857_19;Pokušala sam je pregledati, ali nije uspjelo.;neutral;neutral;True
+BERTić TRAIN;857_20;Rekla sam joj da je meni žao ali da joj ne mogu pomoći.;negative;neutral;False
+BERTić TRAIN;857_21;Ne nalazim što bi još trebalo učiniti da joj se stanje popravi, a liječi se kod liječenice koja se bavi neuroboreliozom, koje nije moje već infektološko područje.;neutral;neutral;True
+BERTić TRAIN;857_22;Sve to vrijeme bilo je više od 45 minuta ne treba ništa platiti ali nažalost joj ne mogu pomoći.;negative;neutral;False
+BERTić TRAIN;857_23;Ona se liječi zbog drugog problema kojim se ja ne bavim.;neutral;neutral;True
+BERTić TRAIN;857_24;Otpratila sam je do vrata i do stepenica po kojima može sama - ona to to opisuje kao naguravanje?!!!;negative;neutral;False
+BERTić TRAIN;857_25;Zaboga zar bi ikoji liječnik naguravao pacijenta?.;negative;neutral;False
+BERTić TRAIN;857_26;Vesna Brinar;neutral;neutral;True
+BERTić TRAIN;858_1;Inače nikada ne komentiram nikoga, ali ovako neugodno iskustvo nisam nikada doživjela.;negative;negative;True
+BERTić TRAIN;858_2;"Nakon cca pola sata pregleda, doktorica je izrazito ponižavajući pričala o ""drugim"" liječnicima i nadređenim čije nalaze sam donijela.";negative;negative;True
+BERTić TRAIN;858_3;Nakon pola sata pregleda, naprasno mi bez nikakvog obrazloženja gura papire i završava pregled, uz napomenu da mi ona ne može pomoći niti mi dati savjet niti me uputiti igdje.;negative;negative;True
+BERTić TRAIN;858_4;"Žurno me ""gura"" van iz ordinacije.";negative;negative;True
+BERTić TRAIN;858_5;Ostala sam u šoku ponašanjem jedne liječnici, te je sve ispod mog dostojanstva i načina na koji sam sam odgojena nije mi dopustio da se spuštam na njezin nivo.;negative;negative;True
+BERTić TRAIN;858_6;Isto šokirana, bez ikakavog obrazloženja napuštam ordinaciju.;negative;negative;True
+BERTić TRAIN;858_7;O njezinoj stručnosti ne mogu ništa prokomentirati jer nisam dobila Nikakvo mišljenje.;negative;neutral;False
+BERTić TRAIN;858_8;Ni usmeno ni pismeno.;neutral;neutral;True
+BERTić TRAIN;858_9;U samoj ordinaciji nisam susrela nikakvo drugo osoblje ( ona me dopratila i ispratila), tako da taj dio ne mogu komentirati.;neutral;neutral;True
+BERTić TRAIN;858_10;Jako, jako neugodno iskustvo.;negative;negative;True
+BERTić TRAIN;858_11;Tko god da je s druge strane njezinog stola, nikako ne zaslužuje ovakav tretman.;negative;negative;True
+BERTić TRAIN;859_1;Jedna od njih sto tisuća .;neutral;neutral;True
+BERTić TRAIN;859_2;Ova doktorica je razumjela Hipokratovu zakletvu i ima moje apsolutno povjerenje.;positive;positive;True
+BERTić TRAIN;859_3;Liječila je i produžila život mome ocu punih 15 godina, nikada otresita, nikada arogantna, nikada ljuta- divno empatično ljudsko biće kojoj sam zahvalan i koju poštujem više od bilo kojeg liječnika ikad.;positive;positive;True
+BERTić TRAIN;859_4;I mojoj je majci znala dijagnozu prije svih CT , MR- ova i Rentgen uređaja..;neutral;positive;False
+BERTić TRAIN;859_5;A vi što pišete protiv nje- jeste li pogledali i prebrojali diplome na njenome zidu ?!;negative;neutral;False
+BERTić TRAIN;859_6;za svaku od njih trebalo je puno raditi i proliti puno znoja.;negative;neutral;False
+BERTić TRAIN;859_7;Hvala Vam na svemu. doktorice Ivo Ivšac;positive;positive;True
+BERTić TRAIN;860_1;Izvrsna doktorica, apsolutni autoritet za bolesti sžs, uz siroko internisticko znanje i detaljan pristup pacijentu.;positive;positive;True
+BERTić TRAIN;860_2;Vrlo ljubazna, ugodna osoba, trudi se pomoci pacijentu.;positive;positive;True
+BERTić TRAIN;860_3;Imam dojam da posjeduje izrazitu intrinzicnu motivaciju, mladenacki znatizeljan duh zeljan novih saznanja.;positive;positive;True
+BERTić TRAIN;860_4;Cijenim doktoricu, pomogla mi je uvijek svojim savjetima.;positive;positive;True
+BERTić TRAIN;860_5;Diana;neutral;neutral;True
+BERTić TRAIN;861_1;Najbolja doktorica ikad!;positive;positive;True
+BERTić TRAIN;861_2;Vrhunski stručnjak, a i čovjek, primjer kakvi bi svi doktori trebali biti.;positive;positive;True
+BERTić TRAIN;861_3;Svaka čast doktorici.;positive;positive;True
+BERTić TRAIN;862_1;Uglavnom izvrsna doktorica kao stručnjak i kao čovjek te je preporučujem svima.;positive;positive;True
+BERTić TRAIN;862_2;Uvijek vedra, susretljiva i otvorena.;positive;positive;True
+BERTić TRAIN;862_3;Svaki savjet i terapija koji mi je dala pokazao se kao pravo rješenje.;positive;positive;True
+BERTić TRAIN;862_4;Da je danas više takvih doktora bilo bi jako lijepo.;positive;positive;True
+BERTić TRAIN;862_5;Od doktorice Brinar bi svaki mladi doktor trebao učiti.;negative;positive;False
+BERTić TRAIN;862_6;Jednostavno sam oduševljena.;positive;positive;True
+BERTić TRAIN;863_1;rijetko dobra lijecnica,pozorno saslusa pacjenta ,bez zurbe ,Prvivi puta sam bila kod nje prije 40 god zadnji prije 5g i uvjek isti pristup pacjentu,, S postovanjem dr Brinar;positive;positive;True
+BERTić TRAIN;864_1;Najbolja doktorica koja postoji!;positive;positive;True
+BERTić TRAIN;864_2;Svakom bi preporucila ovu doktoricu!;positive;positive;True
+BERTić TRAIN;864_3;Jedina koja me je rijesila stravicnih bolova dok svi drugi doktori nisu znali sto bi sa mnom.;positive;positive;True
+BERTić TRAIN;864_4;Jako sam joj zahvalna i najvise cijenim njeno misljenje.;positive;positive;True
+BERTić TRAIN;865_1;Doktorica Brinar je najbolja neurolog kod koje sam bio od pustih lutanja,sasluša pacijenta do kraja i sve vam potanko objasni da bi došli do dijagnoze i krenuli u oporavak.;positive;positive;True
+BERTić TRAIN;865_2;Preporučjem Doktoricu Brinar svima !!!!!!!!;positive;positive;True
+BERTić TRAIN;866_1;Nevjerojatno je koliko stručnosti, izvrsnosti, ljudskosti, odlučnosti, plemenitosti, topline i ljubavi prema pozivu koji živi i pacijentima.;positive;positive;True
+BERTić TRAIN;866_2;Nakon 5 godina posjećivanja raznih stručnjaka koji su samo slijegali ramenima, suprug i ja došli smo kod dr. Brinar.;neutral;neutral;True
+BERTić TRAIN;866_3;Jedina liječnica koja je s nama porazgovarala kao s ljudima, dala konkretnu dijagnozu i što je potrebno napraviti.;positive;positive;True
+BERTić TRAIN;866_4;Kako je rekla, tako je i bilo.;neutral;neutral;True
+BERTić TRAIN;866_5;Ukratko, nikad u životu nismo sreli bolje doktorice ili doktora od nje!;positive;positive;True
+BERTić TRAIN;867_1;Prije svega divna kao osoba, toliko empatije i suosjećanja koje niste dugo doživjeli kod doktora, šteta što je takvih jako malo.;positive;positive;True
+BERTić TRAIN;867_2;Jako predana i posvećena svome poslu, uvijek posluša i odgovori na sva pitanja i nedoumice.;positive;positive;True
+BERTić TRAIN;867_3;Preporuka za doktoricu i ovim putem koristim priliku da joj se zahvalim na svemu što je učinila za mene.;positive;positive;True
+BERTić TRAIN;868_1;Najbolja neurologinja koju sam srela do sada, precizna, ljubazna, detaljno objasnila cjelokupnu situaciju, od 2015. lutam i tražim objašnjenje za simptome, koje sam sada dobila.;positive;positive;True
+BERTić TRAIN;868_2;Ako odete kod dr.Brinar, možete biti sigurni da ćete izaći zadovoljni i sa detaljnim objašnjenjem za Vaše tegobe.;positive;positive;True
+BERTić TRAIN;869_1;Unaprijed sam poslal email sa cijelom historiju ,uredno pripremila sve nalaze i CD .;neutral;neutral;True
+BERTić TRAIN;869_2;Doktorica se nije predhodno pripremila za moj dolazak , pregedani snimci..;negative;neutral;False
+BERTić TRAIN;869_3;Ukazala mi ne sto je trebalo biti uradjeno a nije na vrijeme ,vrlo malo korisnih informacija sam dobila za sadasnje stanje stvari.;negative;negative;True
+BERTić TRAIN;869_4;Takodje je I misljenje sturo ...;neutral;negative;False
+BERTić TRAIN;869_5;Ako niste iz Zg ne trosite pare I vrijeme za staru doktoricu koja Vas jos pored svega primi hladno I bez empatije;negative;negative;True
+BERTić TRAIN;870_1;Hvala vam od srca.;positive;positive;True
+BERTić TRAIN;870_2;Izuzetan stručnjak detaljnja i vrlo temeljita.;positive;positive;True
+BERTić TRAIN;870_3;Apsutna preporuka za ovu iznimno dobru doktoricu;positive;positive;True
+BERTić TRAIN;871_1;Prof. Brinar je vrsna dijagnostičarka čija mi je terapija pomogla takoreći preko noći nakon mjeseci i mjeseci lutanja i patnje.;positive;positive;True
+BERTić TRAIN;871_2;Iznimno jasno i jednostavno sve objašnjava, puna je riječi podrške i strpljenja.;positive;positive;True
+BERTić TRAIN;871_3;Kada bi barem svi liječnici pristupali pacijentima s istom toplinom i empatijom.;positive;positive;True
+BERTić TRAIN;871_4;Preporučujem od srca.;positive;positive;True
+BERTić TRAIN;871_5;Sanja Lokner;neutral;neutral;True
+BERTić TRAIN;872_1;Izvrsna liječnica.;positive;positive;True
+BERTić TRAIN;872_2;Jako mi je puno pomogla.;positive;positive;True
+BERTić TRAIN;872_3;Ako slušate njene savjete, napraviti ćete sebi dobro.;negative;positive;False
+BERTić TRAIN;872_4;Izuzetno ljubazna i draga.;positive;positive;True
+BERTić TRAIN;872_5;Stvori pa skoro prijateljski odnos.;positive;positive;True
+BERTić TRAIN;872_6;Naravno, ovisi i o pacijentu da li prati terapiju po uputama.;neutral;neutral;True
+BERTić TRAIN;872_7;Svaka joj čast!;positive;positive;True
+BERTić TRAIN;872_8;Preporučujem je jako !;positive;positive;True
+BERTić TRAIN;873_1;Imam MS vec 23 god. te jedino i iskljucivo zahvaljujuci cijenjenoj prof. Brinar, koja mi je davne 2006 osigurala terapiju Copaxonom, jos i dan danas sam u vrlo dobrom zdravstvenom stanju.;positive;positive;True
+BERTić TRAIN;873_2;Hvala Vam.;positive;positive;True
+BERTić TRAIN;874_1;Vrhunska doktorica.;positive;positive;True
+BERTić TRAIN;874_2;Jedna od rijetkih koja ima konkretne odgovore na različita pitanja u vezi zdravstvenog stanja, kojoj je prirodno pacijentu sve detaljno objasniti te pokazati iz prijašnjih i novih nalaza gdje se nalaze objašnjenja za određenu dijagnozu.;positive;positive;True
+BERTić TRAIN;874_3;Također, vidi se da doktorica prati najnovija istraživanja i da ne zanemaruje najnovije metode.;positive;positive;True
+BERTić TRAIN;874_4;Pregled je detaljan kao i konačan nalaz.;positive;positive;True
+BERTić TRAIN;874_5;Vrlo precizna i točna.;positive;positive;True
+BERTić TRAIN;874_6;Definitivno stručna osoba kojoj vrijedi otići.;positive;positive;True
+BERTić TRAIN;874_7;Uz sve to doktorica Brinar je iznimno ljubazna i pokazuje brigu za svoje pacijente te je spremna pomoći u svakom trenutku.;positive;positive;True
+BERTić TRAIN;874_8;Definitino jedna od najboljih;positive;positive;True
+BERTić TRAIN;875_1;Prof.dr.sc. Vesna Brinar ima unikatan i izvrstan pristup pacijentima koji je pun podrske, prijateljstva, povjerenja, uvijek dostupna i spremna odgovoriti na bilo kakva pitanja.;positive;positive;True
+BERTić TRAIN;875_2;Sasluša pacijenta i daje svoje stručne savjete što me zaista potaknulo da ne gubim nadu.;positive;positive;True
+BERTić TRAIN;875_3;Moram naglasiti da je doktorica jako energična i pozitivna.;positive;positive;True
+BERTić TRAIN;875_4;Rijetka kombinacija znanja i pozitivnog stava prema pacijentu!;positive;positive;True
+BERTić TRAIN;876_1;Poštovana profesorica Brinar je najbolja liječnica koju sam srela u životu!!!!;positive;positive;True
+BERTić TRAIN;876_2;Ovim svojim komentarom ne želim i ne mogu u pitanje dovoditi njezinu neupitnu stručnost, jer netko tko je toliko srcem i dušom posvećen svojoj struci, samim time je dostojan mog divljenja.;positive;positive;True
+BERTić TRAIN;876_3;Njezina biografija je dovoljan dokaz najkvalitetnijeg neurologa na ovim prostorima.;positive;positive;True
+BERTić TRAIN;876_4;Ali mogu iznijeti svoj doživljaj susreta, a koji ja , kao najveći hipohondar na svijetu, sam doživjela kao isključivo jedno prelijepo iskustvo.;positive;positive;True
+BERTić TRAIN;876_5;Svoju zahvalnost ne mogu izraziti riječima....jer takvih riječi nema....;positive;positive;True
+BERTić TRAIN;876_6;Uprkos dijagnozi tinitusa, koji je naporan, neizdržljiv /meni/, zahvalna sam za svaku njenu riječ, toplinu kojom zrači i beskrajno sam privilegirana što sam bila u mogućnosti upoznati takvu osobu.;positive;positive;True
+BERTić TRAIN;876_7;Preporučujem gđu. profesor svakom tko treba pomoć u njezinoj, jako kompliciranoj i zahtjevnoj struci.;positive;positive;True
+BERTić TRAIN;876_8;Još ima dobrih ljudi i!!!!!!!;neutral;positive;False
+BERTić TRAIN;876_9;Ivona Radulović Matica, prof;neutral;neutral;True
+BERTić TRAIN;877_1;Bila sam na pregledu kod dr.Brinar, zaista pregled vrijedi svake kune, a takav doktor se rijetko viđa naravno u pozitivnom smislu.;positive;positive;True
+BERTić TRAIN;877_2;Holistički pristup koji ova žena ima trebao bi biti primjer svakom liječniku.;positive;positive;True
+BERTić TRAIN;877_3;Vrlo brižna, empatična i savjesna.;positive;positive;True
+BERTić TRAIN;877_4;Svaka čast!;positive;positive;True
+BERTić TRAIN;878_1;Postovanoj dr. Vesni Brinar sam se obratila telefonski putem za dogovor o terminu posjete u poliklinici Cortex (ne zivim u Zagrebu) za konzultaciju, dijagnostiku te EEG prije susreta s prof. Paladinom.;neutral;neutral;True
+BERTić TRAIN;878_2;Zamolila sam je 5 minuta razgovora na sto je dr. Brinar lijepo pristala.;neutral;positive;False
+BERTić TRAIN;878_3;Pri pokusaju navodjenja mojih dijagnoza (okcipitalni kavernozni angiom mozga, desna mozdana hemisfera, cervikalna spondiloza uz diskus herniju C6 lijevo, insomnia te glavobolje) htjedoh je zamoliti termin za EEG i EMNG.;neutral;neutral;True
+BERTić TRAIN;878_4;Dr Brinar prekida recenicu i upada u rijec donoseci zakljucak da se EMNG ne treba raditi ako je neuroloski status uredan (naglasavam da ista postovana doktorica ne zna je li moj neuroloski status uredan ili nije) te vezano za moj kavernom i glavobolje istice kako cu dobiti tablete za glavobolju kad se vidimo i da ce sve biti u redu.;negative;negative;True
+BERTić TRAIN;878_5;Naglasavam, takodjer, da postovana dr Brinar ne zna koju vrstu glavobolje imam, pijem li vec neke lijekove za glavobolju te reagiram li na te lijekove.;neutral;neutral;True
+BERTić TRAIN;878_6;EEG nudi jedan termin koji mi nije odgovarao zbog termina slijetanja aviona.;negative;neutral;False
+BERTić TRAIN;878_7;Htjedoh je zamoliti za neko drugo vrijeme, medjutim postovana doktorica ne dozvoljava da zavrsim recenicu s molbom za drugi termin, kulturno me pozdravlja i spusta mi slusalicu.;negative;negative;True
+BERTić TRAIN;878_8;Razgovor je trajao 3 minute.;negative;neutral;False
+BERTić TRAIN;878_9;Doista je neozbiljno i neodgovorno iznositi rjesenja za dijagnozu / anamnezu koju posjedujem prije pregleda MR mozga i vratne kraljeznice te provjere neuroloskog statusa ma koliko god da si iskusan i ovjeren u vrsnoci.;negative;negative;True
+BERTić TRAIN;878_10;ne treba puno riječi za opisati doktoricu koja me vodi već 8 godina.;positive;negative;False
+BERTić TRAIN;879_1;Izrazito ljubazna, draga i vrlo stručna Pravilnom dijagnozom i terapijom ponovno me postavila na noge.;positive;positive;True
+BERTić TRAIN;879_2;Svaka pohvala;positive;positive;True
+BERTić TRAIN;880_1;Korektna i temeljita, ne oteže niti ne zadržava nepotrebno.;positive;positive;True
+BERTić TRAIN;880_2;Nijedan doktor do dolaska k njoj, nije ozbiljno shvacao moj problem.;negative;positive;False
+BERTić TRAIN;880_3;Osim neupitne stručnosti, stječe se dojam da pacijenta gleda kao cjelinu a ne samo problem zbog kojeg je došao.;positive;positive;True
+BERTić TRAIN;881_1;Profesorica Brinar je vrhunska doktorica, vrlo ljubazna, empaticna i profesionalna.;positive;positive;True
+BERTić TRAIN;881_2;Vrlo strpljivo odgovara na svako pitanje i nakon dugogodisnjih obilazaka raznih ordinacija u samo jednom posjetu postavila mi je ispravnu dijagnozu i pomogla prepisanom terapijom.;positive;positive;True
+BERTić TRAIN;882_1;Doktorica je stručna ,ljubazna, susretljiva ,neposredna.;positive;positive;True
+BERTić TRAIN;882_2;Daje savjete , preporuke.;positive;positive;True
+BERTić TRAIN;882_3;Za svaku pohvalu!;positive;positive;True
+BERTić TRAIN;882_4;Osobno smatram da će Hrvatska neurologija ostati jako zakinuta jednog dana kad ona prestane s radom.;negative;positive;False
+BERTić TRAIN;883_1;Profesorica Brinar me je spasila od krive dijagnoze drugog liječnika.;positive;positive;True
+BERTić TRAIN;883_2;Nakon njene terapije sam se preporodila.;positive;positive;True
+BERTić TRAIN;883_3;Ona je najbolja liječnica na svijetu!;positive;positive;True
+BERTić TRAIN;883_4;Vrhunska dijagnostičarka i veliki stručnjak!;positive;positive;True
+BERTić TRAIN;883_5;Prije svega veliki čovjek sa divnim srcem.;positive;positive;True
+BERTić TRAIN;883_6;Uvijek je tu za nas.;positive;positive;True
+BERTić TRAIN;883_7;Njen pristup pacijentima trebao bi biti primjer drugima.;positive;positive;True
+BERTić TRAIN;883_8;Svima je preporučujem.;positive;positive;True
+BERTić TRAIN;883_9;Njena klinika zove se Cortex, Tomašićeva 4, Zagreb.;neutral;neutral;True
+BERTić TRAIN;883_10;Veliki pozdrav od Ive Savi;positive;neutral;False
+BERTić TRAIN;884_1;Iako je dr. Brinar bila vrlo ljubazna i pristupacna, meni osobno nije pomogla.;negative;mixed;False
+BERTić TRAIN;884_2;"Nije prepoznala ostecenje motorickih zivaca lijevog ramenog obruca odnosno slabost misica oko lijeve lopatice (scapula alata) nego je dijagnosticirala ""serotonergicki poremecaj mozga"" i sukladno tome propisivala antidepresive, antiepileptike i ulje kanabisa.";negative;negative;True
+BERTić TRAIN;884_3;Samoinicijativno sam prekinula lijecenje kod nje vidjevsi da nema pomaka i da terapija nema nikakav ucinak na moj zdravstveni problem.;negative;negative;True
+BERTić TRAIN;884_4;Lijecenje sam nastavila u drugoj ustanovi.;neutral;neutral;True
+BERTić TRAIN;885_1;Najbolja doktorica koju sam ikada srela (nazalost, sretala sam ih mnogo)!!!;positive;positive;True
+BERTić TRAIN;885_2;Ljubazna i brizna, imam osjecaj da brine o mom zdravlju vise nego ja sama.;positive;positive;True
+BERTić TRAIN;885_3;Hvala od srca!;positive;positive;True
+BERTić TRAIN;886_1;Svaka pohvala doktorici Brinar, fenomenalan dijagnostičar, uvijek ugodna i prijazna, spremna pomoći.;positive;positive;True
+BERTić TRAIN;886_2;Jako sam zadovoljna Vašim pristupom i radom.;positive;positive;True
+BERTić TRAIN;887_1;Ne treba puno riječi za opisati doktoricu koja me vodi već 8 godina.;positive;positive;True
+BERTić TRAIN;887_2;Profesionalac i čovjek prije svega.;positive;positive;True
+BERTić TRAIN;888_1;Najbolja i najstručnija doktorica koju sam imala priliku upoznati.;positive;positive;True
+BERTić TRAIN;888_2;Dostupna je 0/24 i bas je pravo oličenje doktora koji pomaže i lijeći ljude.;positive;positive;True
+BERTić TRAIN;888_3;Doktorica je vrlo stručna, pedantna, ljubazna.;positive;positive;True
+BERTić TRAIN;888_4;Sve naj naj najbolje o njoj.;positive;positive;True
+BERTić TRAIN;888_5;Kao čovjeka i doktoricu!;positive;positive;True
+BERTić TRAIN;889_1;Imala sam neke nedoumice koje mi je tek ona objasnila laičkim jezikom.;negative;neutral;False
+BERTić TRAIN;889_2;Upute i dijagnoza koje doktorica daje uvijek vode brzom rješenju problema.;positive;positive;True
+BERTić TRAIN;889_3;Suosjećajna i uvijek spremna odgovoriti na pitanja, ona bila iskreno sretna zbog mene, onako ljudski.;positive;positive;True
+BERTić TRAIN;889_4;Iz vlastitog iskustva, toplo preporučam.;positive;positive;True
+BERTić TRAIN;890_1;Doktorica je iznimno posvećena pacijentu.;positive;positive;True
+BERTić TRAIN;890_2;"Iako sam laik očigledno je da ima ogromno znanje i iskustvo i da ga koristi pri ""obradi"" svakoga pacijenta; izuzetno fokusirana, pamti i najmanje detalje ...";positive;positive;True
+BERTić TRAIN;890_3;ukratko zaista ulijeva osjećaj da ste u rukama osobe koja zna što radi.;positive;positive;True
+BERTić TRAIN;890_4;Dostupna je na mobitel, spreman izići u susret oko termina.;positive;positive;True
+BERTić TRAIN;890_5;Pored toga, empatična je i topla osoba.;positive;positive;True
+BERTić TRAIN;890_6;Rijetka kombinacija vrhunskog stručnjaka i vrhunske osobe.;positive;positive;True
+BERTić TRAIN;891_1;Bila sam na pregledu kod doktorice.;neutral;neutral;True
+BERTić TRAIN;891_2;Doktorica je super i draga osoba, jako ljubazna, sasluša vas, da vam puno savjeta, uvijek nasmijana i spremna izaći u susret.;positive;positive;True
+BERTić TRAIN;891_3;Bilo jutro, dan ili ponoć, uvijek odgovara na poziv.;positive;positive;True
+BERTić TRAIN;891_4;Uvijek je spremna pomoći i vrhunski je neurolog.;positive;positive;True
+BERTić TRAIN;891_5;Odlična organiziranost također.;positive;positive;True
+BERTić TRAIN;891_6;Najbolja generacija liječnika!;positive;positive;True
+BERTić TRAIN;891_7;Ma imam samo riječi pohvale.;positive;positive;True
+BERTić TRAIN;892_1;Atmosfera je ugodna i opuštajuća, a doktorica posjeduje veliko znanje, iskustvo i želju da zaista pomogne pacijentima.;positive;positive;True
+BERTić TRAIN;892_2;Sve pohvale za dr. Brinar!:);positive;positive;True
+BERTić TRAIN;893_1;Prezadovoljni smo s doktoricom, prvoklasna liječnica s puno razumijevanja i ogromnim iskustvom!;positive;positive;True
+BERTić TRAIN;894_1;Odlična liječnica, perfekcionist u svom poslu.;positive;positive;True
+BERTić TRAIN;894_2;Uvijek dostupna za savjete i pomoć u svakom obliku!;positive;positive;True
+BERTić TRAIN;895_1;Meni osobno dokorica nije pomogla, došla sam zbog problema s vrtoglavicama i dobila sav niz antidepresiva koji mi ništa nisu pomogli jer u tome uopće nije bio problem, što sam saznala kod drugog doktora.;negative;negative;True
+BERTić TRAIN;895_2;zašto kod drugog doktora?;negative;neutral;False
+BERTić TRAIN;895_3;jer je doktorica rekla da mi više ne može pomoći, a nakon mog pitanja što mi preporuča, odgovor je bio: ništa.;negative;negative;True
+BERTić TRAIN;895_4;Eto, toliko.;neutral;neutral;True
+BERTić TRAIN;896_1;Dr. Brinar je vrlo stručna liječnica, vidi stvari koje drugi ne primjećuju.;positive;positive;True
+BERTić TRAIN;896_2;Svakom dijagnozom demijelinizacijske bolesti savjetujem da ode i kod nje.;positive;positive;True
+BERTić TRAIN;896_3;Kuži stvar a mislim i uzroke kod nekih pacijenata.;neutral;positive;False
+BERTić TRAIN;897_1;Doktorica je najbolji klinicki neurolog u Zagrebu.;neutral;positive;False
+BERTić TRAIN;897_2;Poznaje neurolosku farmakologiju sto je kod neuroloskih bolesnika jako bitno.;positive;positive;True
+BERTić TRAIN;897_3;Dozvoljava privatni kontakt ,u bilo koje vrijeme.;positive;positive;True
+BERTić TRAIN;897_4;Kod nekih zagrebackih neurologa prof.ili acad.;neutral;neutral;True
+BERTić TRAIN;897_5;su samo slova iz abecede, iza toga nema nista, za 500 kn te ni ne dodirne.;negative;neutral;False
+BERTić TRAIN;897_6;Sama pomisao kada mi je lose da ju nazovem i da mi poznajuci anamnezu kaze kako da se izvucem iz krize(parkinsonizam) znaci mi sve.;positive;positive;True
+BERTić TRAIN;897_7;detaljna u pregledima, usporedbi nalaza i uvijek tu.;positive;positive;True
+BERTić TRAIN;897_8;VELIKO HVALA DANICA;positive;positive;True
+BERTić TRAIN;898_1;Ne vidim zašto bi je skidali, zar samo državne ocjenjujemo?;negative;neutral;False
+BERTić TRAIN;898_2;Ona sad radi privatno, no sigurno ljudi koji odlučuju kod koga će imaju pravo vidjeti i kako je drugi ocjenjuju.;neutral;neutral;True
+BERTić TRAIN;898_3;Nismo više u socijalizmu da bi diskriminirali privatnike.;neutral;neutral;True
+BERTić TRAIN;899_1;Slažem se da je vrhunski stručnjak.;positive;positive;True
+BERTić TRAIN;899_2;Hrvatsko zdravstvo je izgubilo mnogo otkad su umirovili Prof Brinar.;negative;positive;False
+BERTić TRAIN;899_3;Kapa dolje Prof Brinar;positive;positive;True
+BERTić TRAIN;900_1;Najveći stručnjak za multipla sklerozu u Hrvatskoj.;positive;positive;True
+BERTić TRAIN;901_1;Istina.;neutral;neutral;True
+BERTić TRAIN;901_2;profesorica je u mirovini.;neutral;neutral;True
+BERTić TRAIN;901_3;Bio bih red da je izbrišete s portala.;negative;neutral;False
+BERTić TRAIN;901_4;Ona više neradi u bolnici neg u privatnoj poliklinici Cortex u tomašićevoj 4;neutral;neutral;True
+BERTić TRAIN;902_1;Pa žena je u mirovini od 1 mjeseca.;neutral;neutral;True
+BERTić TRAIN;902_2;izbrišite je da ljudi znaju;negative;neutral;False

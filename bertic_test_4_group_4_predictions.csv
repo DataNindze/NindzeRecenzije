@@ -1,0 +1,276 @@
+﻿model;id;text;predicted_label;original_label;a==b
+BERTić TRAIN;9_1;Divan doktor, pažljiv, nježan ..;positive;positive;True
+BERTić TRAIN;9_2;za svaku preporuku!;positive;positive;True
+BERTić TRAIN;23_1;Odličan dijagnostičar i operater, daje sve potrebne informacije tijekom liječenja.;positive;positive;True
+BERTić TRAIN;23_2;Puno vam hvala doktore na velikoj pomoći.;positive;positive;True
+BERTić TRAIN;23_3;Stručan i ljubazan doktor.;positive;positive;True
+BERTić TRAIN;23_4;Doktor pun razumijevanja, tolerancije, brige o pacijentu, komunikativan, spreman u svakom trenutku odgovoriti na sva pacijentova pitanja ili pitanja bližnjih.;positive;positive;True
+BERTić TRAIN;23_5;Brzo mi je otkrio uzrok tegoba i uputio dalje.;positive;positive;True
+BERTić TRAIN;29_1;Izvrstan liječnik i čovjek prije svega.;positive;positive;True
+BERTić TRAIN;29_2;Radio mi je carski rez, tijekom operacije,prije i poslije, objasnio je sve što radi.;positive;positive;True
+BERTić TRAIN;29_3;Kako je ogledalo iznad operacijskog stola, gledala sam cijelu operaciju.;neutral;positive;False
+BERTić TRAIN;29_4;Vidjela sam svaki rez, odvajanje organa, vađenje djeteta iz maternice, prvi udisaj i plač, a onda završnu obradu i šivanje.;neutral;positive;False
+BERTić TRAIN;29_5;Jedno nezaboravno iskustvo.;positive;positive;True
+BERTić TRAIN;29_6;Brzo sam se oporavila od operacije bez ikakvih komplikacija.;positive;positive;True
+BERTić TRAIN;29_7;To mi je bio drugi carski.;neutral;neutral;True
+BERTić TRAIN;29_8;Svaka pohvala doktoru, ali i cijeloj riječkoj ginekologiji!;positive;positive;True
+BERTić TRAIN;35_1;Moje iskustvo s ovim doktorom pocelo je u najtezem trenutku zivota kad mi je trebao saopciti najgoru vijest o trudnoci koja se morala prekinuti u visokom stupnju.;neutral;neutral;True
+BERTić TRAIN;35_2;Tu najgoru dinagnozu je on izrekao na najljudskiji nacin i svojim pristupom i objasnjenjem stvari, ucinio taj trenutak podnosljivijim.;positive;positive;True
+BERTić TRAIN;35_3;Potpuno je smiren i dostupan za bilo kakvo pojasnjenje dijagnoze, ima razumijevanja i strpljenja za pacjenta u svakom trenutku.;positive;positive;True
+BERTić TRAIN;35_4;Detaljno analizira sve faktore u dijagnozi.;positive;positive;True
+BERTić TRAIN;35_5;Vrlo ga cijenim zbog takvog pristupa i potpuno vjerujem njegovim djagnozama.;positive;positive;True
+BERTić TRAIN;35_6;Prilikom pregleda je vrlo fin i zaista odaje profesionalni dojam pa kod pacjenta izazove veliko postovanje!;positive;positive;True
+BERTić TRAIN;35_7;Vjerujem da je strucnjak u svom poslu kakvog nema u Rijeci!;positive;positive;True
+BERTić TRAIN;35_8;Kada bi se bar drugi doktori ugledali na njegov nacin rada!;positive;positive;True
+BERTić TRAIN;37_1;Docent Finderle mi je vodio trudnoću i porodio me.;neutral;neutral;True
+BERTić TRAIN;37_2;Sve same pohvale zaslužuje boljeg,stručnijeg,ljubaznijeg doktora nisam srela.;positive;positive;True
+BERTić TRAIN;37_3;Hvala bogu pa sam na njega naišla tako da svoju drugu trudnoću i porod mogu pamtiti samo po najljepšem iskustvu.;positive;positive;True
+BERTić TRAIN;37_4;Uz njega se osjećaš sigurno sve ti ljepo objasni,sve ga možeš pitati uvjek krajnje ljubazan.;positive;positive;True
+BERTić TRAIN;37_5;Svima bih ga preporučila .;positive;positive;True
+BERTić TRAIN;50_1;Prof Boris Božić je jedan od najboljih neurokirurga u Vinogradskoj bolnici.;positive;positive;True
+BERTić TRAIN;50_2;Njegov sam pacijent , za doktora mogu reći samo riječi pohvale .;positive;positive;True
+BERTić TRAIN;50_3;Preporučila bih ga svima tko god ima problem za kralježnicom.;positive;positive;True
+BERTić TRAIN;50_4;Veliko mu hvala , hvala mu do neba.;positive;positive;True
+BERTić TRAIN;52_1;Do sada se nisam susrela sa takvim doktorom.;positive;positive;True
+BERTić TRAIN;52_2;Sve rijeci hvale.;positive;positive;True
+BERTić TRAIN;52_3;Profesor Božić je doktor sa strpljenjem koji ce sve ljepo objasnit prije operacije, a nakon operacije brine za svoje pacijente.;positive;positive;True
+BERTić TRAIN;52_4;Preporucila bi ga svima tko ima problem sa kraljeznicom jer takvog doktora kakav je profesor nema njigdje.;positive;positive;True
+BERTić TRAIN;52_5;Dok su svi drugi doktori govorili da meni nije nista, da te bolove koje imam budu prosli sami od sebe, jedino je profesor Božić pokazao interes i rijesio moj problem.;positive;positive;True
+BERTić TRAIN;52_6;Svaka cast profesoru.;positive;positive;True
+BERTić TRAIN;58_1;Ležala sam u Vinogradskoj bolnici zbog prijeloma kralješka.;neutral;neutral;True
+BERTić TRAIN;58_2;Poslije 6 tjedana došla sam na kontrolu.;neutral;neutral;True
+BERTić TRAIN;58_3;Iako sam bila naručena kod prof. Rotima, bio je dr Božić, potpuno nezainteresiran, nisam sigurna da li me je uopće pogledao, niti pregledao, na mene je potrošio 3-4 minute svoga vremena, pišući samo na kompjuteru da dodjem na kontrolu za koji tjedan.;negative;negative;True
+BERTić TRAIN;58_4;Zar se to zove pregledom?;neutral;negative;False
+BERTić TRAIN;58_5;"Usput upitavši, a gdje vi stanujete i ""zašto ste uopće došli u Vinogradsku?";negative;negative;True
+BERTić TRAIN;58_6;"Vašim problemom bavi se Traumatološka bolnica I možete ići tamo.""";neutral;negative;False
+BERTić TRAIN;58_7;Rekla sam mu da stanujem na Tuškancu i da mi je Vinogradska najbliža.;neutral;neutral;True
+BERTić TRAIN;58_8;Ako mogu ići u Vinogradsku i ako sam kod njih ležala, dobila jewett brace, zašto me odjedanput upućuje u Traumatološku?;negative;negative;True
+BERTić TRAIN;58_9;Možda je, kad netko izgubi interes za rad sa pacijentima, kucnuo čas za povlačenje.;negative;negative;True
+BERTić TRAIN;66_1;Vrhunski strucnjak, vrlo ljubazan, strpljiv i smiren.;positive;positive;True
+BERTić TRAIN;66_2;Uistinu se potrudi objasniti problem bez zurbe.;positive;positive;True
+BERTić TRAIN;66_3;Naprosto uljeva povjerenje .;positive;positive;True
+BERTić TRAIN;98_1;Vrlo ljubazan, pristupačan i stručan doktor.;positive;positive;True
+BERTić TRAIN;98_2;Pristupa pacijentu s pažnjom i razumijevanjem te ima stručne i korisne savjete.;positive;positive;True
+BERTić TRAIN;98_3;Sve pohvale za doktora Ćorluku.;positive;positive;True
+BERTić TRAIN;108_1;Jedan moj nesmotren pad rezultirao je slomljenom bedrenom kosti gdje se gornji dio kosti doslovce raspao.;negative;neutral;False
+BERTić TRAIN;108_2;Tri mjeseca kasnije, hodam uz pomoć jednog štapa.;negative;positive;False
+BERTić TRAIN;108_3;Ovakvu rekonstrukciju prijeloma bedrene kosti (femura), koji je pratio brz oporavak, mogao je izvesti samo vrhunski strucnjak kakav je Dr Stipe Čorluka specijalist ortopedije i traumatologije.;positive;positive;True
+BERTić TRAIN;108_4;Oduševljen sam njegovim vrhunskim operativnim zahvatom na mojoj nozi koji mi je omogućio tako brz oporavak u mojoj 88. godini života;positive;positive;True
+BERTić TRAIN;108_5;Oduševljen sam njegovim odnosom prema pacijentu, stručnošću, brigom i ljubaznošću, što dovoljno govori o njemu kao osobi i liječniku.;positive;positive;True
+BERTić TRAIN;108_6;Presretan sam što sam pacijent tako vrhunskog liječnika Dr Stipe Čorluke.;positive;positive;True
+BERTić TRAIN;108_7;Hvala, veliko hvala za sve što je Dr Stipe Čorluka napravio za mene.;positive;positive;True
+BERTić TRAIN;118_1;Dr. Stipe Ćorluka je prije svega čovjek velikog srca.;positive;positive;True
+BERTić TRAIN;118_2;Njegov profesionalizam, predanost, pristup i empatija prema pacijentu je na zavidnom nivou.;positive;positive;True
+BERTić TRAIN;140_1;Prije par mjeseci bila sam zbog problena sa lumbalnom kralježnicom kod doktora Ćorluke.;neutral;neutral;True
+BERTić TRAIN;140_2;Na pregled nisam dugo čekala.;positive;positive;True
+BERTić TRAIN;140_3;Doktor me primio, postavio dijagnozu,za sada sam na fizikalnim terapijama i ok je.;positive;positive;True
+BERTić TRAIN;140_4;Jako ljubazan,drag,odgovara na sva moja pitanja, savjetuje,veoma stručan i savjestan.;positive;positive;True
+BERTić TRAIN;140_5;Sve pohvale i preporuke!!;positive;positive;True
+BERTić TRAIN;155_1;Doktor je veoma ljubazan i stručan!;positive;positive;True
+BERTić TRAIN;155_2;Njegov pristup vratio mi je vjeru u Hrvatsko zdravstvo, drago mi je da se kao mladi čovjek odlučio ostati u Hrvatskoj raditi svoj poziv!;positive;positive;True
+BERTić TRAIN;156_1;Pohvaljujem doktora Ćorluku zbog njegove prvenstveno ljudskosti, ljubaznosti, profesionalnosti i ulozenom trudu za rjesavanje mojih zdravstvenih problema te njegovoj brizi za pacijente.;positive;positive;True
+BERTić TRAIN;158_1;Doktor je prilično bahat, ne možeš ga ništa pitati.;negative;negative;True
+BERTić TRAIN;158_2;Jer kod njega pitanja ne postoje .;negative;negative;True
+BERTić TRAIN;158_3;Samo kaže što ON želi i točka.;negative;negative;True
+BERTić TRAIN;158_4;Nebi ga preporučila nikome.;negative;negative;True
+BERTić TRAIN;158_5;Katastofa od jednog liječnika.;negative;negative;True
+BERTić TRAIN;164_1;Moram reci da sam jako zadovoljna odnosom koji dr. Franicevic ima prema pacijentima i njegovim radom.;positive;positive;True
+BERTić TRAIN;164_2;Nakon sto sam procitala ocjene i komentare ovdje ocekivala sam tko zna sto... ali onda sam usla u ordinaciju i imala valjda najbolje i najopustenije iskustvos ginekologom u zivotu.;positive;positive;True
+BERTić TRAIN;164_3;Dr. Franicevic nije bezobrazan i neljubazan nego vi drage moje (neke od vas) ne razumijete sarkazam niti zezanciju.;negative;negative;True
+BERTić TRAIN;164_4;Na neko moje pitanje odgovorio mi je odgovorom na koji sam prasnula u smijeh i nastavili smo normalno razgovarati.;negative;positive;False
+BERTić TRAIN;164_5;Nije on neljubazan nego covjek mozda trazi novi nacin kako odgovoriti na ista pitanja kojih svaki dan dobiva na desetke i tako stalno.;negative;neutral;False
+BERTić TRAIN;164_6;Covjek samo ima duha i to je sve.;positive;positive;True
+BERTić TRAIN;164_7;Dok je radio na Borovju primjetila sam i da je sestra sva zivnula, bila dobro raspolozena jer je on dizao atmosferu u ambulanti.;positive;positive;True
+BERTić TRAIN;164_8;Pregled je obavio profesionalno, interesirao se za svaki problem i dao konstruktivne savjete, vrlo ljubazno i uz pokoju salu.;positive;positive;True
+BERTić TRAIN;164_9;Znate vi koliko je rijetko danas sresti doktora koji ce vas jos i nasmijati..i jos u javnom zdravstvu.;positive;positive;True
+BERTić TRAIN;164_10;Dvaka cast doktoru za njegov rad i duh koji ima, neka ga nikad ne izgubi!;positive;positive;True
+BERTić TRAIN;169_1;Jedan susret je bio dovoljan da potrazim drugog ginekologa.;negative;negative;True
+BERTić TRAIN;169_2;Niposto ne bi smio raditi s ljudima.;negative;negative;True
+BERTić TRAIN;169_3;Sestra, dok je bila doktorica Lenija, je bila ljubazna i nasmijana, spremna izici u susret.;positive;positive;True
+BERTić TRAIN;169_4;Cula sam da i na nju vice i stekla dojam da ga se boji...;negative;negative;True
+BERTić TRAIN;169_5;Potpuno je razumijem jer taj covjek zlostavlja verbalno zlostavlja ljude kojima bi trebao pomoci.;negative;negative;True
+BERTić TRAIN;180_1;Dosta grub i priča nepovezano, zaboravi što je dao i da duplo pa vas šetaju.;negative;negative;True
+BERTić TRAIN;180_2;Zadnji put mi je ostavio vrata otvorena i izašao van, da bi me djevojka koja čeka kod sestre vidjela golu na stolu, pa je sestra kada je skužila ispričala se i zatvorila vrata.;negative;negative;True
+BERTić TRAIN;180_3;Mislim da to nikome nije ugodno, a posebno ne meni koja imam 30-tak dana do poroda.;negative;negative;True
+BERTić TRAIN;180_4;"Dok radi ultrazvuk ne kaže ništa osim ""to ću ja sad pregledat ovo osnovno, nećemo sad buci buci vidi beba"".";negative;negative;True
+BERTić TRAIN;180_5;Mislim da su nam ipak trebali najaviti da doktorica odlazi da znamo, a ne ovako da nitko od nas nije znao što se događa, samo dođeš jedan dan, njenih stvari nema i druga osoba te pita tko si i zašto si danas tu.;negative;negative;True
+BERTić TRAIN;184_1;Doktor je neprofesionalan i neljubazan.;negative;negative;True
+BERTić TRAIN;184_2;Postavlja se kao da je u poziciji moći (kao sve pacijentice su glupe) i to na vrlo grub način.;negative;negative;True
+BERTić TRAIN;184_3;"Npr. na pitanje mogu li ga nešto kratko pitati odgovara mi: ""nemam vremena""; na pitanje da li i krvarenje kao i crvenilo može upućivati da imam cin odgovara mi :""kada razdvojis te dvije stvari u glavi shvatit ces.";negative;negative;True
+BERTić TRAIN;184_4;"Vi sami bez ikakvih temelja povezujete stvari u svojoj glavi i donosite krive zakljucke"".";negative;negative;True
+BERTić TRAIN;184_5;U vise navrata je spomenuo kako zene same bleblecu gluposti i razmjenjujuci iskustva donose dijagnoze na pamet.;negative;negative;True
+BERTić TRAIN;184_6;Bilo je jos par takvih primjera, ukratko na nijedno pitanje nisam dobila jednostavan, suvisao odgovor.;negative;negative;True
+BERTić TRAIN;184_7;Doktor Franicevic ostavlja dojam kao da se ograduje od donosenja bilo kakvih zakljucaka.;negative;negative;True
+BERTić TRAIN;184_8;Kao secer na kraju, rekao mi je da on ne radi pregled, papu i ultrazvuk u jednom pregled već da se za UZV moram posebno naruciti (iako sam se ja narucila za cijeli pregled, odnosno i uzv i papu).;negative;negative;True
+BERTić TRAIN;184_9;"Na to sam mu rekla da mi kasni menstruacija te ga zamolila da mi napravi UZV, a doktor mi odgovara: ""UZV ti nece pomoci, lijepo odi u ljekarnu, kupi test i napravi ga doma"".";negative;negative;True
+BERTić TRAIN;184_10;Treba li jos sto reci?!;neutral;negative;False
+BERTić TRAIN;197_1;Doktor je prebahat i prepametan, a žene su glupe i ne znaju šta imaju dolje..ne znam šta bi uopće rekla više..čudo jedno.;negative;negative;True
+BERTić TRAIN;198_1;u potpunosti se slažem, nikad više.;negative;negative;True
+BERTić TRAIN;200_1;Bila sam kod doktora Franičevića samo jednom, na pregledu i papa-testu.;neutral;neutral;True
+BERTić TRAIN;200_2;Došla sam na red isti tren, usprkos nekakvoj pogrešci u sustavu zbog koje nisam uopće biula zabilježena da sam rezervirala termin.;negative;positive;False
+BERTić TRAIN;200_3;Sestra Lea me smireno i ljubazno primila, kao i doktor.;positive;positive;True
+BERTić TRAIN;200_4;Doktor je korektan, uputio me na sva moja prava koja ostvarujem preko zdravstvenog, nije bio grub, ni bezobrazan, ni nista slicno.;positive;positive;True
+BERTić TRAIN;200_5;Ono sto sam primjetila u usporedbi s privatnom praksom je da se ne izdvaja minuta da se poprica s pacijentom i eventualno razjasni nedoumice oko nekih stvari.;positive;negative;False
+BERTić TRAIN;200_6;"Sve je bilo vrlo brzo i, štono bi se reklo, ""k'o na traci"".";negative;neutral;False
+BERTić TRAIN;200_7;No, to nije samo do doktora, nego je to problem zdravstvenog sustava zbog koje liječnici nisu motivirani da s punom paznjom pristupe svakom pacijentu.;negative;negative;True
+BERTić TRAIN;200_8;S obzirom na sve ostale komentare, bila sam isprepadana i dvoumila se da li da odem ovom doktoru, međutim sve je prošlo bez problema.;positive;mixed;False
+BERTić TRAIN;200_9;Nadam se tome i ubuduće.;positive;positive;True
+BERTić TRAIN;204_1;Izuzetno bezobrazan i neugodan.;negative;negative;True
+BERTić TRAIN;204_2;Bila sam kod njega jedanput i odmah promijenila ginekologa.;neutral;negative;False
+BERTić TRAIN;204_3;Drugu šansu nije dobio.;negative;negative;True
+BERTić TRAIN;204_4;Na pitanja mi je odgovarao bahato i uvredljivim tonom, a kad mu je dosadilo, jednostavno je izašao iz ordinacije dok sam ja ostala unutra sjediti kao tuka.;negative;negative;True
+BERTić TRAIN;206_1;a zbog čega se njega ne bi prijavilo??;negative;negative;True
+BERTić TRAIN;206_2;puno žena je iznimno nezadovoljno a time se liječnička komora može i mora pozabaviti.;negative;negative;True
+BERTić TRAIN;206_3;i korisno je za druge žene da napišete što ste doživjeli, nema razloga da Vas se cenzurira.;neutral;negative;False
+BERTić TRAIN;215_1;Meni ta vulgarnost koja se ovdje spominje i nije potvrđena.;negative;neutral;False
+BERTić TRAIN;221_1;Neugodan, vulgaran, seksualno ugrožen, neugodni komentari, neprimjereno ponašanje, promašio profesiju...;negative;negative;True
+BERTić TRAIN;246_1;Pročitaj malo što su žene po forumima pisale o njemu pa ćeš vidjeti da nisam jedina koju muče iste stvari.;negative;negative;True
+BERTić TRAIN;246_2;O Dr. Stepanić nije pričao, kolegice koje rade u obiteljskoj medicini je proglasio histeričnim kokošima.;negative;negative;True
+BERTić TRAIN;246_3;Oprosti, ali meni kao liječnici to nije ni kolegijalno ni profesionalno.;negative;negative;True
+BERTić TRAIN;246_4;Za Stepanićku zaista ne znam kakva je jer u ambulanti nisam bila otkako je Dr. Marija Gregov u njoj prestala raditi.;neutral;negative;False
+BERTić TRAIN;246_5;Za nju mogu reći samo najbolje.;positive;positive;True
+BERTić TRAIN;246_6;I krivo si me shvatila, kad sam rekla da se razgovara kao da smo na placu nisam mislila na izražavanje u laičkim terminima nego na sam način razgovora i upadanje u pola rečenice.;negative;negative;True
+BERTić TRAIN;246_7;Ni jednom, ali ni jednom mi nije dao da mu do kraja kažem ono što želim.;negative;negative;True
+BERTić TRAIN;246_8;"Inače i sama apsolutno podržavam i sa svojim pacijentima izbjegavam korištenje ""superdoktorskim riječnikom"".";positive;negative;False
+BERTić TRAIN;246_9;Molim te pročitaj još jednom koje su moje zamjerke.;neutral;negative;False
+BERTić TRAIN;246_11;Ja se u njegovoj ambulanti imam pravo osjećati neugodno isto kao što se ti imaš pravo ne složiti samnom po tom pitanju.;negative;negative;True
+BERTić TRAIN;285_1;Supruga je mjesecima liječio antibioticima, a karcinom je za to vrijeme jako narastao.;neutral;negative;False
+BERTić TRAIN;285_2;Takvu indolenciju još nisam vidjela.;negative;negative;True
+BERTić TRAIN;285_3;Sva sreća da smo otišli u Dubravu, tamo su prepoznali poblem i riješili.;positive;positive;True
+BERTić TRAIN;285_4;Obiđite ovakve doktore, možda puno znaju, ali nemaju interesa za pacijente i zato učine užasne greške.;negative;negative;True
+BERTić TRAIN;288_1;Meni je profesor Lajtman vadio stitnjacu prije desetak dana i na temelju pretpregleda, operacije ta naknadnih pregleda i vadjenja konaca mogu ga samo pohvaliti.;positive;positive;True
+BERTić TRAIN;288_2;Ljubazan, brz, ostrouman i pristupacan covjek koji mi je odgovorio na svako postavljeno pitanje.;positive;positive;True
+BERTić TRAIN;288_3;I sam operativni zahvat kao i zacjeljenje rane isto tako je vodjeno vrhunski, bez ikakvih poroblema bez obzira sto se i sama operacija zakomplicirala uslijed pretjeranog krvarenja (specificno za musku stitnjacu koja je puno veca od standardne);positive;positive;True
+BERTić TRAIN;288_4;Isto tako, apsolutno svo osoblje ORL odjela u bolnici Merkur, kojega isto tako bas profesor vodi, moram pohvaliti jer su fenomenalni, vrlo strucni i strahovito olaksaju covjeku i na taj nacin direktno pomognu sam oporavak;positive;positive;True
+BERTić TRAIN;288_5;Vrlo ugodno sam iznenadjen.;positive;positive;True
+BERTić TRAIN;288_6;"Moram jos dodati da su i svi oni na odjelu, ukljucujuci i profesora, jako zatrpani poslom i stvarno rade 24 sata dnevno vrlo jakim tempom ali eto, i uz sve to nadju vremena za svakog pacjenta i njegovu posjetu tak da, ja se iskreno cudim kada citam ove ""mrgude"" gore";negative;positive;False
+BERTić TRAIN;292_1;dijete mi ima zakazanu operaciju kod njega 23.4.2013.(nos).;neutral;neutral;True
+BERTić TRAIN;292_2;imam puno povjerenje u njega, jer je prije par godina operirao joj mandule i bilo je sve ok...;positive;positive;True
+BERTić TRAIN;292_3;sa punim povjerenjem dajem mu svoje dijete u ruke;positive;positive;True
+BERTić TRAIN;294_1;Meni je operirao nos dva puta.;neutral;neutral;True
+BERTić TRAIN;294_2;Uopce mi nije pomogao.;negative;negative;True
+BERTić TRAIN;294_3;Ne mogu disati na nos nikako.;negative;negative;True
+BERTić TRAIN;294_4;Ako zelite (morate) operirati nos ne idite kod njega.;negative;negative;True
+BERTić TRAIN;294_5;Ne zna svoj posao, barem sto se nosa tice.;negative;negative;True
+BERTić TRAIN;311_1;Dr. Bojan Šain je izuzetan liječnik, a prije svega čovjek koji svakome pacijentu maksimalno posvećuje pažnju;positive;positive;True
+BERTić TRAIN;320_1;Već duži niz godina sam pacijentica dr. Bojana Šaina.;neutral;positive;False
+BERTić TRAIN;320_2;Imam potpuno povjerenje u njega, profesionalan, stručan i ljubazan.;positive;positive;True
+BERTić TRAIN;320_3;Moje velike preporuke svima kojii traže stručnog i odgovornog doktora!;positive;positive;True
+BERTić TRAIN;324_1;Predivno iskustvo s Bojanom, stomatolog koji se maksimalno potrudio da bi mi sve detaljno objasnio i prezentirao.;positive;positive;True
+BERTić TRAIN;324_2;Rad profesionalca…;positive;positive;True
+BERTić TRAIN;331_1;Dr. Šain izuzetno je stručan u poslu koji obavlja, vrlo ljubazan i strpljiv.;positive;positive;True
+BERTić TRAIN;331_2;Tople preporuke za sve one koji traže bezbolan odlazak stomatologu.;positive;positive;True
+BERTić TRAIN;349_1;Dr.Šain je vrhunski stomatolog koji redovito prati najnovije trendove u području stomatologije, te ih primjenjuje kod svojih pacijenata.;positive;positive;True
+BERTić TRAIN;349_2;Profesionalno i izuzetno stručno obavlja svoj posao zbog čega uvijek rado idem kod njega.;positive;positive;True
+BERTić TRAIN;349_3;Definitivno za svaku preporuku!;positive;positive;True
+BERTić TRAIN;360_1;Pozdrav , Bio sam na operaciji vratne kralježnice 5.4.2022. acdf metodom od c5 do c7, novi diskovi, pločice, vijci.;neutral;neutral;True
+BERTić TRAIN;360_2;S obzirom kako se osjećam i po nalazima magnetske rezonance dr.Vukić je napravio odličan posao.;positive;positive;True
+BERTić TRAIN;360_3;Znači prije operacije, izgubio sam kontrolu mišića mjehura i stolice, hiperosjetljivost cijele desne strane tijela na toplo i hladno, nesposobnost pravilnog hodanja, trnci u rukama i slabost u rukama te rizik od trajnog invaliditeta po njegovim riječima.;negative;neutral;False
+BERTić TRAIN;360_4;Hitno zakazana operacija u prvom slobodom terminu.;neutral;positive;False
+BERTić TRAIN;360_5;Operacija je počela u 9h završila u 11h u 15h sam samostalno hodao i svi gore navedeni simptomi su nestali.;positive;positive;True
+BERTić TRAIN;360_6;Sada nakon dva kontrolna magneta mogu se baviti gotovo svim fizičkim aktivnostima kao prije operacije, ali izbjegavati udarce u glavu.;positive;neutral;False
+BERTić TRAIN;360_7;I da bio sam samo 5 minuta na pregledu, što je bilo dovoljno da doktor shvati ozbiljnost situacije.;neutral;positive;False
+BERTić TRAIN;360_8;Veliko hvala dr.Vukiću;positive;positive;True
+BERTić TRAIN;365_1;Toliko bahatosti, neetičnosti, nebrige, nestručnosti u jednoj osobi!;negative;negative;True
+BERTić TRAIN;365_2;Čitajući komentare došla sam do zaključka da moja mama nije jedina koju je upropastio.;negative;negative;True
+BERTić TRAIN;365_3;Nakon što smo tražili drugo i treće mišljenje, doktori su bili složni u procjeni da je dr Miroslav Vukić napravio šarlatansko zlodjelo.;negative;negative;True
+BERTić TRAIN;365_4;I onda se na kraju možemo samo zapitati- tko ili što ga je dovelo na poziciju na kojoj je i još ga se uporno drži.;negative;negative;True
+BERTić TRAIN;365_5;Kraj toliko fantastičnih neurokirurga osuđeni smo na najniži nivo.;negative;negative;True
+BERTić TRAIN;365_6;Svaki pozitivan komentar konzekvenca je korištenja privatne prakse, istog članstva ili nećeg trećeg.;negative;negative;True
+BERTić TRAIN;365_7;Žalosno, ali potpuno u skladu s doktorovom neetičnošću i šarlatanstvom!;negative;negative;True
+BERTić TRAIN;377_1;Da li je vama netko platio da pisete o profesoru tako dobre komentare??;negative;negative;True
+BERTić TRAIN;377_2;Ne znam sto bi napisala o doktoru?!;negative;negative;True
+BERTić TRAIN;377_3;Operirao me prosle god u jesen.;neutral;neutral;True
+BERTić TRAIN;377_4;Pod hitno.;negative;neutral;False
+BERTić TRAIN;377_5;Ni ne znam da li je bio na operaciji.;neutral;negative;False
+BERTić TRAIN;377_6;Operirala sam stenozu kanala i herniju diska.;neutral;neutral;True
+BERTić TRAIN;377_7;Poslije operacije bol je nestala,ali je dosla utrnjenost ,ponekad nemam osjecaj da sam odradila veliku i malu nuzdu.;positive;mixed;False
+BERTić TRAIN;377_8;Noga leti.;negative;neutral;False
+BERTić TRAIN;377_9;Bila sam na kontroli ,drugoj, i kazem da mi nije dobro ,kaze dr meni da je to sve u redu.;neutral;negative;False
+BERTić TRAIN;377_10;On je svoj posao odradio i to je to .;positive;negative;False
+BERTić TRAIN;377_11;Kakve su posljedice, njega ne interesira.;negative;negative;True
+BERTić TRAIN;377_12;Znaci ,briga o pacijentu ispod nule.;negative;negative;True
+BERTić TRAIN;377_13;Pitam ga jos neke stvari,jer ne znam,on kaže meni da kako su drugi dr glupi što mi govore takve stvari.;negative;negative;True
+BERTić TRAIN;377_14;A dr Vukic kaze skroz drugacije.;negative;neutral;False
+BERTić TRAIN;377_15;Nakon njegovog pregleda odem po jos jedno misljenje.;neutral;neutral;True
+BERTić TRAIN;377_16;Doktor me pregleda, traži da hodam ,legnem i saslusa me.;neutral;neutral;True
+BERTić TRAIN;377_17;Kaze da sve ovo nije dobro i da trebam ici na reoperaciju.;negative;neutral;False
+BERTić TRAIN;377_18;Znaci, dr Vukica ne bi preporucila ni najgorem neprijatelju.;negative;negative;True
+BERTić TRAIN;377_19;Nisam htjela slusati kada su mi rekli da ne idem k njemu.;negative;negative;True
+BERTić TRAIN;377_20;Zao mi je sto ovo pisem.;neutral;negative;False
+BERTić TRAIN;377_21;Nekom je možda dobar,ali meni nije.;negative;negative;True
+BERTić TRAIN;377_22;"Na meni nije dobro ""odradio"" posao.";negative;negative;True
+BERTić TRAIN;378_1;Jednostavno, ako vam treba bilo kakva pomoć od tog čovjeka, dobiti ćete je u najkraćem mogućem roku.;positive;positive;True
+BERTić TRAIN;378_2;Danas operiran i prvi puta nakon 15 mjeseci osjecam olaksanje u vratu i desnoj ruci...;positive;positive;True
+BERTić TRAIN;378_3;Primio me pod svoje, 100 puta sam mu bio dosadan i odradio me nevjerojatno brzo unatoč njegovim osobnim zdravstvenim tegobama.;positive;positive;True
+BERTić TRAIN;378_4;Nisam imučan niti iz takve obitelji, kada sam mu zahvaljivao sto me uzeo pod svoje, rekao je da mu se ne zahvaljujem jer on radi po nalazu, a moj je bio loš.;negative;positive;False
+BERTić TRAIN;378_5;Malo je takvih ljudi i doktora.;positive;positive;True
+BERTić TRAIN;393_1;Profesor Vukić me je pregledao jučer radi hernije diska L5/S1...doktor ne komplicira, a ja ne volim drame tako da mi to paše: kratko, konkretno i sve jasno...mislim po to sam i dosla...;positive;positive;True
+BERTić TRAIN;394_1;Postovani, Vjerujem da je Dr. uocio nesto opasno da bi reagirao I narucio za operaciju,.;neutral;positive;False
+BERTić TRAIN;394_2;Mene je operirao pdine 10god.i imam samo rijeci hvale iako Sam na zadnjoj kontroli primjetil da je nervoznini nego Tada vjerovatno zbog preopterecenosti.;positive;mixed;False
+BERTić TRAIN;407_1;Da li itko zna koliko se čeka za pregled kod dr Miroslava Vukića?;neutral;neutral;True
+BERTić TRAIN;407_2;Imam protruziju diska i trpim jake bolove.;neutral;neutral;True
+BERTić TRAIN;407_3;Centralno naručivanje je katastrofa, mogu samo sjesti, pardon leći, jer sjedenje nije moguće i plakati.;negative;negative;True
+BERTić TRAIN;410_1;Izvrstan neurokirurg.;positive;positive;True
+BERTić TRAIN;410_2;Besprijekorno mi je izveo izrazito tešku i zahtjevnu operaciju na koju sam odšao gotovo paraliziran trenutno sam na rehabilitaciji i oporavak je bolji od očekivanog.;positive;positive;True
+BERTić TRAIN;410_3;Zahvalio bih se prof Vukiću i svom medicinskom osoblju odjela neurokirurgije na Rebru;positive;positive;True
+BERTić TRAIN;416_1;Poznato je da je stručnjak ali da je ČOVJEK ...;positive;positive;True
+BERTić TRAIN;416_2;takvu ljubaznost, osječajnost prema bolesniku i susretljivost nisam još u svom životu srela...;positive;positive;True
+BERTić TRAIN;416_3;eto ja sam imala sreće i upoznala čovjeka....miroslava vukića...;positive;positive;True
+BERTić TRAIN;416_4;hvala mu na svemu sto je učinio za mog supruga....;positive;positive;True
+BERTić TRAIN;469_1;Doktor Gračan i tim iz Štimac centra su mi “spasili život”!;positive;positive;True
+BERTić TRAIN;469_2;Od prvog pa sve do zadnjeg “susreta” je iskrenost i ljubaznost doktora Gračana i svih ostalih djelatnika Štimac tima bila na jako visokoj razini.;positive;positive;True
+BERTić TRAIN;469_3;Samo riječi hvale imam.;positive;positive;True
+BERTić TRAIN;469_4;Posebno mi se svidjelo to što je od prvog dana gospodin Dr. Gračan bio jako iskren i davao striktne i precizne upute vezane za održavanje zubiju i zubnoga mesa i stvar koja je također vrijedna pohvale jest da je vrlo lako komunicirati s gospodinom doktorom Gračanom i uvijek je spreman za dati savijet.;positive;positive;True
+BERTić TRAIN;469_5;Puno hvala svima u ordinaciji Štimac na predobrom radu!;positive;positive;True
+BERTić TRAIN;473_1;Profesionalnost, ljubaznost.;positive;positive;True
+BERTić TRAIN;473_2;Jasno davanje uputa za sam postupak ugradnje te jasne upute oko održavanja protetskog rada (pismeno i usmeno) od strane svih djelatnika.;positive;positive;True
+BERTić TRAIN;473_3;Do sada sve 5.;positive;positive;True
+BERTić TRAIN;481_1;Radi se prekrasnoj dami koja je vrlo stručna u postavljanju dijagnoze, terapije te prognoze rezultata.;positive;positive;True
+BERTić TRAIN;481_2;Osim visoke razine stručnosti, doktorica mi se sviđa jer je izuzetno susretljiva, ljubazna, strpljiva i spremna sve objasniti.;positive;positive;True
+BERTić TRAIN;484_1;Vrhunski doktori i usluga.;positive;positive;True
+BERTić TRAIN;484_2;Zadovoljna sam sa svim uslugama.;positive;positive;True
+BERTić TRAIN;484_3;Od popravaka, vađenja zubi, ugradnje implantanata;neutral;positive;False
+BERTić TRAIN;485_1;Liječnica pristupa individualno, maksimalno je posvećena svakom pacijentu.;positive;positive;True
+BERTić TRAIN;485_2;Osjećam se sigurno kada odlazim k njoj, liječnica je stručna i od povjerenja.;positive;positive;True
+BERTić TRAIN;485_3;Draga, ljubazna i suosjećajna sa pacijentom.;positive;positive;True
+BERTić TRAIN;485_4;Nema straha niti boli.;positive;positive;True
+BERTić TRAIN;485_5;Preporučila bih ju prijateljima i rodbini.;positive;positive;True
+BERTić TRAIN;516_1;Kod gospođe Štimac sam bio na prvom pregledu radi eventualne ugradnje 2 implantata.;neutral;neutral;True
+BERTić TRAIN;516_2;Mogu je reć da je ista bila jako bahata i uzvišena u svom ponašanju .;negative;negative;True
+BERTić TRAIN;516_3;Pregled je trajao svega par minuta u kojem je gospođa umjesto da je odgovarala na moja pitanja pošto se ipak radi o nečem što predstavlja dugoročno a i skupo rješenje, postavljala meni pitanja u bahatom i izrazito neugodnom tonu.;negative;negative;True
+BERTić TRAIN;516_4;Gurala je konstantno jedan brend implantata iako se oni kao klinika navodno bave sa ugradnjom više (vjerovatno radi ugovora sa brendom).;negative;negative;True
+BERTić TRAIN;516_5;Na kraju sa u ponudi dobio samo izložene cijene za taj jedan brand ,te me gospođa u vrlo neljubaznom tonu pozdravila.;negative;negative;True
+BERTić TRAIN;516_6;Kolko god zaposlenici bili stručni , ovakvim pristupom me u potpunosti odbila od bilo kakve želje da svoje novce ostavim u ovoj klinici.;negative;negative;True
+BERTić TRAIN;520_1;Stručna, ljubazna i puna razumjevanja.;positive;positive;True
+BERTić TRAIN;520_2;Doktorici Štimac me uputio moj doktor i bit ću mu zauvijek zahvalna na tome.;positive;positive;True
+BERTić TRAIN;520_3;Odmah je postavila ispravnu dijagnozu jer sam prije nje bila kod nekoliko zubara koji su samo odmahivali rukom.;positive;positive;True
+BERTić TRAIN;520_4;Odmah me shvatila i razumjela.;positive;positive;True
+BERTić TRAIN;530_1;Doktorica spasila zube koji su drugi htjeli vaditi!;positive;positive;True
+BERTić TRAIN;530_2;Jako pristupačna, uzela je malo više svog vremena i posvetila mi više pažnje kako bi mi detaljnije objasnila svaki zahvat posebno, bilo je dosta posla ali baš se isplatilo :);positive;positive;True
+BERTić TRAIN;546_1;Rijetko kada hvalim i ostavljam komentare na ovakvim stranicama, ali moram pohvaliti doktoricu Maju i njezinu sestru Snježanu.;positive;positive;True
+BERTić TRAIN;546_2;Imam stvarno velik strah od zubara, ali radi svoga zdravlja, odlučila sam otići kod doktorice Maje nakon što sam ovdje o njoj čitala pozitivne komentare.;positive;positive;True
+BERTić TRAIN;546_3;Stvarno sam se uvjerila u njezinu ljubaznost i stručnost i riješila sam svoj problem u par dolazaka.;positive;positive;True
+BERTić TRAIN;546_4;Prilikom prvog pregleda doktorica mi je preporučila tretmane i rekla o kojoj cijeni je riječ.;neutral;positive;False
+BERTić TRAIN;546_5;Nakon pregleda sam otišla bez da sam se odlučila jer sam htjela još jedno mišljenje no na kraju sam se ipak odlučila za ordinaciju Štimac koju svima toplo preporučam.;positive;positive;True
+BERTić TRAIN;571_1;Vrlo ugodna, domaća atmosfera.;positive;positive;True
+BERTić TRAIN;571_2;Jako jako simpatične i pristupačne sestre.;positive;positive;True
+BERTić TRAIN;571_3;Pratim njihov rad putem medija, iako sam mislila da su jako hoh i dignutoga nosa, osjetila sam toplinu i povjerenje tog tima.;positive;positive;True
+BERTić TRAIN;571_4;Ne znam kakva su iskustva drugih pacijenata, što se mene tiče za svaku preporuku!;positive;positive;True
+BERTić TRAIN;582_1;Jako neprofesionalna i neljubazna.;negative;negative;True
+BERTić TRAIN;582_2;Iako sam bio kod desetaka stomatologa zadnjih 10 godina njeno ponašanje spada u dno dna.;negative;negative;True
+BERTić TRAIN;582_3;Ako je sudeći i po komentarima svi se slažu s time.;neutral;negative;False
+BERTić TRAIN;582_4;Ovi pozitivni komentari kao da ih je robot pisao.;negative;negative;True
+BERTić TRAIN;582_5;Apsolutno ne preporučam posjetu.;negative;negative;True
+BERTić TRAIN;582_6;Dočekalo me bahatost, snobizam, prepotencija...;negative;negative;True
+BERTić TRAIN;582_7;nevjerojatno za jednog privatnog liječnika stomatologa.;negative;negative;True
+BERTić TRAIN;587_1;Sigurno jedan od boljih doktora.;positive;positive;True
+BERTić TRAIN;587_2;Ljudski pristup, uzme vremena da ti sve lijepo objasni.;positive;positive;True
+BERTić TRAIN;587_3;Izrazito ljubazno i susretljivo osoblje.;positive;positive;True
+BERTić TRAIN;587_4;Ma imam samo rijeci pohvale za sve njih,posebno za doktoricu Maju.;positive;positive;True
+BERTić TRAIN;587_5;takve dobre i drage osobe stvarno su danas rijetkost;positive;positive;True
+BERTić TRAIN;618_1;Ne slažem se sa prethodnim komentarima jer dr. Maja Štimac Jagodić uvijek nasmiješena dočekuje svoje pacijente, daje potpunu uslugu u smislu ugodnog osoblja i ugodne atmosfere u ordinaciji.;positive;positive;True
+BERTić TRAIN;618_2;Uvijek korektna, spremna odgovoriti na sva pitanja i riješiti nedoumice.;positive;positive;True
+BERTić TRAIN;618_3;Pamti i cijeni svoje pacijente iako ih ima veliki broj.;positive;positive;True
+BERTić TRAIN;618_4;Ponekad se divim njenom entuzijazmu i sposobnošću nalaženja rješenja za svaki problem.;positive;positive;True
+BERTić TRAIN;620_1;Slazem se,jako,jako lose rade protetiku!;negative;negative;True
