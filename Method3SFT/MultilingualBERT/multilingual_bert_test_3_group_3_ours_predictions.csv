@@ -1,0 +1,611 @@
+﻿model;id;text;predicted_label;original_label;a==b
+multilingual BERT TRAIN;3_1;Doktorica je stručna ,empatična i brižna.;positive;positive;True
+multilingual BERT TRAIN;3_2;Van radnog vremena posvećuje puno brige za pacijente sa problemima.;positive;positive;True
+multilingual BERT TRAIN;3_3;Sestra Antonija vrlo profesionalna , ljubezna i susretljiva.;positive;positive;True
+multilingual BERT TRAIN;3_4;Velike preporuke;positive;positive;True
+multilingual BERT TRAIN;6_1;Dr. Belak je divna, njezna i strucna u svom poslu.;positive;positive;True
+multilingual BERT TRAIN;6_2;Najprije je obavila ciljani razgovor potom je slijedio pregled.;positive;neutral;False
+multilingual BERT TRAIN;6_3;Prilikom ultrazvucnog pregleda cijelo vrijeme je objasnjavala sto vidi, a u mom slucaju o kojoj je nepravilnosti rijec te koji su daljni koraci u lijecenju, u svemu tome pruza svoju podrsku.;positive;positive;True
+multilingual BERT TRAIN;6_4;Na sva moja pitanja je dala konkretne odgovore i izdvojila dosta vremena.;positive;positive;True
+multilingual BERT TRAIN;6_5;Sve pohvale za liječnicu i medicinsku sestru!;positive;positive;True
+multilingual BERT TRAIN;9_1;Dr. Belak je toliko topla i osjećajna osoba , te izuzetno stručna osoba.;positive;positive;True
+multilingual BERT TRAIN;9_2;Sestra Antonija uslužnai odlična.;positive;positive;True
+multilingual BERT TRAIN;9_3;SVE POHVALE I PREPORUKE !;positive;positive;True
+multilingual BERT TRAIN;11_1;Doktorica i sestra vrlo stručne i ljubazne.;positive;positive;True
+multilingual BERT TRAIN;11_2;U bilo koje doba dana uvijek spremne javiti se i odgovoriti na privatne poruke te adekvatno pacijenta uputiti i educirati u slučaju bilo kakve nedoumice i problema.;positive;positive;True
+multilingual BERT TRAIN;11_3;Nalazi stignu u dogovorenom roku s adekvatnim i razumljivim objašnjenjem istoga.;positive;positive;True
+multilingual BERT TRAIN;11_4;Za svaku preporuku ordinacija.;positive;positive;True
+multilingual BERT TRAIN;14_1;Ordinacija Belak je iznimna ustanova vrijedna svakog centa, vremena, putovanja.;positive;positive;True
+multilingual BERT TRAIN;14_2;"od sestre Antonije koja je susretljiva, objasni sve bez osjećaja ""kak to ne znaš"", doktorica i doktor koji vode trudnoće, sve i najveće pohvale za njih.";positive;positive;True
+multilingual BERT TRAIN;14_3;Vidi se stručnost i zajedništvo.;positive;positive;True
+multilingual BERT TRAIN;14_4;Sve preporuke!;positive;positive;True
+multilingual BERT TRAIN;15_1;Odlično iskustvo, odlučila sam ispravno kad sam rekla da će mi oni voditi trudnoću.;positive;positive;True
+multilingual BERT TRAIN;15_2;Pružaju osjećaj sigurnosti, povjerenja i ugode.;positive;positive;True
+multilingual BERT TRAIN;15_3;Sve preporuke!;positive;positive;True
+multilingual BERT TRAIN;16_1;Doktorica Belak i sestra Antonija su primjer kako se zdravstveni djelatnici trebaju odnositi prema pacijentima.;positive;positive;True
+multilingual BERT TRAIN;16_2;Uvijek ljubazne, spremne pomoći.;positive;positive;True
+multilingual BERT TRAIN;16_3;Doktorica je izrazito stručna, pristojna i pristupačna, sa nivoom odnosa prema pacijentima kakvom bi svi trebali težiti.;positive;positive;True
+multilingual BERT TRAIN;16_4;Sestra Antonija je divna osoba koja uvijek odgovori na mail, javi se na telefon, da savjet, pomogne i umiri.;positive;positive;True
+multilingual BERT TRAIN;16_5;Za svaku preporuku.;positive;positive;True
+multilingual BERT TRAIN;24_1;Doktorica Belak je prva uspela pronaći uzroke mojih problema i sve riješiti u kratkom roku adekvatnom terapijom.;positive;positive;True
+multilingual BERT TRAIN;24_2;Pratila me kroz vrlo komplicirane i teške situacije i uvijek je velika podrška kao stručnjak, kao čovjek i kao žena.;positive;positive;True
+multilingual BERT TRAIN;24_3;Sestra također veoma ljubazna i nekako se uvijek dobro osjećam kada dođem tamo.;positive;positive;True
+multilingual BERT TRAIN;25_1;Dr. Belak je definitivno najbolji doktor s kojim sam se susrela.;positive;positive;True
+multilingual BERT TRAIN;25_2;Spasila mi je život, za mene je najbolja doktorica, jako je ljubazna,s uper objasni , zahvalna sam joj cijeli život!;positive;positive;True
+multilingual BERT TRAIN;29_1;Oko četiri godine odlazila sam kod više ginekologa zbog izuzetno bolnih odnosa , zapravo ih nisam mogla ni imati.;neutral;neutral;True
+multilingual BERT TRAIN;29_2;Pregledi su bili užasno bolni.;negative;negative;True
+multilingual BERT TRAIN;29_3;Dobivala sam razne kreme , uputili su me psihijatru,rekli su da će to proći kad rodim , mada neznam kako jer suprug i ja uopće nismo mogli imali odnose.;negative;negative;True
+multilingual BERT TRAIN;29_4;Dr. Belak je posumnjala na lichen sclerosus , rijetku autoimunu bolest.;positive;neutral;False
+multilingual BERT TRAIN;29_5;Poslala me prof. Skerlevu na dermatologiju Šalata koji je nakon biopsie potvrdio dijagnozu.;neutral;neutral;True
+multilingual BERT TRAIN;29_6;Sada nakon lječenja postala sam majka i naš se život promijenio u superlativ.;positive;positive;True
+multilingual BERT TRAIN;29_7;Znam da se bolest može vratiti i redovito idem na preglede kod prof. Skrerleva a na ginekološke kod dr. Belak .;neutral;neutral;True
+multilingual BERT TRAIN;29_8;Od srca joj hvala jer mi je promjenila život.;positive;positive;True
+multilingual BERT TRAIN;34_1;Doktorica koja je uvijek spremna pomoći i dati savjet.;positive;positive;True
+multilingual BERT TRAIN;34_2;Medicinska sestra također vrlo ljubazna.;positive;positive;True
+multilingual BERT TRAIN;34_3;Svaka preporuka!;positive;positive;True
+multilingual BERT TRAIN;40_1;Najbolja doktorica!;positive;positive;True
+multilingual BERT TRAIN;40_2;Vodila kod nje treću trudnoća i bila prezadovoljna!;positive;positive;True
+multilingual BERT TRAIN;40_3;Doktorica kod koje ideš bez grča i straha!;positive;positive;True
+multilingual BERT TRAIN;40_4;Morala sam obaviti sve pretrage kks,urin,urino kultura,šećer koji sam kontrolirala do kraja trudnoće,briseve dva puta,papa test,kombinirani i anomalijski.;negative;neutral;False
+multilingual BERT TRAIN;40_5;Svaki put težina i tlak.;positive;negative;False
+multilingual BERT TRAIN;40_6;Doktor Zudenigo i sestra Tonka odlično rade svoj posao.;positive;positive;True
+multilingual BERT TRAIN;40_7;Doktorica pristupačna,brižna,sve objasni i žao mi je što mi nije vodila i prve dvije trudnoće!;positive;positive;True
+multilingual BERT TRAIN;40_8;Sve pohvale!;positive;positive;True
+multilingual BERT TRAIN;41_1;Meni sad vodi prvu trudnoću.;positive;neutral;False
+multilingual BERT TRAIN;41_2;Pedantna, strpljiva, uredna, puna razumijevanja.;positive;positive;True
+multilingual BERT TRAIN;41_3;Prvi put me pregled nije bolio.;positive;positive;True
+multilingual BERT TRAIN;41_4;Jako pristupačna, uvijek nasmijana i stvarno spremna pomoći koliko može.;positive;positive;True
+multilingual BERT TRAIN;41_5;Odlična je.;positive;positive;True
+multilingual BERT TRAIN;41_6;Čovjek i liječnik u jednom !;positive;positive;True
+multilingual BERT TRAIN;43_1;Uz duzno postovanje i bez losih namjera, ja bih samo komentirala kako sam i ja vodila trudnocu kod doktorice Belak, tj.;neutral;neutral;True
+multilingual BERT TRAIN;43_2;kod primariusa koji zajedno radi sa doktoricom.;neutral;neutral;True
+multilingual BERT TRAIN;43_3;pa bih iznijela svoje iskustvo.;negative;neutral;False
+multilingual BERT TRAIN;43_4;Vi ste mozda zamijetili neke mane i propuste, ali ja bih se vise osvrnula na ove pozitivne strane.;positive;positive;True
+multilingual BERT TRAIN;43_5;A to je duzina cekanja (odnosno ne cekanja valjda ni minute kad se dodje), veeelika pristupacnost prema svakom pacijentu, briznost i izrazita njeznost pri pregledu.;positive;positive;True
+multilingual BERT TRAIN;43_6;o samoj strucnosti da ne pricam jer doktorica stvarno ima puno iskustva u radu s pacijentima, a jos u kombinaciji sa doktorom Zudenigom koji je primarius na sv.;negative;positive;False
+multilingual BERT TRAIN;43_7;Duhu (i iz bliskih izvora znam da je sjajan dijagnosticar), mislim da je to stvarno top kombinacija.;positive;positive;True
+multilingual BERT TRAIN;43_8;Tako da mislim da svaka trudnica moze biti stvarno sigurna i mirna da je u pravim rukama i da nece biti nikakvih propusta. :);positive;positive;True
+multilingual BERT TRAIN;44_1;Samo rijeci hvale za ovu doktoricu.;positive;positive;True
+multilingual BERT TRAIN;57_1;Puno znači imati ovako divnu liječnicu i sestru koja te uvijek s osmijehom dočeka.;positive;positive;True
+multilingual BERT TRAIN;57_2;Uredno mi vodi trudnoću, sve mi lijepo i detaljno objasni.;positive;positive;True
+multilingual BERT TRAIN;57_3;Slučajno sam postala pacijentica doktorice Belak a namjeravam to i ostati!;positive;positive;True
+multilingual BERT TRAIN;57_4;Sve pohvale!;positive;positive;True
+multilingual BERT TRAIN;61_1;Za dr. Snježanu Belak imam samo riječi hvale!;positive;positive;True
+multilingual BERT TRAIN;61_2;Doktorica je stručna, strpljiva, pažljiva i ljubazna.;positive;positive;True
+multilingual BERT TRAIN;61_3;Ima empatiju i ljudski pristup te Vam u slučaju bilo kakvih nedoumica ili pitanja, sve odgovori i objasni, pomogne savjetom.;positive;positive;True
+multilingual BERT TRAIN;61_4;Prilikom pregleda vrlo je pažljiva,opuštena i pristupačna.;positive;positive;True
+multilingual BERT TRAIN;61_5;Sestra je također ljubazna i ekspeditivna i brza, a opet posvećena svakom pacijentu.;positive;positive;True
+multilingual BERT TRAIN;61_6;Stoga toplo preporučam ginekološku ordinaciju dr. Snježana Belak!;positive;positive;True
+multilingual BERT TRAIN;63_1;Sve pohvale za doktoricu, iako sam kod nje kraće vrijeme preporučila bih ju svakako jer se stvarno zauzme za pacijenta i voljna je pomoći, također me molila da joj javim ishod (jer me uputila dalje) tako da mislim da rijetko koji doktor iskreno brine za pacijenta.;positive;positive;True
+multilingual BERT TRAIN;63_2;Sve objasni prilikom pregleda, ako imate kakva pitanja i na njih će odgovoriti tako da je moja ocjena čista petica.;positive;positive;True
+multilingual BERT TRAIN;63_3;Što se sestre tiče isto je super, jedino zna ponekad bezveze preplašiti sa svojim mogućim dijagnozama (ako joj ispričate problem).;negative;mixed;False
+multilingual BERT TRAIN;63_4;Nikad nisam čekala duže od par minuta i prilikom naručivanja brzo sam dobila termin.;positive;positive;True
+multilingual BERT TRAIN;63_5;Preporuke!;positive;positive;True
+multilingual BERT TRAIN;64_1;Svatko definitivno ima pravo na svoje mišljenje i svi smo mi ljudi različitii.;positive;neutral;False
+multilingual BERT TRAIN;64_2;Ja se kod doktorice Belak lječim već par godina, za mene su ona i sestra Antonija predivne prije svega osobe, a zatim doktorice.;positive;positive;True
+multilingual BERT TRAIN;64_3;Danas je jako teško vidjeti takav pristup, da se osjećaš opušteno i uživaš u dolasku ginekologu.;positive;positive;True
+multilingual BERT TRAIN;64_4;Za svaki posao treba imati želju i volju.;positive;positive;True
+multilingual BERT TRAIN;64_5;"Što nekome znači biti ginekolog ako svoje pacijentice gleda kao ""broj"" ?";negative;negative;True
+multilingual BERT TRAIN;64_6;Takva je nažalost većina, upravo radi toga i jesmo u RH di jesmo.;negative;negative;True
+multilingual BERT TRAIN;64_7;gledaju se samo novci i pacijenti se gledaju kao broj, nije čudno kakva se sranja događaju.;negative;negative;True
+multilingual BERT TRAIN;64_8;To sam iskusila i na svojoj koži, upravo zato sam preporođena otkako sam kod dokt.Belak.;positive;mixed;False
+multilingual BERT TRAIN;64_9;Lijepo je kad možeš popričati o vremenu, dečku, mužu, obitelji zašto ne ?;negative;positive;False
+multilingual BERT TRAIN;64_10;Do tebe je koliko površno želiš i ne želiš razgovarati,kao i uvijek u životu.;positive;neutral;False
+multilingual BERT TRAIN;64_11;Tada si samo još više opušteniji i zaboravljaš da si na ginek stolu.;positive;positive;True
+multilingual BERT TRAIN;64_12;, doktorica je jednostavno sama po sebi takva.;positive;positive;True
+multilingual BERT TRAIN;64_13;Bliska i susretljiva i odlična osoba.;positive;positive;True
+multilingual BERT TRAIN;64_14;Doktorica Belak i sestra Antonija imaju svaku moju pohvalu, prije svega bitno je biti čovjek, a one su to pokazale puno,puno puta.;positive;positive;True
+multilingual BERT TRAIN;64_15;da im je pacijent na prvom mjestu i da su uvijek tu kada treba pomoći, sestra Antonija će ako je potrebno provesti telefonski pola sata samnom ako meni treba pomoć i objašnjenje, drugi se ne javljaju po cijele dane, toliko o svemu.;negative;positive;False
+multilingual BERT TRAIN;64_16;Velika šteta ako netko to ne prepoznaje.;positive;mixed;False
+multilingual BERT TRAIN;64_17;Jedno veliko HVALA na kvaliteti koju one pružaju.;positive;positive;True
+multilingual BERT TRAIN;64_18;i živim u nadi da će se ostali ginekolozi ugledati na njih i shvatit koliko je ljepše biti od pomoći pošto im je to u opisu posla.;positive;positive;True
+multilingual BERT TRAIN;65_1;Ja sam upravo ocjenjivala doktoricu i komentirala koliko je doktorica predivna!;positive;positive;True
+multilingual BERT TRAIN;65_2;Znači ne samo kao ginekologica, nego kao osoba.;positive;positive;True
+multilingual BERT TRAIN;65_3;Naravno da vi imate pravo na svoje mišljenje, ali po mom mišljenju, baš taj njen prisup kao čovjek čovjeku, a ne kao broju na papiru i je poseban.;positive;positive;True
+multilingual BERT TRAIN;65_4;I baš zato što ona od cijelog pregleda napravi ugodnu atmosferu u kojoj vi kroz razgovor s njom i zaboravite da ste na ginekološkom stolu, bih ja naglasila isključivo kao njenu prednost, a ne manu, kao što ste to vi naveli.;positive;positive;True
+multilingual BERT TRAIN;65_5;"A uostalom, doktorica mora ispitati neke stvari o vama i dobiti uvid u neko vaše ""stanje"" kako bi uopće znala kako pristupati samom pregledu.";negative;neutral;False
+multilingual BERT TRAIN;65_6;Ponavljam, svako ima pravo na svoje mišljenje pa tako i vi, ali definitivno mislim da ste krivo procijenili doktoricu i u nečem što je njena izuzetna kvaliteta našli vama nešto uvredljivo.;negative;mixed;False
+multilingual BERT TRAIN;65_7;Šteta.;positive;negative;False
+multilingual BERT TRAIN;70_1;Kad idem na pregled kod doktorice Belak, osjecam se sigurno i sve mi bude jasno, vrlo je njezna pri pregledu, i ono sto najvise cijenim - sve mi objasni, bez doktorskih prenemaganja i vrlo jasno.;positive;positive;True
+multilingual BERT TRAIN;70_2;Preporucujem doktoricu, posebno mladjim osobama.;positive;positive;True
+multilingual BERT TRAIN;70_3;Jako opusteno i usluga na nivou.;positive;positive;True
+multilingual BERT TRAIN;73_1;Prima, međutim ona nije u sustavu HZZO-a, ako ste na to mislili.;negative;neutral;False
+multilingual BERT TRAIN;75_1;Prvi dojmovi zaista odlični i za doktoricu i za sestru!;positive;positive;True
+multilingual BERT TRAIN;75_2;Doktorica stučna, draga, ljubazna, osjećajna.;positive;positive;True
+multilingual BERT TRAIN;75_3;Preporuka.;positive;positive;True
+multilingual BERT TRAIN;87_1;Doktorica Belak je divna!;positive;positive;True
+multilingual BERT TRAIN;87_2;Vrlo ljubazna i pravi profesionalac!;positive;positive;True
+multilingual BERT TRAIN;87_3;Sestra je isto krasna!;positive;positive;True
+multilingual BERT TRAIN;87_4;Bravo +5!;positive;positive;True
+multilingual BERT TRAIN;93_1;Doktorica je jako ljubazna, susretljiva i strpljiva u objašnjavanju.;positive;positive;True
+multilingual BERT TRAIN;93_2;Pregled kod nje je pozitivno iskustvo.;positive;positive;True
+multilingual BERT TRAIN;93_3;Pohvala i sestri na ljubaznosti i srdačnosti.;positive;positive;True
+multilingual BERT TRAIN;97_1;Pišem kao pacijent kako bi izrazio svoje nezadovoljstvo načinom na koji ste postupali prema menii mojoj obitelji tijekom posjeta.;negative;negative;True
+multilingual BERT TRAIN;97_2;Nažalost, Vaš pristup često djeluje neljubazno i neosjetljivo na naše potrebe i zabrinutosti.;negative;negative;True
+multilingual BERT TRAIN;97_3;Primijetili smoda ne pregledavate temeljito nalaze prije nego što donesete odluke o daljnjem liječenju.;negative;negative;True
+multilingual BERT TRAIN;97_4;Vaše odluke, koje smatrate ispravnima, nisu nam pomogle u prošlosti, što dodatno povećava našu zabrinutost.;positive;negative;False
+multilingual BERT TRAIN;97_5;Savjetujem da ubuduće posvetite više pažnje nalazima i da se prema nama odnosite s više empatije i razumijevanja.;positive;negative;False
+multilingual BERT TRAIN;97_6;Vaša stručnost je važna, ali jednako je važno da se pacijenti osjećaju saslušano i poštovano.;positive;negative;False
+multilingual BERT TRAIN;101_1;Jednom riječi odlična doktorica u svemu.;positive;positive;True
+multilingual BERT TRAIN;101_2;Brza usluga, konkretna pomoć, jasna, brižna, jednostavna, stručna.;positive;positive;True
+multilingual BERT TRAIN;102_1;Kod doktorice nema naručivanja, kad si bolestan dođeš, doktorica je uvijek dostupna i telefonom i e-mailom.;positive;positive;True
+multilingual BERT TRAIN;102_2;Nikad se ne čeka dugo ni u ordinaciji niti na telefonu.;negative;positive;False
+multilingual BERT TRAIN;102_3;Vrlo je stručna u pogledu upučivanja pacijenta na vrstu liječenja i potrebnih dijagnostika.;positive;positive;True
+multilingual BERT TRAIN;102_4;Uvijek je dobre volje i posvećena je maksimalno svakom pacijentu.;positive;positive;True
+multilingual BERT TRAIN;102_5;Kad god je potrebno dođe u kućni posjet.;negative;positive;False
+multilingual BERT TRAIN;102_6;Kad ima pacijenata u ordinaciji nikad ne koristi stanku.;negative;positive;False
+multilingual BERT TRAIN;106_1;Doktorica super, ALI.;positive;mixed;False
+multilingual BERT TRAIN;106_2;Nemoguće ju je kontaktirati.;negative;negative;True
+multilingual BERT TRAIN;106_3;Na telefon se ne javlja, email nema nigdje ispisan na netu kao ni radno vrijeme.;negative;negative;True
+multilingual BERT TRAIN;106_4;Uvijek bolesna moram ići provjeravati je li u ambulanti pa 'poljubiti' vrata.;negative;negative;True
+multilingual BERT TRAIN;106_5;Treba poraditi na komunikaciji s pacijentima, u 21.stoljeću smo.;neutral;negative;False
+multilingual BERT TRAIN;107_1;Za svaku pohvalu je doktorica Valentina, a posebno medicinski brat Ervin.;positive;positive;True
+multilingual BERT TRAIN;107_2;Uvijek dostupni i brižni za svoje pacijente.;positive;positive;True
+multilingual BERT TRAIN;116_1;Najbolja doktorica i najsposobnija lijecnica u gradu!;positive;positive;True
+multilingual BERT TRAIN;116_2;Njezina medicinska sestra ima jako njeznu ruku i da se ne osjeti kad daje injekciju,jako je ljubazna prije svega je jako dobra dijagnosticarka i izvrsno opremljena ordinacija i svima bih je preporucila;positive;positive;True
+multilingual BERT TRAIN;117_1;Aurora to sto ste napisali nije istina,doktora Valentina Hećimović je najbolja,nauzornija i najljubaznija doktorica na svijetu za svaku pohvalu i preporuku.;positive;positive;True
+multilingual BERT TRAIN;117_2;Preporucam doktoricu svima koji zele takve doktorice.;positive;positive;True
+multilingual BERT TRAIN;117_3;A vi Aurora molim vas maknite ovaj komentar jer vasem komentaru nije mjesto ovdje.;negative;neutral;False
+multilingual BERT TRAIN;117_4;Hvala na razumijevanju.;positive;neutral;False
+multilingual BERT TRAIN;117_5;LP :).;positive;positive;True
+multilingual BERT TRAIN;119_1;Najbolja liječnica, definitivno, za svaku pohvalu i preporuku!;positive;positive;True
+multilingual BERT TRAIN;119_2;Ljubazna, susretljiva i nadasve stručna, izuzetan dijagnostičar!;positive;positive;True
+multilingual BERT TRAIN;133_1;Predivna, jako sam zadovoljan kako se odnosi prema mom dijabetesu.;positive;positive;True
+multilingual BERT TRAIN;133_2;Otkad sam ga dobio, nisam imao laksu prilagodbu svog zivotnog stila, sve do dr. Miskic, koja me je uputila u terapiju i povecanje aktivnosti.;positive;positive;True
+multilingual BERT TRAIN;139_1;Izbjegavajte dr. Muških.;negative;negative;True
+multilingual BERT TRAIN;139_2;Hipertireozu nije prepoznala da me je bilo sramota kad sam završila na hitnom prijemu.;negative;negative;True
+multilingual BERT TRAIN;139_3;Nikad je nema pa dolaze neke mlade.;negative;negative;True
+multilingual BERT TRAIN;139_4;Strašno!;negative;negative;True
+multilingual BERT TRAIN;144_1;Zavukla mi je štitnjaču da se ne mogu načuditi da ta i dalje radi i tko joj je dao da radi.;negative;negative;True
+multilingual BERT TRAIN;144_2;Tko može zaobići tu doktoricu i u Osijek.;negative;negative;True
+multilingual BERT TRAIN;144_3;Mene su spasili od dr. Miškić.;positive;negative;False
+multilingual BERT TRAIN;150_1;Iznimno cijenim dr. Miškić i njen rad.;positive;positive;True
+multilingual BERT TRAIN;150_2;Sposobna,stručna i jako dobra dijagnostičarka.;positive;positive;True
+multilingual BERT TRAIN;150_3;Preporučila bih ju svima.;positive;positive;True
+multilingual BERT TRAIN;151_1;Doktorica koja ima znanje i iskustvo.;positive;positive;True
+multilingual BERT TRAIN;151_2;Vrlo korektna i predana svom poslu.;positive;positive;True
+multilingual BERT TRAIN;163_1;Dr. Bagatin jedan je od rijetkih koji zna što Hipokratova zakletva zbilja znači.;positive;positive;True
+multilingual BERT TRAIN;163_2;"Drag, uvijek spreman poslušati i dati sve od sebe da riješi tvoj problem, i da ti isti laički priblizi… Liječnik kojeg mogu samo preporučiti; profesionalan, susretljiv, i nadasve human; kod njega nisam samo karton, već čovjek; sretna sam što u našem zdravstvenom sustavu postoje ljudi kao dr. Dinko Bagatin!";positive;positive;True
+multilingual BERT TRAIN;173_1;Veliki covjek i pravi i profesionalac!;positive;positive;True
+multilingual BERT TRAIN;173_2;Izuzetni drag, ugodan, pametan i susretljiv.;positive;positive;True
+multilingual BERT TRAIN;173_3;Svaka pohvala dr. Dinku i njegovom timu!;positive;positive;True
+multilingual BERT TRAIN;175_1;Dr. Dinko Bagatin je poseban po svom odnosu prema pacijentu, velikoj ljubavi prema svom poslu i jos vecem znanju.;positive;positive;True
+multilingual BERT TRAIN;175_2;Preporucam i dr. Dinka i Polikliniku Bagatin!;positive;positive;True
+multilingual BERT TRAIN;177_1;Dugo mi je trebalo da se odlucim za operaciju, no nakon sto sam upoznala dr. Dinka, pitam se sto sam toliko cekala?;negative;positive;False
+multilingual BERT TRAIN;177_2;Zaista, divan covjek, brizan doktor, pametan i njezan.;positive;positive;True
+multilingual BERT TRAIN;177_3;Top!;positive;positive;True
+multilingual BERT TRAIN;178_1;Divno iskustvo.;positive;positive;True
+multilingual BERT TRAIN;178_2;Pazljiv prema pacijentima, pun znanja, profesionalan, smiren.;positive;positive;True
+multilingual BERT TRAIN;178_3;Zahvat odradjen savrseno.;positive;positive;True
+multilingual BERT TRAIN;180_1;Kod cijenjenog primarijusa sam bila na preporuku prijateljice te mogu reci da jednostavnijeg doktora nisam srela.;positive;positive;True
+multilingual BERT TRAIN;180_2;Skroman, pametan, posvecen.;positive;positive;True
+multilingual BERT TRAIN;180_3;bas me odusevio!;positive;positive;True
+multilingual BERT TRAIN;181_1;Pregled i zahvat prošli ugodno, gotovo bezbolno i stvarno je sve profesionalno i vidi se da i doktor i sestre svoj posao rade s ljubavlju.;positive;positive;True
+multilingual BERT TRAIN;181_2;Oličenje onoga sto doktor treba biti.;positive;positive;True
+multilingual BERT TRAIN;181_3;Svaka čast!;positive;positive;True
+multilingual BERT TRAIN;181_4;Preporučam :);positive;positive;True
+multilingual BERT TRAIN;186_1;Doktor Dinko je izveo savrsenu operaciju karpalne kosti, oporavak je bio brz zahvaljujuci brizi dr Dinka.;positive;positive;True
+multilingual BERT TRAIN;188_1;Doktor za sve pohvale.;positive;positive;True
+multilingual BERT TRAIN;188_2;Ljubazan, stručan i pun empatije.;positive;positive;True
+multilingual BERT TRAIN;188_3;Pacijent mu nije samo broj nego ga stvarno sasluša i sve objasni.;positive;positive;True
+multilingual BERT TRAIN;191_1;Poliklinika Bagatin je opravdala moja ocekivanja, a dr. Dinko ispunio moju dugogodisnju zelju!;positive;positive;True
+multilingual BERT TRAIN;191_2;Izuzetan doktor, jednostavan i brizan.;positive;positive;True
+multilingual BERT TRAIN;193_1;Dr. Dinko je prije svega izvrstan kirurg.;positive;positive;True
+multilingual BERT TRAIN;193_2;Otvorenog uma za nova znanja i metode, ima hrabrosti, energije, ali i stručnu podršku izvrsnog tima kako bi ih najuspješnije primijenio u radu.;positive;positive;True
+multilingual BERT TRAIN;193_3;Ozbiljan je, točan, precizan i dostupan.;positive;positive;True
+multilingual BERT TRAIN;199_1;Same pohvale za dr. Dinka i njegovu polikliniku!;positive;positive;True
+multilingual BERT TRAIN;199_2;Jako srdacan, pristupacan i nadasve strucan!;positive;positive;True
+multilingual BERT TRAIN;199_3;Opravdao je moje povjerenje.;positive;positive;True
+multilingual BERT TRAIN;201_1;Dr. Bagatin je jedan od najboljih liječnika i kiruga.;positive;positive;True
+multilingual BERT TRAIN;201_2;Iznimno profesionalan, pazljiv, brizan, simpatican i pun razumijevanja.;positive;positive;True
+multilingual BERT TRAIN;201_3;Za svaku preporuku!;positive;positive;True
+multilingual BERT TRAIN;205_1;Cijeli zivot sanjam o savrsenim grudima, a sada ih i imam!;positive;positive;True
+multilingual BERT TRAIN;205_2;Naj, naj, najbolji plasticni kirurg u gradu!;positive;positive;True
+multilingual BERT TRAIN;208_1;Dr. Dinku zahvaljujem na profesionalnosti, dobroti i zeljenom rezultatu.;positive;positive;True
+multilingual BERT TRAIN;208_2;Ocijenila bi ga cistom peticom!;positive;positive;True
+multilingual BERT TRAIN;210_1;Dugo sam se premisljala otici pod noz ili ne, ali dr. Dinko Bagatin mi je odagnuo strah i opravdao povjerenje!;positive;positive;True
+multilingual BERT TRAIN;223_1;Jedan od rijetkih doktora koji saslusaju pacijenta do krajai strpljivo odgovore na sva pitanja.;positive;positive;True
+multilingual BERT TRAIN;223_2;Topal, strucan i veliki profesionalac.;positive;positive;True
+multilingual BERT TRAIN;238_1;Doktor je iznimno posvećen poslu, detaljan i savjestan.;positive;positive;True
+multilingual BERT TRAIN;238_2;Maksimalno se trudi i posao obavlja detaljno.;positive;positive;True
+multilingual BERT TRAIN;238_3;Najbolji u cijelom Zagrebu a vjerojatno i okolici jer kvalitetnih i temeljitih doktora je malo.;positive;positive;True
+multilingual BERT TRAIN;242_1;Odličan doktor, veoma stručan, strpljiv, ljubazan i profesionalan.;positive;positive;True
+multilingual BERT TRAIN;242_2;Svojim pristupom i odnosom prema pacijentu te detaljnim odgovorima na postavljena pitanja uklanja otklanja svaki strah od zahvata.;positive;positive;True
+multilingual BERT TRAIN;242_3;Velike preporuke od mene i hvala doktoru na svemu.;positive;positive;True
+multilingual BERT TRAIN;248_1;Perfekcionist!;positive;positive;True
+multilingual BERT TRAIN;248_2;Zaista sam impresioniran dobivenim rezultatom.;positive;positive;True
+multilingual BERT TRAIN;248_3;Svaka cast dr. Dinku!;positive;positive;True
+multilingual BERT TRAIN;248_4;Hvala svima koji su mi oporavak ucinili laksim i brzim.;positive;positive;True
+multilingual BERT TRAIN;262_1;Dr. Bagatin je kolegijalan, profesionalan, brine o svakom detalju, njegovo ophođenje ulijeva sigurnost i povjerenje.;positive;positive;True
+multilingual BERT TRAIN;262_2;A ono najvažnije rezultati rada savršeni.:-);positive;positive;True
+multilingual BERT TRAIN;263_1;Sve najbolje o poliklinici Bagatin.;positive;positive;True
+multilingual BERT TRAIN;263_2;Dr Tomica stručan, susretljiv ljubazan.;positive;positive;True
+multilingual BERT TRAIN;263_3;Za njega samo riječi hvale.;positive;positive;True
+multilingual BERT TRAIN;265_1;Vrlo stručan i simpatičan, vidi se da zna svoj posao.;positive;positive;True
+multilingual BERT TRAIN;265_2;Definitivno preporučujem!;positive;positive;True
+multilingual BERT TRAIN;269_1;Samo pohvale dr Dinku i cijeloj ekipi poliklinike Bagatin.;positive;positive;True
+multilingual BERT TRAIN;269_2;Uvijek cu ih rado svakome preporuciti.;positive;positive;True
+multilingual BERT TRAIN;273_1;Draga doktorica koja ima razumjevanja,zna svoj posao.;positive;positive;True
+multilingual BERT TRAIN;273_2;Pristupacna i vesela.;positive;positive;True
+multilingual BERT TRAIN;273_3;Djeca ju vole i uvijek je spremna pomoci.;positive;positive;True
+multilingual BERT TRAIN;273_4;Hvala joj puno.;positive;positive;True
+multilingual BERT TRAIN;281_1;Bili smo kod dr. Gagro, otišli od nje.;neutral;neutral;True
+multilingual BERT TRAIN;281_2;Sad sam, nakon godina natezanja i borbe sa svim i svačim (da ne kažem svakim), spremna pred punom čekaonom kleknuti i moliti da nas uzme natrag.;positive;neutral;False
+multilingual BERT TRAIN;281_3;Doslovno.;neutral;neutral;True
+multilingual BERT TRAIN;286_1;Pošto ste medicinska sestra, pa mozda cak i radite u Klaicevoj, logicno je da cete lijepo govoriti o dr. Gagro.;negative;negative;True
+multilingual BERT TRAIN;286_2;Mije dijete ima 7 godina, 3 godine je 'lijeceno' kod dr. Gagro i na kraju mi je dijete samo upropasteno!;positive;negative;False
+multilingual BERT TRAIN;286_3;6 godina se vec lijeci jer ono sto je ona unistila i kobajage lijecila, to prof. Harjaček ispravlja i zahvaljujuci njemu moje dijete je zdravo!;positive;mixed;False
+multilingual BERT TRAIN;286_4;Moje dijete je kod nje zapusteno bilo jer su oba koljena bila upitanju, a niti jednu punkciju nije napravila niti obavila UZV jer joj je moje dijete sluzilo za ucenje, posto doticna lijecnica tada nije bila reumatolog.;negative;negative;True
+multilingual BERT TRAIN;286_5;Zamislite staviti dijete samo na steroide i netotrexat 3 godine bez iceg drugog, bez punkcije bez ikakvog UZV.;negative;negative;True
+multilingual BERT TRAIN;286_6;Da napomenem, bila je u remisiji PRIVIDNOJ BEZ UZVa, onako ODOKA ukinuta terapija kod dr. Gagro!;neutral;negative;False
+multilingual BERT TRAIN;286_7;Zar to nije žalosno!;negative;negative;True
+multilingual BERT TRAIN;286_8;SRETNO SVIMA KOJI SE LIJEČE KOD NJE!;positive;negative;False
+multilingual BERT TRAIN;291_1;Za alternativu znam jer ju i sama kupujem za svoje dijete.;negative;neutral;False
+multilingual BERT TRAIN;291_2;vjerujem da joj uz ove sve lijekove ne pomažem prirodnim, teško bi bilo.;negative;neutral;False
+multilingual BERT TRAIN;291_3;Dajemo sve od sebe.;positive;neutral;False
+multilingual BERT TRAIN;295_1;Na kojoj terapiji je Vaše dijete, pitam zbog toga što ste rekli da vam je naškodila terapija i kod koga se sad lijčite?;negative;negative;True
+multilingual BERT TRAIN;304_1;Na Srebrnjak smo i otisli tj.pobjegli, ali kasno jer je 'lijecena' u Klaicevoj kod Alenke Gagro skoro 3 godine.;negative;negative;True
+multilingual BERT TRAIN;304_2;Zamislite sad da djeca imaju istu bolest i da ona svakog drukčije lijeci.;negative;negative;True
+multilingual BERT TRAIN;304_3;Mome djetetu nije dala lijekove koji štite zeludac iako smo joj 100 puta rekli da dijete ne moze jesti od svakodnevnih bolova, dok je drugoj djeci dala.;negative;negative;True
+multilingual BERT TRAIN;304_4;Mome djetetu nije napravila niti jednu punkciju iako su joj upaljenih 6 zglobova.;negative;negative;True
+multilingual BERT TRAIN;304_5;Također niti jedan UZV nije napravila jer ona NE ZNA TO RADITI, a kako kaze NE VOLI SE TIME ZAMARATI.;negative;negative;True
+multilingual BERT TRAIN;304_6;Konsultirali smo se s doktorima reumatolozima u Americi i rekli su da takav nacin liječenja je NEADEKVATAN!;negative;negative;True
+multilingual BERT TRAIN;304_7;Toliko o njenoj znanstvenosti!;negative;negative;True
+multilingual BERT TRAIN;307_1;Dr. Gagro je izuzetno stručna liječnica koja vrlo temeljito obavlja svoj posao.;positive;positive;True
+multilingual BERT TRAIN;307_2;Vrlo detaljno bavi se svakim svojim pacijentom.;positive;positive;True
+multilingual BERT TRAIN;307_3;U slučaju dvojbi/nedoumica, usko surađuje s drugim liječnicima iz Klaićeve, a po potrebi i iz drugih zagrebačkih bolnica.;positive;positive;True
+multilingual BERT TRAIN;307_4;Strpljiva, roditeljima detaljno objašnjava sve što trebaju znati i odgovara na svako pitanje (koliko god se ono nama laicima činilo banalnim ili glupim).;positive;positive;True
+multilingual BERT TRAIN;308_1;Također i za moje dijete je rekla da mozda ima leukemiju ili tumor kostiju iako je krvna slika bila ok.;negative;negative;True
+multilingual BERT TRAIN;308_2;a nalaz star nekoliko sati!;negative;neutral;False
+multilingual BERT TRAIN;308_3;Ja i moja cijela obitelj smo proplakali cijelu noć!;positive;negative;False
+multilingual BERT TRAIN;308_4;A sto je najgore nalaze smo čekali mjesec i pol dana da bi se ustanovilo da se radio o reumatoidnom artritisu.;negative;negative;True
+multilingual BERT TRAIN;308_5;Na kontrolama nas je nekoliko puta doslovno istjerala jer je morala jednom na sahranu iako smo bili naruceni na pregled i iako nismo došli na vrijeme na red i kad smo ušli ona kaze ide na sahranu da moramo čekati a mi od Zagreba skoro 5 sati!;negative;negative;True
+multilingual BERT TRAIN;308_6;Također jednom nas je doslovno istjerala s pregleda jer je ona morala vidjeti Papu!;negative;negative;True
+multilingual BERT TRAIN;308_7;Svaka čast Papi, ali ona je na radnom mjestu i pacijenti su je čekali, ali očito je to puno manje vazno!;negative;negative;True
+multilingual BERT TRAIN;308_8;Zašto nam taj dan nije otkazan pregled, nego da s bolesnim djetetom dolazimo u Zagreb i da satima čekamo!;negative;negative;True
+multilingual BERT TRAIN;308_9;Pa gdje je tu moral i etika?;negative;negative;True
+multilingual BERT TRAIN;309_1;Prvo i najvažnije dijete je bilo i ostalo zdravo, a osnova za takvu izjavu je bila upala kuka.;positive;negative;False
+multilingual BERT TRAIN;309_2;Svi promatrani parametri u krvi su bili uredni, ali se svejedno spominjanjem takvih dijagnoza ustrajalo na hospitalizaciji djeteta.;negative;negative;True
+multilingual BERT TRAIN;309_3;Nasreću, to je iza nas i nadam se da se neće ponoviti drugim roditeljima.;positive;neutral;False
+multilingual BERT TRAIN;311_1;Zahvaljujem se Alenki Gagro koja mi je u više situacija spasila život!;positive;positive;True
+multilingual BERT TRAIN;311_2;Iznimno ljubazna i draga osoba koja je cijeli svoj život posvetila radu.;positive;positive;True
+multilingual BERT TRAIN;313_1;Reći na bolničkom hodniku da dijete možda ima leukemiju ili tumor bez ikakvih nalaza nego na temelju vidovnjaštva je krajnje nemoralno i neprofesionalno.;negative;negative;True
+multilingual BERT TRAIN;313_2;Slijedećih 60-tak sati života, nakon takve izjave liječnika ne moram opisivati niti jednom roditelju.;negative;negative;True
+multilingual BERT TRAIN;317_1;Dr. Spalldi je izuzetno ugodna, ljubazna i pažljiva liječnica koja zaista sluša svoje pacijentice.;positive;positive;True
+multilingual BERT TRAIN;317_2;Nakon što sam prošla sedam različitih ginekologa, ona je prva koja me istinski saslušala, razumjela moj problem i ponudila konkretno rješenje.;positive;positive;True
+multilingual BERT TRAIN;317_3;Koristi najnoviju tehnologiju u dijagnostici i liječenju, što dodatno ulijeva povjerenje.;positive;positive;True
+multilingual BERT TRAIN;317_4;Ako bilo tko u Zadru ima problem s vulvodinijom, neka ne gubi vrijeme drugdje – dr. Spalldi je prava osoba kojoj se treba obratiti!;positive;positive;True
+multilingual BERT TRAIN;321_1;Doktorica je divna i ljubazna al sestra,sestre neznsm koliko ih je tamo, Neznam cemu im sluzi telefon kad je toliki problem dignit tu slusalicu il odgovorit na mail.;positive;mixed;False
+multilingual BERT TRAIN;321_2;Da umires nebi ti se javila…;negative;negative;True
+multilingual BERT TRAIN;325_1;Vrlo ljubazan i profesionalan tim, U zadnje vrijeme čujem kako se što više žena žali zbog termina u toj ambulanti.;positive;mixed;False
+multilingual BERT TRAIN;325_2;Drage žene, za početak probajte se naći na njihovom mjestu, one koje moraju primati i dalje nove pacijentice, a termina na žalost ima sve manje, a upisanih žena sve više.;negative;mixed;False
+multilingual BERT TRAIN;325_3;Valjda Vam je jasno da ginekološki pregled traje vremenski duže i da je tu doktorica koja Vam se posveti i da maksimalno od sebe.;positive;positive;True
+multilingual BERT TRAIN;325_4;Također trudnice imaju prednost, a trudnica ima puno.;positive;neutral;False
+multilingual BERT TRAIN;325_5;Što se tiče termina i u drugim gradovima se čeka po par mjeseci pa ne vidim problem.;negative;neutral;False
+multilingual BERT TRAIN;325_6;Sve pohvale za ovu doktoricu i sestru.;positive;positive;True
+multilingual BERT TRAIN;327_1;Doktorica je izuzetno ljubazna,korektna i profesionalna.;positive;positive;True
+multilingual BERT TRAIN;327_2;Prvi dani trudnoce su mi bili prilicno teski,hematomi,cesta krvarenja i sl.;neutral;neutral;True
+multilingual BERT TRAIN;327_3;Odredjenom terapijom zahvaljujuci dr Spalldi danas imam predivnu djevojcicu.;positive;positive;True
+multilingual BERT TRAIN;327_4;Sestra,citam negativne komentare o njoj,kako ocekujete da se ponasa prema Vama?;negative;mixed;False
+multilingual BERT TRAIN;327_5;Onako kao i Vi prema njoj.;positive;mixed;False
+multilingual BERT TRAIN;327_6;"Osobno sam imala iskustvo sa jom sljedece;dolazim nervozna,trudna,hormoni me okrecu ,nisam bas bila ljubazna,istom mjerom bez drskosti mi se obratila.";negative;mixed;False
+multilingual BERT TRAIN;327_7;Nakon toga preostalih 8mj mogu samo reci i zanju sve rijeci hvale,susretljivosti i pristupacnosti.;positive;positive;True
+multilingual BERT TRAIN;327_8;Drage zene,imajmo malo vise razumjevanja za doktoricu i sestru jer nisu one krive sto smo nervozne te imaju preko 2500 pacjentica.;negative;positive;False
+multilingual BERT TRAIN;327_9;Vazno da svoj posao obavljaju savjesno i temeljito a to svakako obavljaju.;positive;positive;True
+multilingual BERT TRAIN;330_1;Jako neljubazna i bezobrazna medicinska sestra.;negative;negative;True
+multilingual BERT TRAIN;330_2;Narucivanje iskljucivo prvog u mjesecu, al nemoguce telefonski doci do termina vec se treba osobno dolaziti za narucivanje i ako uspijete dobiti popodnevni termin ste prava sretnica.;negative;negative;True
+multilingual BERT TRAIN;350_1;Naručuje se za termin pregleda jedan dan u mjesecu i onda kad se dođete naručiti, kada im počinje radno vrijeme u popodnevnoj smjeni, med.sestra vam kaže da nemaju termina jer su žene već ujutro popunile termine?;negative;negative;True
+multilingual BERT TRAIN;350_2;To su nam dali?;neutral;negative;False
+multilingual BERT TRAIN;350_3;Tako se brinu o ženama u Zadru?;negative;negative;True
+multilingual BERT TRAIN;350_4;Puno hvala.;positive;sarcasm;False
+multilingual BERT TRAIN;359_1;Izuzetno ljubazna, pristupačna i profesionalna doktorica koja odlično zna i radi svoj posao!;positive;positive;True
+multilingual BERT TRAIN;359_2;Za svaku preporuku;positive;positive;True
+multilingual BERT TRAIN;361_1;Iznimno draga doktorica.;positive;positive;True
+multilingual BERT TRAIN;361_2;Tek je stigla u Zadar i svakako bi ju preporučila svima!;positive;positive;True
+multilingual BERT TRAIN;361_3;Osoba koja će saslušati svaki vaš problem i strah.;positive;positive;True
+multilingual BERT TRAIN;361_4;Vrlo je stručna i s puno iskustva.;positive;positive;True
+multilingual BERT TRAIN;361_5;Ulijeva mi potpuno povjerenje.;positive;positive;True
+multilingual BERT TRAIN;361_6;Za svaku preporuku;positive;positive;True
+multilingual BERT TRAIN;362_1;Definitivno najbolja ginekologica kod koje sam sada bila!;positive;positive;True
+multilingual BERT TRAIN;362_2;Nježna, stručna i nadasve ljubazna.;positive;positive;True
+multilingual BERT TRAIN;362_3;Reagirala je pravovremeno kada mi je bilo potrebno.;positive;positive;True
+multilingual BERT TRAIN;362_4;Odlična doktorica, a i prije svega osoba!;positive;positive;True
+multilingual BERT TRAIN;367_1;Uspjela sam uloviti doktoricu dok je još radila, negdje u 6.mjesecu.;positive;neutral;False
+multilingual BERT TRAIN;367_2;Da, doktorica je na prvi pogled vedra, vesela, srdačna, ali iza toga ne stoji nikakva specijalna stručnost.;positive;mixed;False
+multilingual BERT TRAIN;367_3;Ne želim ulaziti u detalje, ali mene je vidjela jednom i opasno mi je ugrozila zdravlje.;negative;negative;True
+multilingual BERT TRAIN;367_4;Do koje mjere joj je stalo do pacijenata pokazuje i to vječno bolovanje u sred medicinske drame, a onda je sretnete u šetnji s djecom.;negative;negative;True
+multilingual BERT TRAIN;367_5;Budući da mi se stanje zakompliciralo, dolazila sam i kod zamjene i nije to sestrina izmišljotina da morate doći tamo, nego liječnik koji je tad bio na zamjeni tako zahtijeva.;negative;neutral;False
+multilingual BERT TRAIN;367_6;Iskreno, meni je sestre žao.;positive;negative;False
+multilingual BERT TRAIN;367_7;Riba smrdi od glave, za stanje u ordinaciji je odgovoran liječnik.;positive;negative;False
+multilingual BERT TRAIN;369_1;Doktorica je ono sto bi se trebalo ocekivati od svakog doktora u 2020.godini.;positive;positive;True
+multilingual BERT TRAIN;369_2;Izuzetno ljubazna, smirena, pristupacna - razina da se dopisujemo putem waap oko nalaza i termina, strucna i zeli pomoci.;positive;positive;True
+multilingual BERT TRAIN;369_3;Uz njezinu pomoc, trudnoca u vrijeme covid krize prolazi uz puno manje stresa i brige.;positive;positive;True
+multilingual BERT TRAIN;369_4;Tesko je dovoljno naglasiti sve benefite ali za svaku preporuku!;positive;positive;True
+multilingual BERT TRAIN;376_1;Doktorica i sestra su mi bile od velike pomoci.;positive;positive;True
+multilingual BERT TRAIN;376_2;Sve pohvale za rad, trud i ljubaznost.;positive;positive;True
+multilingual BERT TRAIN;379_1;Najljubaznije stvorenje ikad, odlična i stručna doktorica sa osmijehom ko najboljom terapijom.;positive;positive;True
+multilingual BERT TRAIN;381_1;Doktorica je odlična, sestra također, sve pohvale koje su ovdje već napisane stoje.;positive;positive;True
+multilingual BERT TRAIN;381_2;Jedina zamjerka je to što svaki put kada trebam recept (a to je svaka 2 mjeseca) moram ići do tamo, znam da nisam jedina i znam da si rijetko tko može to priuštiti (zbog posla i ostalih obaveza) stoga molim da nas što više taj problem prijavi doktorici kako bi našli neko rješenje, ako je ikako moguće.;negative;neutral;False
+multilingual BERT TRAIN;381_3;Moj prijedlog je e-mail, s obzirom da se sestra na telefon javlja samo 1h dnevno, sumnjam da se stigne javiti svima koji ju zovu.;negative;neutral;False
+multilingual BERT TRAIN;381_4;Živimo u 21.stoljeću, ajmo se malo modernizirati :);positive;neutral;False
+multilingual BERT TRAIN;382_1;Sestra se javlja samo na taj broj i to samo 1h dnevno.;negative;negative;True
+multilingual BERT TRAIN;382_2;Ponedjeljak i srijeda između 18:00 i 19:00h, a utorak, četvrtak i petak između 12:00 i 13:00h.;neutral;neutral;True
+multilingual BERT TRAIN;398_1;Vidjela sam da je netko napisao da doktor najstarijim pacijentima ne pomaže bez mita što je apsolutna laž.;negative;positive;False
+multilingual BERT TRAIN;398_2;Ja sam imala 22 godine kad mi nije htio pomoći bez mita.;neutral;negative;False
+multilingual BERT TRAIN;401_1;Svaka cast doktoru koji navecer moze mirno zaspat neznam jeli Sundov moze jer se nadam da kad je postajao lijecnik prisegao priziv savjesti koju onda valjda i ima.;negative;negative;True
+multilingual BERT TRAIN;401_2;Ne sviđa mi se a daljne optužbe mu nebi stavljala.;negative;negative;True
+multilingual BERT TRAIN;405_1;"Sram vas moze biti,pogotovo ovakav servis ,koji sluzi plemenitoj svrsi ,iskoristavat za iznosenje tako gnusnih inusacija o doktoru koje da imaju iti malo temelja bile bi na obradi u krim policiji,i to je vidljivo da ISTA osoba,ocito nepismena( izraz ""NE HUMANIST"" koristi u dva komentara) ide vrijeđati doktora na tako gnusan način da spominje doktorovo podrijetlo.";negative;mixed;False
+multilingual BERT TRAIN;405_2;O doktoru samo najbolje i s kim god bih se slučajno dotakao teme o ovom vrlo cijenjenom i uglednom doktoru,imao je samo riječi hvale za dotičnog!;positive;positive;True
+multilingual BERT TRAIN;408_1;Ako u nevolji želite susret sa bahatim, površnim i nekulturnim doktorom potražite ovog dr Šundova Željka.;negative;negative;True
+multilingual BERT TRAIN;408_2;Trebalo bi mu hitno uručiti dopuštenje da može odseliti u inozemstvo (naravno na zapad) ili da bar otvori privatnu praksu pa da sam osjeti koliko bi dugo opstao.;negative;negative;True
+multilingual BERT TRAIN;408_3;Ovakvi ljudi poništavaju kompletan ugled liječničke struke;positive;negative;False
+multilingual BERT TRAIN;413_1;Jednostavno izvrsna.;positive;positive;True
+multilingual BERT TRAIN;413_2;Liječnica s dugogodišnjim iskustvom, detaljna i bez trunke površnosti prilikom pregleda i daljnje obrade u eventualnom liječenju.;positive;positive;True
+multilingual BERT TRAIN;413_3;Naručite se ranim osobnim dolaskom u ordinaciji petkom ujutro i već idući tjedan ste kod doktorice.;neutral;positive;False
+multilingual BERT TRAIN;413_4;Umjesto kritika, brojni liječnici bi se trebali ugledati na ovaj koncept, a pacijenti biti zahvalni.;positive;positive;True
+multilingual BERT TRAIN;413_5;To što je direktna i konkretna u komunikaciji nekome možda ne odgovara, ali ako tražite stručan i efikasan posjet dermatologinji s dugogodišnjim iskustvom onda ste definitivno na pravom mjestu.;positive;positive;True
+multilingual BERT TRAIN;413_6;Da je barem više takvih liječnika, bravo, samo tako dalje.;positive;positive;True
+multilingual BERT TRAIN;416_1;Doktoric nedostaju joj osnovne vještine komunikacije, a nema ni bolničara/bolnničarku dato ublaži.;negative;negative;True
+multilingual BERT TRAIN;416_2;Njezin način ophođenja može se opisati kao sociopatski.;negative;negative;True
+multilingual BERT TRAIN;416_3;Teško je pojmiti kako uopće funkcionirau društvu, a kamoli da i dalje ima liječničku licencu.;negative;negative;True
+multilingual BERT TRAIN;423_1;Jednostavno protiv ove dvije ne vredi se boriti.;negative;negative;True
+multilingual BERT TRAIN;423_2;Nije mi jasno kako ih sram i jad nije da umjesto su draga i ljubazne one su o očima svih neprofesionalne, bahate i izazivaju nemir.;negative;negative;True
+multilingual BERT TRAIN;423_3;Dakle telefonski naručivanje jedan je način, no na teleefon se ne javljaju.;negative;negative;True
+multilingual BERT TRAIN;423_4;Možda ako budete uporni pa se jave nakon 113 puta.;negative;negative;True
+multilingual BERT TRAIN;423_5;Sljedeći način jeste da dođete petkom u ordinaciju, i sada ako po prilici kao ja niste u Zagrebu morate doći u onaj petak da bi vas naručila za naredni tjedan, bez obzira na hitnost i konstantne promjene na koži stopala.;negative;negative;True
+multilingual BERT TRAIN;423_6;Ovaj komentar evo neka pomogne samo onom ko je u prilici da ode privatno ali nikako ovdje.;negative;negative;True
+multilingual BERT TRAIN;423_7;Sramota za ljudstvo i ljudski rod.;negative;negative;True
+multilingual BERT TRAIN;425_1;Čitam komentare i dosta su mi pomogli.;positive;positive;True
+multilingual BERT TRAIN;425_2;Naime,trebam se naručiti za pregled,ali samo petkom primaju pozive za isto.;negative;negative;True
+multilingual BERT TRAIN;425_3;Dakle,dva petka za redom zovem, imam i dokaz,jer na mobitelu sve piše.;positive;negative;False
+multilingual BERT TRAIN;425_4;109 puta sam zvala,linija kakti zauzeta.;negative;negative;True
+multilingual BERT TRAIN;425_5;6 puta linija slobodna,nitko se ne javlja.;negative;negative;True
+multilingual BERT TRAIN;425_6;Kakva su to pravila?;neutral;negative;False
+multilingual BERT TRAIN;425_7;Očito,po ovim komentarima njihova.;neutral;negative;False
+multilingual BERT TRAIN;425_8;Imam 66 godina,živim u Velikoj Gorici.;neutral;neutral;True
+multilingual BERT TRAIN;425_9;Znači,moram se maltretirati iz Gorice do Kruga da se samo dođem naručiti.;negative;negative;True
+multilingual BERT TRAIN;425_10;Sram ih može biti.;negative;negative;True
+multilingual BERT TRAIN;425_11;Žao mi je da su danas doktori samo na papiru,bez duše ( čast izuzecima ) Potpisujem se punim imenom i prezimenom Ana Miljak;positive;negative;False
+multilingual BERT TRAIN;428_1;Dr. Marinovic je bahata i neugodna doktorica koja radi sto i kako joj se hoce, jer je u zakupu!;negative;negative;True
+multilingual BERT TRAIN;428_2;Sestra takodjer, uz to je vrlo neljubazna, ne zeli saslusati pacijenta, ne moze ih se dobiti na telefonskoro cijelo vrijeme, a nacin narucivanja vrlo neprilagodljiv (samo petkom ujutro do 11 sati!).;negative;negative;True
+multilingual BERT TRAIN;428_3;Za sve pacijente info: ovakve doktore mozete direktno prijaviti u HZZO-u, jer im oni daju novce i vrse kontrole, a za doktore u koji su zaposlenici domova zdravlja (tj.;negative;neutral;False
+multilingual BERT TRAIN;428_4;koji nisu u najmu/zakupu) - ravnateljstvo DZ Centar u Runjanonovoj - posalju formular ili ga preuzmete osobno i na taj nacin pokrecete prijavu!;negative;neutral;False
+multilingual BERT TRAIN;428_5;Za novce koje ja dajem godisnje u sustav HZZO-a imam pravo traziti ibar minimalnu razinu pristojnog ponasanja i profesionalnosti, osobito u razgovoru sa pacijentom koji sigurno nije dosao da im smeta i bez razloga!;negative;negative;True
+multilingual BERT TRAIN;428_6;Moramo zanti svoja prava, ali i obveze!;positive;neutral;False
+multilingual BERT TRAIN;431_1;Doktorica je super i sestra.;positive;positive;True
+multilingual BERT TRAIN;431_2;Brzo rješavaju problem i objašnjavaju postupke koje će poduzeti i način terapije.;positive;positive;True
+multilingual BERT TRAIN;436_1;Moje iskustvo sa doktoricom nije nimalo neugodno.;positive;negative;False
+multilingual BERT TRAIN;436_2;Stručna , brza , stalno prisutna doza humora .;positive;positive;True
+multilingual BERT TRAIN;436_3;Sestra je također ljubazna i korektna.;positive;positive;True
+multilingual BERT TRAIN;436_4;Ukratko, za svaku preporuku.;positive;positive;True
+multilingual BERT TRAIN;437_1;Prije svega, moram reći da sam duboko uvjeren da su sve dobre ocjene (5 zvjezdica) kod ove doktorice lažne jer je naprosto nemoguce da takva osobna nekog oduševi.;negative;negative;True
+multilingual BERT TRAIN;437_2;Bezobrazna, bahata, iz nekog razloga jedostavno zla.;negative;negative;True
+multilingual BERT TRAIN;437_3;Malo mi ju je zao.;negative;negative;True
+multilingual BERT TRAIN;437_4;i njezinih bližnjih.;neutral;negative;False
+multilingual BERT TRAIN;437_5;Ali takva osoba ne zasluzuje sazaljenje.;negative;negative;True
+multilingual BERT TRAIN;437_6;Povisen ton na granico deranja, uvrede, bahatost.;negative;negative;True
+multilingual BERT TRAIN;437_7;Ne zasluzuje da se kod nje dolazi, nije dostojna liječničke profesije.;negative;negative;True
+multilingual BERT TRAIN;437_8;Red cekanja je kratak jer kod nje dolaze samo oni trebaj hitnu pomoci ili ne znaju kome odlaze.;negative;negative;True
+multilingual BERT TRAIN;437_9;Svakako preporučujem da radije duze cekate drugu ordinaciju nego da idete kod te, bez razloga zle i bezobrazne žene u obliku liječnika.;negative;negative;True
+multilingual BERT TRAIN;444_1;Moje iskustvo sa doktoricom je sasvim ok.;positive;neutral;False
+multilingual BERT TRAIN;444_2;Sve ide po p.s.-u;neutral;neutral;True
+multilingual BERT TRAIN;444_3;Nema čekanja.;positive;positive;True
+multilingual BERT TRAIN;444_4;Fibrome mi je odstranila po tijelu bez grubosti.;positive;positive;True
+multilingual BERT TRAIN;444_5;Neznam evo, tu ljudi svašta pišu, ali eto.;negative;neutral;False
+multilingual BERT TRAIN;444_6;samnom je bila sasvim u redu.;positive;positive;True
+multilingual BERT TRAIN;444_7;I sestra je super i ljubazna.;positive;positive;True
+multilingual BERT TRAIN;448_1;Vrijeme čekanja je tolko kratko iz razloga što nitko ne ide tamo.;positive;negative;False
+multilingual BERT TRAIN;448_2;Doktorica je oličenje bahatosti i hodajući kompleks kojeg onda istresa na svoje pacijente - užasno bezobrazna i nije informirana s novim trendovima dermatologije.;negative;negative;True
+multilingual BERT TRAIN;448_3;Prvo vam da krivu dijagnozu, zatim kada imate svoju papirologiju i dijagnozu, uvjerava vas da ste si vi to umislili, da vi filozofirate, da ona zna najbolje, i krivi vas za vaše stanje, iako vam je ona dala krivu dijagnozu i krivi lijek.;negative;negative;True
+multilingual BERT TRAIN;448_4;Zatim se nastavlja svađati i tupiti po svojem.;negative;negative;True
+multilingual BERT TRAIN;448_5;Očito je opsjednuta s moči jer je uživala u tom svojem ponižavanju.;negative;negative;True
+multilingual BERT TRAIN;448_6;Ako cijenite svoje vrijeme i sebe ka osobu, pronađite privatnog doktora.;negative;negative;True
+multilingual BERT TRAIN;448_7;Ovo je zlostavljanje.;negative;negative;True
+multilingual BERT TRAIN;448_8;Pogotovo nemojte ovdje djecu dovoditi, ostati će istraumaizirani.;negative;negative;True
+multilingual BERT TRAIN;453_1;Sve pohvale doktorici na stručnosti i iskustvu koje primjenjuje svakodnevno kod svojih pacijenata.;positive;positive;True
+multilingual BERT TRAIN;453_2;Impresioniran sam njenom organizacijom vremena koja pacijentima omogućuje zanemariva vremena čekanja na pregled i terapiju.;positive;positive;True
+multilingual BERT TRAIN;453_3;Preporučio sam je poznanicima i prijateljima jer sam jako zadovoljan njenim radom.;positive;positive;True
+multilingual BERT TRAIN;454_1;Sve pohvale doktorici koju krasi velika stručnost, iskustvo i znanje.;positive;positive;True
+multilingual BERT TRAIN;454_2;U današnje vrijeme kada se na pregled čeka mjesecima kod nje se dobije termin za maksimalno tjedan dana.;positive;positive;True
+multilingual BERT TRAIN;462_1;Meni je danas doktorica rekla da ce me izbaciti van, gledajuci me u oci, fino, mirnim tonom kao da pita kolko je sati;negative;negative;True
+multilingual BERT TRAIN;472_1;I za dotičnu doktoricu mr sc dr br i njezinu sestru također dijelim isto negativno mišljenje kao i većina Vas.;negative;negative;True
+multilingual BERT TRAIN;472_2;Izrazito neljubazna, nesusretljiva, bahata i bezobrazna.;negative;negative;True
+multilingual BERT TRAIN;472_3;Naručeni smo bili jednom nismo obavili ništa, dijagnoza je stres kao i u večine današnjih bolesti.;negative;negative;True
+multilingual BERT TRAIN;472_4;Nikad više kod nje nećemo ići.;negative;negative;True
+multilingual BERT TRAIN;472_5;Nije ni čudo što ima loše ocijene.;negative;negative;True
+multilingual BERT TRAIN;472_6;Ne znam da li ovo netko čita i da li ovo šta znači, ali bilo bi dobro da se provjeri sa nekim tajnim bolesnicima, kao što imaju i tajni kupci.;negative;neutral;False
+multilingual BERT TRAIN;472_7;Unaprijed zahvaljujem barem na tome što imam gdje napisati mišljenje, koje će nadam se isto tako nekome pomoći da kod nje jednostavno ne ide.;positive;negative;False
+multilingual BERT TRAIN;477_1;Kod doktorice sam bio nekoliko puta u zadnjih 5 godina, kao i još neki poznanici i svi dijele mišljenje sa mnom, a to je: Doktorica Tajana Marinović-Remetić je najbezobraznija pripadnica medicinskog osoblja koju sam ikada upoznao.;negative;negative;True
+multilingual BERT TRAIN;477_2;"Ne objašnjava, ne priča i napravi ""dovoljni minimum"" posla.";negative;negative;True
+multilingual BERT TRAIN;477_3;Cijelo vrijeme se postavlja uzvišeno i snishodljivo.;positive;negative;False
+multilingual BERT TRAIN;477_4;"Kada je se nešto pita, daje minimalni odgovor, a zapravo taj njezin odgovor ne rješava ništa jer često zvuči ovako: ""A što vi mislite kako to možete spriječiti?";negative;negative;True
+multilingual BERT TRAIN;477_5;""" i onda morate pogađati što ona misli pa onda odgovara ""To vam ja nisam rekla."", ""To vi znate."" i slično.";negative;negative;True
+multilingual BERT TRAIN;477_6;Zbog ovakvih doktora ljudi traže medicinska rješenja premo interneta.;negative;negative;True
+multilingual BERT TRAIN;477_7;I trebali bi jer ne savjetujem nikome da ide kod nje osim ako mora.;negative;negative;True
+multilingual BERT TRAIN;477_8;Osobno sam otišao samo zato jer točno znam što mi treba napraviti, znam što mogu očekivat i nema puno čekanja.;positive;neutral;False
+multilingual BERT TRAIN;477_9;Inače, ne bih joj nikada dopustio da radi neki postupak za koji i sam ne znam proces.;negative;negative;True
+multilingual BERT TRAIN;477_10;Ocjena: najgora doktorica ikada;negative;negative;True
+multilingual BERT TRAIN;485_1;sto ocekivati od doktora koji ti na iskazivanje problema,odgovori sa 'previse filozofirate i ajte doma'.;negative;negative;True
+multilingual BERT TRAIN;485_2;krajnje neprofesionalna i neljubazna lijecnica,koja se odnosi kao da smo na placu a ne u ordinaciji.;negative;negative;True
+multilingual BERT TRAIN;485_3;slazem se sa time da bi se svakako trebalo provjeravati doktore koji se na ovaj nacin ponasaju prema pacijentima,i sankcionirati ih.;negative;negative;True
+multilingual BERT TRAIN;488_1;Nakon što sam se raspitala o doktorici Marinović-Remetić i njenoj ordinaciji i nakon što sam proguglala malo, gotovo da me je bilo strah otići tamo.;positive;negative;False
+multilingual BERT TRAIN;488_2;Očekivala sam da će me i na naručivanju telefonski sestra sprašiti i da ću odustati od svega toga.;positive;negative;False
+multilingual BERT TRAIN;488_3;No.;neutral;neutral;True
+multilingual BERT TRAIN;488_4;sve je ispalo drugačije, sestra je bila doista jako ljubazna, naručila sma se odmah, dobila svoj termin, tamo uopće nisam čekala i odmah sam bila na redu kad sam naručena.;positive;positive;True
+multilingual BERT TRAIN;488_5;Doktorica je vrlo izravna i prefesionalna.;positive;positive;True
+multilingual BERT TRAIN;488_6;Nema nikakvog okolišanja, što ni ne očekujem od doktora, sve mi je direktno objasnila, dala terapiju.;positive;positive;True
+multilingual BERT TRAIN;488_7;Ordinaciju sam posjećivala nekoliko tjedana i nikad nisam imala nikakvu neugodnost.;positive;positive;True
+multilingual BERT TRAIN;488_8;Nakon svega toga, sigurna sam da ako ikad zatrebam dermatologa uopće se neću dvoumiti, otići ću tamo!;positive;positive;True
+multilingual BERT TRAIN;499_1;Samo riječi hvale za sve.;positive;positive;True
+multilingual BERT TRAIN;499_2;Hvala puno na trudu i da Vam dragi BOG podari puno sretnih i uspješnih godina rada.;positive;positive;True
+multilingual BERT TRAIN;499_3;A na prvom mjestu puno zdravlja i dobrih i pozitivnih pacijenata.;positive;positive;True
+multilingual BERT TRAIN;500_1;Izvrsna poliklinika, jako profesionalni, efikasni i simpatični fizijatri i fizioterapeuti.;positive;positive;True
+multilingual BERT TRAIN;500_2;Za svaku preporuku.;positive;positive;True
+multilingual BERT TRAIN;503_1;Tražio sam termin za pregled fizijatra preko uputnice HZZO-a od više poliklinika.;neutral;neutral;True
+multilingual BERT TRAIN;503_2;Od svih poliklinika, osim poliklinike dr. Nekić, dobio sam normalne odgovore i ponudu termina za pregled u roku od mjesec dana.;positive;neutral;False
+multilingual BERT TRAIN;503_3;"Samo dr. Nekić odgovara da se pregled fizijatra preko uputnice ""čeka mjesecima"" i nudi plaćeni pregled za 80 eura u roku od par dana.";negative;negative;True
+multilingual BERT TRAIN;503_4;"Nakon što sam rekao da ne želim plaćeni pregled, nego preko uputnice i da mi daju predviđeni termin, termin opet nisam dobio, nego sam stavljen na ""listu čekanja"" bez vremenskog okvira kada bih dobio termin za pregled fizijatra.";negative;negative;True
+multilingual BERT TRAIN;503_5;Sramotno i neetično ponašanje.;negative;negative;True
+multilingual BERT TRAIN;503_6;Pregled sam na kraju obavio u drugoj poliklinici na uputnicu i u roku od 24 dana od dana kada sam tražio pregled.;neutral;positive;False
+multilingual BERT TRAIN;509_1;Doktorica će vam objasniti sve mogućnosti, savjetovati što misli da je najbolje za vas ali vas neće forsirati u određenom smjeru i omalovažavati, kao što to hrvatski liječnici imaju tendenciju činiti.;positive;positive;True
+multilingual BERT TRAIN;509_2;Kao osoba topla, pristupačna,strpljiva, kao liječnik stručna.;positive;positive;True
+multilingual BERT TRAIN;511_1;Preporučujem dr. Nekić koja je izuzetno stručna i ljubazna i odličan dijagnostičar.;positive;positive;True
+multilingual BERT TRAIN;511_2;Sve djelatnice su vrlo ljubazne, pažljive i vrlo stručan tim.;positive;positive;True
+multilingual BERT TRAIN;511_3;Veliko hvala svima!;positive;positive;True
+multilingual BERT TRAIN;515_1;Na preporuku prijatelja liječnika došla sam kod gđe dr. Nekić zbog izuzetno bolnog ramena.;neutral;neutral;True
+multilingual BERT TRAIN;515_2;Prije desetak godina sam imala istu dijagnozu na drugom ramentu te sam kod dr Nekić došla s prijašnjim iskustvom dugotrajnog i jako bolnog liječenja.;neutral;neutral;True
+multilingual BERT TRAIN;515_3;Na moje iznenađenje dr Nekić je složila tretman po svojoj metodologiji, te je bol popustila u kratko vremenu.;positive;positive;True
+multilingual BERT TRAIN;515_4;Terapija je izvrsna, funkcija ramena mi se potpuno vratila i nema boli.;positive;positive;True
+multilingual BERT TRAIN;515_5;Osim izuzetno profesionalnog pristupa i stručnosti, dr Nekić je i izuzetna ŽENA puna duha i životne mudrosti!;positive;positive;True
+multilingual BERT TRAIN;519_1;Pohvala za rad u poliklinici, za vaše osoblje.;positive;positive;True
+multilingual BERT TRAIN;519_2;Vrlo rado se vraćam i dolazim već deset godina.;positive;positive;True
+multilingual BERT TRAIN;519_3;Veliko hvala za vašu stručnost te brigu o našem zdravlju jer ono nam je najvažnije.;positive;positive;True
+multilingual BERT TRAIN;519_4;Želim vam uspješnu godinu i sve ostale godine koje ćemo se s radošću viđati.;positive;positive;True
+multilingual BERT TRAIN;521_1;Poštovani i cijenjeni, Ne znam koju riječ da upotrijebim za vaše osoblje, takvu uslugu, ljubaznost duge godine nigdje nisam doživjela.;positive;positive;True
+multilingual BERT TRAIN;521_2;Zahvaljujem se svima od doktorice do sestara.;positive;positive;True
+multilingual BERT TRAIN;521_3;Predivni ste, hvala na svemu.;positive;positive;True
+multilingual BERT TRAIN;523_1;Prvi ciklus gotov.;positive;neutral;False
+multilingual BERT TRAIN;523_2;Dojmovi pozitivni.;positive;positive;True
+multilingual BERT TRAIN;523_3;Osoblje izuzetno profesionalno i ljubazno kao i njhova šefica dr Nekić.;positive;positive;True
+multilingual BERT TRAIN;523_4;Sve pohvale!;positive;positive;True
+multilingual BERT TRAIN;531_1;Svakako preporučam doktoricu,.;positive;positive;True
+multilingual BERT TRAIN;531_2;Za nju se može reći da je doktorica stvarno pogodila svoju profesiju jer je stručna i detaljna u svojem poslu!;positive;positive;True
+multilingual BERT TRAIN;533_1;Doktorica je jedna izuzeztno smirena i stručna osoba koja mi je pomogla u mnogim mojim problemima sa zdravljem!;positive;positive;True
+multilingual BERT TRAIN;535_1;Jako je ljubazna i stručna, nježna kod pretraga i sistematična, baš se vidi da voli svoj posao.;positive;positive;True
+multilingual BERT TRAIN;535_2;Oduševio me njezin srdačni pristup i energičnost.;positive;positive;True
+multilingual BERT TRAIN;535_3;Imam samo rijeci hvale za Dr. Nekić!;positive;positive;True
+multilingual BERT TRAIN;541_1;Došao kod dr. Nekić na pregled sa uputnicom.;neutral;neutral;True
+multilingual BERT TRAIN;541_2;Rekao dr. Nekić da sam se odlučio ljeciti kod nje radi dobrih komentara i ocjena na ovom portalu.;neutral;positive;False
+multilingual BERT TRAIN;541_3;Prvo sto je rekla da su rezultati najbolji ako se ide bez uputnice.;negative;negative;True
+multilingual BERT TRAIN;541_4;Ne sumljam u njenu kvalitetu ali ljudi plitkog džepa neka razmisle!;negative;neutral;False
+multilingual BERT TRAIN;545_1;Kao i ostali na ovom mjestu osjećam potrebu iskazati zahvalnost doktorici Nekić te pohvaliti njen pristup poslu i ophođenje s pacijentima, a što je najvažnije veliku stručnost koja je rezultat posvećenosti svome poslu.;positive;positive;True
+multilingual BERT TRAIN;545_2;S obzirom da sam već bila čula pohvale na račun doktorice, imala sam određena očekivanja ali su ona bila nadmašena.;positive;positive;True
+multilingual BERT TRAIN;545_3;Već kod tog prvog pregleda doktorica Nekić me oslobodila nelagodnog osjećaja i povremeno boli u kuku koju sam osjećala kroz duži period.;negative;positive;False
+multilingual BERT TRAIN;545_4;Od tada je prošlo već par tjedana a poboljšanje stanja traje.;positive;positive;True
+multilingual BERT TRAIN;545_5;Još jednom sve pohvale za profesionalan i stručan pristup doktorice i njenog tima.;positive;positive;True
+multilingual BERT TRAIN;548_1;"Sve pohvale za dr. Nekić i njeno ljubazno osoblje; prvo želim istaknuti toliko željenu kvalitetu kod doktora, a tako rijetku u praksi, a to je empatija i neka smirenost bez imalo pretencioznosti i pompoznosti često doživljene kod drugih doktora.";positive;positive;True
+multilingual BERT TRAIN;548_2;Preporučam kod pacijenata s vertigom ili nestabilnošću, samo pri pregledu već je bilo jasno da barem dio problema leži u vratnom dijelu, nakon pregleda slijedilo je trenutno olakšanje, čovjek to jedino može opisati riječima:magične ruke.;positive;positive;True
+multilingual BERT TRAIN;548_3;Vertigo i/ili nestabilnost u hodu i sjedenju/ležanju događaju se mnogima i barem u mom slučaju, nakon mnogo vremena i pretraga, naletjela sam na dr Nekić koja mi je dala nadu i vrlo stručno odradila pregled vratne kralježnice.;positive;positive;True
+multilingual BERT TRAIN;548_4;Uistinu same pohvale.;positive;positive;True
+multilingual BERT TRAIN;554_1;Doktorica je vrlo stručna i susretljiva.;positive;positive;True
+multilingual BERT TRAIN;554_2;U mojem slučaju od nemogućeg je napravila čudo!;positive;positive;True
+multilingual BERT TRAIN;556_1;Kod dr. Nekić sam liječila sam se 2006.i 2007.;neutral;neutral;True
+multilingual BERT TRAIN;556_2;Ostala mi je u sjećanju kao vrstan fizijatar, koji ima dovoljno vremena i strpljenja objasniti pacijentu sve što ga zanima.;positive;positive;True
+multilingual BERT TRAIN;558_1;Hvala lijepa .;positive;positive;True
+multilingual BERT TRAIN;558_2;Pohvala potiče čovjeka da u svakom trenutku bude bolji.;positive;neutral;False
+multilingual BERT TRAIN;558_3;Sretno i dobro zdravlja.;positive;positive;True
+multilingual BERT TRAIN;558_4;dr Nekic;neutral;neutral;True
+multilingual BERT TRAIN;563_1;Dr. Nekić je izuzetno stručna doktorica fizikalne medicine, ali i izuzetno pozitivna kao osoba.;positive;positive;True
+multilingual BERT TRAIN;563_2;Maksimalo se trudi da pomogne i olakša boli kod svakog pojedinačnog problema.;positive;positive;True
+multilingual BERT TRAIN;563_3;Uz stručnost svakako bih napomenula vrhunsku pristupačnost svakom pacijentu.;positive;positive;True
+multilingual BERT TRAIN;563_4;Uz doktoricu je stručan i iskusan tim, izuzetno dobro uigrana ekipa Ako razmišljate kome fizijatru krenuti za rješenje problema mišićno-koštanog sustava, onda je to sigurno dr. Nekić;positive;positive;True
+multilingual BERT TRAIN;565_1;Doktorica Nekić je jedna od najboljih i najiskusnijih fizijatara na ovom području.;positive;positive;True
+multilingual BERT TRAIN;565_2;Ako vam itko može pomoći da riješite problem to je ona.;negative;positive;False
+multilingual BERT TRAIN;565_3;Ako ste kao ja da više nema mogućnosti trajnog izlječenja, terapija i upute doktorice Nekić će vas dovesti u najbolje moguće stanje s obzirom na situaciju u kojoj se nalazite.;positive;positive;True
+multilingual BERT TRAIN;570_1;Svakome bih preporučila dr. Blaženku Nekić: stručna, odličan dijagnostičar, pažljivo sluša i sve objasni pacijentu, ima odlično opremljenu ordinaciju, temeljita, strpljiva, puna je blagosti i suosjećanja, etična,.;positive;positive;True
+multilingual BERT TRAIN;570_2;ima izuzetno ljubazne i dobro obučene fizioterapeute.;positive;positive;True
+multilingual BERT TRAIN;570_3;Po svemu zaslužuje da bude najdoktor.;positive;positive;True
+multilingual BERT TRAIN;570_4;Zahvaljujući dr. Blaženki Nekić i njezinom osoblju, njihovoj stručnosti, profesionalnosti, osposobljenosti i dugogodišnjem iskustvu danas moj sin opet hoda samostalno uz pomoć samo jedne podlaktne štake, a očekujemo da će daljnjim terapijama kod doktorice Nekić opet samostalno hodati.;positive;positive;True
+multilingual BERT TRAIN;570_5;Nakon ozljede vratne kralješnice (prijelom C6 kralješka i nagnječenje leđne moždine) i oporavka u Varaždinskim toplicama iz kojih je izašao uz jako otežano i ograničeno kretanje, te vidljiv poremećaj ravnoteže, nastavili smo njegovu rehabilitaciju kod dr. Blaženke Nekić.;neutral;neutral;True
+multilingual BERT TRAIN;570_6;Sada poslije tri mjeseca uzastopnih terapija moj sin se i dalje oporavlja, te očekujemo da će uz daljnje terapije i do sada dobre terapijske rezultate prohodati samostalno kao prije sve zahvaljujući profesionalnosti vrhunskom timu koji okuplja dr. Nekić.;positive;positive;True
+multilingual BERT TRAIN;572_1;Nemam rijeći kojima bih pohvalio rad doktorice Nekić i njezinog osoblja.;positive;positive;True
+multilingual BERT TRAIN;572_2;Od samog prijema, brzog naručivanja, pregleda do fizikalne obrade.;positive;positive;True
+multilingual BERT TRAIN;572_3;Sve za 5+.;positive;positive;True
+multilingual BERT TRAIN;572_4;Stručno, strpljivo, ljubazno i uvijek pristupačni svakom pacijentu.;positive;positive;True
+multilingual BERT TRAIN;577_1;"izvrstan liječnik, detaljan i brz pregled, bez previše nepotrebnih riječi sve bitno izrečeno; dobra organizacija i stručnost osoblja.";positive;positive;True
+multilingual BERT TRAIN;578_1;rije svega mi je žao što moram ostavljati ovakav komentar, ali ne želim da drugi ljudi potroše hrpu novaca, barem ne kod nekoga tko im neće apsolutno nikako pomoći, a da im se na kraju dogodi isto što i meni.;negative;negative;True
+multilingual BERT TRAIN;578_2;Naime, u 05/2018 sam posjetila doktora Mijića.;neutral;neutral;True
+multilingual BERT TRAIN;578_3;Imala sam tegobe i bolove u desnoj ruci i nisam mogla raditi od bolova.;positive;neutral;False
+multilingual BERT TRAIN;578_4;Doktora su moji simptomi asocirali na artritis (iako su isto tako bili slični simptomima karpalnog kanala- koji nitko nije spomenuo niti tražio pretrage za njega), te me uputio napraviti neke krvne pretrage koje nisu bile nimalo jeftine i dao mi je terapiju (koju sam naravno odradila kod njih I DOBRO PLATILA).;negative;neutral;False
+multilingual BERT TRAIN;578_5;Kada sam mu donijela krvne nalaze, nije mi ih uopće rastumačio, nego je sve ostalo negdje ''visiti'' u zraku, tako da nisam znala imam li ili nemam artritis.;negative;negative;True
+multilingual BERT TRAIN;578_6;Odradila sam terapije koje mi na kraju nisu pomogle (na što mi doktor nije ništa rekao, ni komentirao, a ja sam si mislila ok , shvaćam, jer ipak je to artritis, pa kao nema neke pomoći.;negative;negative;True
+multilingual BERT TRAIN;578_7;S obzirom da sam tada imala 25, ne želim ni spominjati kako je moje psihičko stanje od straha da u tim godinama imam takvu dijagnozu bilo.;negative;negative;True
+multilingual BERT TRAIN;578_8;Naravno da postoje i gore stvari, ali nije stvar u tome, nego u tome što me netko isprepadao , nije obavio posao do kraja i na kraju uzeo novac.;negative;negative;True
+multilingual BERT TRAIN;578_9;S obzirom da sam poslije doktora Mijića obišla još neke doktore, poslali su me da napravim MR šake i prstiju te HLA A I B I LOKUS pretrage po kojima se ustanovilo (kažem hvala Bogu) da nemam artritis.;positive;neutral;False
+multilingual BERT TRAIN;578_10;U međuvremenu sam shvatila da bi trebala potražiti pomoć od drugih doktora, jer spomenuti doktor nije po mome mišljenju (nisam stručna osoba i ne želim se miješati u tuđi posao- ali slijedi potvrda moga mišljenja) i mišljenju drugih doktora u istoj struci obavio posao kako treba, čak su se i zgražali na dijagnozu koju je postavio, a na kraju je nije ni potvrdio, a ni negirao.;negative;negative;True
+multilingual BERT TRAIN;578_11;Doktor je osoba koja Vas treba saslušati i dobro preispitati i uputiti na daljnje pretrage kako bi mogao postaviti točnu dijagnozu, pogotovo još ako je privatnik i ima svoju paprenu cijenu za to.;positive;neutral;False
+multilingual BERT TRAIN;578_12;Također se radi o tome da se vidi kada je nekome stalo samo i isključivo do novaca, a kada netko radi svoj posao s ljubavlju i prije svega da pomogne onome tko je pomoć došao tražiti.;positive;neutral;False
+multilingual BERT TRAIN;578_13;Drago mi je vidjeti da je ipak bilo i zadovoljnih ljudi iz čega ne mogu i ne želim tvrditi da je doktor u potpunosti pogrešan, ali opet , pitanje je tko je ostavljao recenzije i za koje dijagnoze.;negative;mixed;False
+multilingual BERT TRAIN;578_14;S obzirom na pogrešnu dijagnozu, ja sam u trenutcima kada nisam osjećala bolove nastavljala raditi i dovela se do kroničnog stanja upale karpalnog kanala za koji doktorica s velikim iskustvom koja mi je radila EMNG rekla da viđa samo u starijih ljudi.;positive;negative;False
+multilingual BERT TRAIN;578_15;Sindrom je potvrđen na obje ruke i smatram da je doktor u samom startu odradio dobar posao da bi vjerojatno prošla samo s terapijama bez operacije i naravno da ne kažem bez koliko bolovanja i nemogućnosti rada.;negative;negative;True
+multilingual BERT TRAIN;578_16;Svrha ovog komentara je da se doktor malo više posveti postavljanju dijagnoze kako se ovakvi slučajevi;negative;negative;True
+multilingual BERT TRAIN;580_1;Doktor Mijic je samo jedan u nizu osrednjih fizijatara s prosjecnim znanjem i daleko ispodprosjecnim osjecajem za pacijenta.;positive;negative;False
+multilingual BERT TRAIN;580_2;Njegov jedini cilj je pobrati sto je vise moguce novaca od pacijenata, a za te novce nece vam ponuditi ama bas nikakvu posebnu uslugu.;negative;negative;True
+multilingual BERT TRAIN;580_3;Uz to, strasno je bezobrazan i prepotentan i u stanju je vrijedati pacijente ukoliko mu se usude postaviti kakvo pitanje.;negative;negative;True
+multilingual BERT TRAIN;580_4;Lose, lose, lose;negative;negative;True
+multilingual BERT TRAIN;583_1;Doktor mi je izrazito pomogao u liječenju reumatskog artritisa nakon što sam dugo vremena bolovola i ništa mi nije pomagalo.;positive;positive;True
+multilingual BERT TRAIN;583_2;Nako fizikalne terapije i prepisanih lijekova osjećam se mnogo bolje i iskreno sam zahvalna na svom trudu zahvaljujući kojemu su tegobe znatno smanjene.;positive;positive;True
+multilingual BERT TRAIN;583_3;Unatoč mojim poodmaklim godinama, mogu reći da mi je bolje.;positive;positive;True
+multilingual BERT TRAIN;583_4;Velika pohvala čitavom timu u Faktoru zdravlja koji se prema svakom pacijentu odnosi s posebnom ljubaznošću i njegom.;positive;positive;True
+multilingual BERT TRAIN;583_5;Preporučila bih doktora i njegovu polikliniku svakome!;positive;positive;True
+multilingual BERT TRAIN;593_1;Izuzetno ljubazan, stručan, tolerantan, objasni sve što ga se zamoli i to nekoliko puta ako treba.;positive;positive;True
+multilingual BERT TRAIN;593_2;Svaka pohvala i zahvala.;positive;positive;True
+multilingual BERT TRAIN;599_1;Od 20 minuta provedenih u ordinaciji s doktorom on je 10-tak minuta bio na telefonu.;neutral;negative;False
+multilingual BERT TRAIN;599_2;Vrlo površno odradio pregled.;positive;negative;False
+multilingual BERT TRAIN;599_3;Tri puta je štampao nalaz jer je zaboravio zašto sam uopće došla.;negative;negative;True
+multilingual BERT TRAIN;599_4;Žao mi je što nisam napustila ordinaciju kada sam shvatila da je indisponiran za rad.;negative;negative;True
+multilingual BERT TRAIN;600_1;Doktor Marušić je veliki čovjek i veliki stručnjak.;positive;positive;True
+multilingual BERT TRAIN;600_2;Susretljiv svaki puta i nikada ne odbija pomoći.;positive;positive;True
+multilingual BERT TRAIN;600_3;Prema svima pacijentima prilazi srdačno i susretljivo.;positive;positive;True
+multilingual BERT TRAIN;600_4;Kada dolazite na pretrage ne trebate se bojati jer zna svoj posao i zna kako pomoći čovjeku.;positive;positive;True
+multilingual BERT TRAIN;600_5;Veliko mu hvala za sve !;positive;positive;True
+multilingual BERT TRAIN;601_1;Sve same pohvale.;positive;positive;True
+multilingual BERT TRAIN;601_2;Odličan liječnik, još bolji čovjek!;positive;positive;True
+multilingual BERT TRAIN;625_1;Doktora znam još iz Instituta.;positive;neutral;False
+multilingual BERT TRAIN;625_2;Sada je operirao mojeg tatu.;neutral;neutral;True
+multilingual BERT TRAIN;625_3;Nemam dovoljno riječi zahvale, jednostavan, profesionalan, dostupan.;positive;positive;True
+multilingual BERT TRAIN;625_4;Ivana;neutral;neutral;True
+multilingual BERT TRAIN;626_1;Sjajna energija, sjajan pristup.;positive;positive;True
+multilingual BERT TRAIN;626_2;Operacija odrađena bez straha, ulijeva povjerenje.;positive;positive;True
+multilingual BERT TRAIN;626_3;U bolnici bio samo dva dana.;neutral;positive;False
+multilingual BERT TRAIN;626_4;Velika Hvala.;positive;positive;True
+multilingual BERT TRAIN;632_1;Doktor je prije svega susretljiv, nasmijan, pozitivnog stava i od samog početka ulijeva povjerenje.;positive;positive;True
+multilingual BERT TRAIN;632_2;S pacijentom se odnosi vrlo profesionalno, a opet je vrlo pristupačan.;positive;positive;True
+multilingual BERT TRAIN;632_3;Mislim da je ono što radi njegov poziv a ne zanimanje.;negative;positive;False
+multilingual BERT TRAIN;632_4;Sve u svemu, same pohvale.;positive;positive;True
+multilingual BERT TRAIN;632_5;B.;neutral;neutral;True
+multilingual BERT TRAIN;635_1;Lijecnik koji zna i voli svoj posao.;positive;positive;True
+multilingual BERT TRAIN;635_2;Pacijentu prilazi spuno truda i paznje .;positive;positive;True
+multilingual BERT TRAIN;635_3;Mene je operirao dok je radio na klinici za tumore 2017 (zlocudni tumor epiglotisa na grlu)tamo je osoblje za svaku pohvalu.;positive;positive;True
+multilingual BERT TRAIN;635_4;Operacija i oporavak sve super proslo,redovno se kontroliram kod njega.;positive;positive;True
+multilingual BERT TRAIN;635_5;Kad se covjek razboli i susretne s malignom bolesti onda je sreca kad dobijete tako dobrog kirurga ulijeva povjerenje .;positive;positive;True
+multilingual BERT TRAIN;635_6;Doktor kojeg bi svakom preporucila a njemu zahvalila na svemu sto je ucinio za mene.;positive;positive;True
+multilingual BERT TRAIN;636_1;Dobar je mali, ima perspektive, još je mlad, ali u njemu ima potencijala.;negative;positive;False
+multilingual BERT TRAIN;636_2;Da li je pristojan , ljubazan, to me uopće ne zanima.;negative;neutral;False
+multilingual BERT TRAIN;636_3;Važno je da zna svoj posao kirurga dobro,,bit će nešto od njega.;negative;positive;False
+multilingual BERT TRAIN;638_1;Imam potrebu pohvaliti dr. Krešimira Gršića kao i svo osoblje Klinike za tumore jer su jedan tako stresan događaj kao što je boravak u bolnici i operativni zahvat učinili ugodnim.;positive;positive;True
+multilingual BERT TRAIN;638_2;Operirana sam prošle godine u ovo vrijeme (uklanjanje jednog režnja štitnjače).;neutral;neutral;True
+multilingual BERT TRAIN;638_3;Sama operacija je protekla izvrsno kao i oporavak nakon operacije.;positive;positive;True
+multilingual BERT TRAIN;638_4;Nikakve bolove nisam imala, doktor je bio na raspolaganju, pojasnio je sve što me zanimalo i zahvalna sam za takav odnos i susretljivost kao i za savršeno izvedenu operaciju (ožiljak se gotovo i ne primjećuje više).;positive;positive;True
+multilingual BERT TRAIN;638_5;Svim budućim pacijentima preporučam dr. Gršića a njemu se još jednom zahvaljujem na profesionalnom ali i toplom pristupu pacijentima.;positive;positive;True
+multilingual BERT TRAIN;639_1;Doktor Gršić je stručan, izrazito ljubazan i susretljiv doktor.;positive;positive;True
+multilingual BERT TRAIN;639_2;Pored takvog doktora i ostalog medicinskog osoblja vrijeme provedeno u bolnici je vrlo ugodno.;positive;positive;True
+multilingual BERT TRAIN;639_3;Hvala!;positive;positive;True
+multilingual BERT TRAIN;645_1;U srpnju 2017 g., dr. Krešimir Gršić, operirao mi je štitnjaču.;neutral;neutral;True
+multilingual BERT TRAIN;645_2;Zahvat je prošao bez komplikacija, postoperativni oporavak teče uredno.;positive;positive;True
+multilingual BERT TRAIN;645_3;Želim pohvaliti dr. Krešimira Gršića jer je stvarno stručan, profesionalan i čovjek koji se posveti pacijentu s puno pažnje i razumijevanja.;positive;positive;True
+multilingual BERT TRAIN;645_4;Njegova briga za pacijenta daje sigurnost koja je neprocjenjiva kad je čovjek u bolnici.;positive;positive;True
+multilingual BERT TRAIN;645_5;Pohvalila bih i osoblje KBC-a sestre milosrdnice, Klinike za tumore, odjel Otorinolaringologije, glavnu sestru Snježanu.;positive;positive;True
+multilingual BERT TRAIN;645_6;Svi su vrlo ljubazni i susretljivi.;positive;positive;True
+multilingual BERT TRAIN;645_7;Šteta što svi koji rade u zdravstvenim ustanovama nisu takvi.;positive;positive;True
+multilingual BERT TRAIN;645_8;Još jednom hvala Vam doktore Gršić.;positive;positive;True
+multilingual BERT TRAIN;645_9;Ljiljana iz Splita;neutral;neutral;True
+multilingual BERT TRAIN;652_1;Godinama se liječim zbog tumora dojke.;neutral;neutral;True
+multilingual BERT TRAIN;652_2;Nakon kemoterapije imala sam operaciju čvorova na vratu.;neutral;neutral;True
+multilingual BERT TRAIN;652_3;Susretljivost i razumijevanje doktora na Institutu bio je za svaku pohvalu.;positive;positive;True
+multilingual BERT TRAIN;652_4;Godinu dana iza operacije i redovite kontrole bolesti nema.;positive;positive;True
+multilingual BERT TRAIN;652_5;Zahvalna bolesnica iz Zagreba.;positive;positive;True
+multilingual BERT TRAIN;654_1;Puhvale za mladog doktora.;positive;positive;True
+multilingual BERT TRAIN;654_2;Na prvom pregledu u ambulanti je do najsitnijeg detalja objasni tok operacije i što se može očekivati nakon nje.;positive;positive;True
+multilingual BERT TRAIN;654_3;Ostali smo u šoku, jer prognoza nije bila baš optimistična.;negative;neutral;False
+multilingual BERT TRAIN;654_4;Zatim je doktor na računalu pokazao primjere sličnih operacija i tada smo shvatili da na kraju i nije sve tako strašno kao što je zvučalo.;negative;positive;False
+multilingual BERT TRAIN;656_1;Dr. Grsic je lijecio vise clanova moje obitelji.;positive;neutral;False
+multilingual BERT TRAIN;656_2;Vrlo profesionalan,strucan,sve detaljno objasni,, a nadasve odlican operater.;positive;positive;True
+multilingual BERT TRAIN;656_3;Za svaku preporuku.;positive;positive;True
+multilingual BERT TRAIN;668_1;Izrazito profesionalan i ljubazan liječnik.;positive;positive;True
+multilingual BERT TRAIN;668_2;Ima strpljenja i sluha za svakog pacijenta ponaosob, vrlo strpljiv i susretljiv.;positive;positive;True
+multilingual BERT TRAIN;668_3;Suprug i ja se liječimo godinama kog njega i za dr. Gršića imamo samo riječi hvale.;positive;positive;True
+multilingual BERT TRAIN;677_1;Mirela je sasvim solidna psihijatrica.;positive;positive;True
+multilingual BERT TRAIN;677_2;Ocjene i komentari oko tog da je osoblje užas mi naročito ne ulaze u glavu, jer su prema meni i više nego dobri, pošteni i uljudni.;positive;positive;True
+multilingual BERT TRAIN;677_3;Mirela je, barem prema meni, sasvim solidna psihijatrica.;positive;positive;True
+multilingual BERT TRAIN;677_4;Vrijeme čekanja zna biti katastrofalno, ali ostatak je skroz okej.;negative;mixed;False
