@@ -67,7 +67,7 @@ All five candidate labels were evaluated using a causal log-likelihood masked fo
 ---
 
 ## Confusion Matrices
-Test 1
+### Test 1
 |               | pred_positive | pred_negative | pred_neutral | pred_mixed | pred_sarcasm |
 |---------------|--------------:|--------------:|-------------:|-----------:|-------------:|
 | true_positive | 216 | 12 | 4  | 0 | 0 |
@@ -76,7 +76,7 @@ Test 1
 | true_mixed    | 0   | 1  | 0  | 1 | 0 |
 | true_sarcasm  | 0   | 0  | 0  | 0 | 0 |
 
-Test 2
+### Test 2
 
 |               | pred_positive | pred_negative | pred_neutral | pred_mixed | pred_sarcasm |
 |---------------|--------------:|--------------:|-------------:|-----------:|-------------:|
@@ -86,7 +86,7 @@ Test 2
 | true_mixed    | 10  | 8   | 7  | 0 | 0 |
 | true_sarcasm  | 3   | 2   | 1  | 0 | 0 |
 
-Test 3
+### Test 3
 
 |               | pred_positive | pred_negative | pred_neutral | pred_mixed | pred_sarcasm |
 |---------------|--------------:|--------------:|-------------:|-----------:|-------------:|
@@ -96,7 +96,7 @@ Test 3
 | true_mixed    | 4   | 9   | 1  | 2 | 0 |
 | true_sarcasm  | 1   | 0   | 0  | 0 | 0 |
 
-Test 4
+### Test 4
 
 |               | pred_positive | pred_negative | pred_neutral | pred_mixed | pred_sarcasm |
 |---------------|--------------:|--------------:|-------------:|-----------:|-------------:|
@@ -108,18 +108,18 @@ Test 4
 
 ---
 
-### Short Interpretation - comparison with BERTić
+## Short Interpretation - comparison with BERTić
 
 When comparing the two approaches for Croatian sentiment analysis, BERTić (Transformer) demonstrates overall superior performance compared to Gemma 3 1B (Instruction Fine-Tuning).  
 
-# Key Performance Comparison
+### Key Performance Comparison
 
 Test 1: BERTić wins significantly with an F1-score of 0.826 and Accuracy of 0.824, compared to Gemma's F1: 0.787 and Acc: 0.788.  
 Test 2: BERTić wins with an F1-score of 0.798 and Accuracy of 0.817, beating Gemma's F1: 0.780 and Acc: 0.800.  
 Test 3: BERTić wins with an F1-score of 0.866 and Accuracy of 0.877, outperforming Gemma's F1: 0.851 and Acc: 0.859.  
 Test 4: Both models perform comparably/almost identical, with Gemma showing a microscopic edge in F1-score (0.854 vs. 0.853) and BERTić slightly leading in Accuracy (0.855 vs 0.851).  
 
-# Conclusion
+### Conclusion
 
 BERTić is the preferred model. As a dedicated regional encoder-based transformer, it consistently manages the nuances of the Croatian language better across the board, whereas the smaller LLM (Gemma 3 1B), despite the advanced fixed-label scoring method, falls slightly short in generalization across the different test groups. 
 
