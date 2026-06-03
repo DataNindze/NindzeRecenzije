@@ -66,6 +66,48 @@ All five candidate labels were evaluated using a causal log-likelihood masked fo
 
 ---
 
+## Confusion Matrices
+Test 1
+|               | pred_positive | pred_negative | pred_neutral | pred_mixed | pred_sarcasm |
+|---------------|--------------:|--------------:|-------------:|-----------:|-------------:|
+| true_positive | 216 | 12 | 4  | 0 | 0 |
+| true_negative | 2   | 47 | 2  | 0 | 0 |
+| true_neutral  | 13  | 49 | 44 | 0 | 0 |
+| true_mixed    | 0   | 1  | 0  | 1 | 0 |
+| true_sarcasm  | 0   | 0  | 0  | 0 | 0 |
+
+Test 2
+
+|               | pred_positive | pred_negative | pred_neutral | pred_mixed | pred_sarcasm |
+|---------------|--------------:|--------------:|-------------:|-----------:|-------------:|
+| true_positive | 122 | 9   | 4  | 0 | 0 |
+| true_negative | 13  | 326 | 30 | 0 | 0 |
+| true_neutral  | 17  | 26  | 71 | 0 | 0 |
+| true_mixed    | 10  | 8   | 7  | 0 | 0 |
+| true_sarcasm  | 3   | 2   | 1  | 0 | 0 |
+
+Test 3
+
+|               | pred_positive | pred_negative | pred_neutral | pred_mixed | pred_sarcasm |
+|---------------|--------------:|--------------:|-------------:|-----------:|-------------:|
+| true_positive | 350 | 13 | 8  | 0 | 0 |
+| true_negative | 12  | 125 | 13 | 0 | 0 |
+| true_neutral  | 9   | 16  | 47 | 0 | 0 |
+| true_mixed    | 4   | 9   | 1  | 2 | 0 |
+| true_sarcasm  | 1   | 0   | 0  | 0 | 0 |
+
+Test 4
+
+|               | pred_positive | pred_negative | pred_neutral | pred_mixed | pred_sarcasm |
+|---------------|--------------:|--------------:|-------------:|-----------:|-------------:|
+| true_positive | 135 | 8  | 7  | 1 | 0 |
+| true_negative | 5   | 83 | 5  | 0 | 0 |
+| true_neutral  | 3   | 8  | 17 | 0 | 0 |
+| true_mixed    | 1   | 1  | 0  | 1 | 0 |
+| true_sarcasm  | 0   | 1  | 0  | 0 | 0 |
+
+---
+
 ## Hyperparameters
 
 | Parameter | Value |
