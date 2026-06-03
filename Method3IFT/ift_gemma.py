@@ -1,8 +1,10 @@
 import os
+import re
 import pandas as pd
 import torch
 import torch.nn.functional as F
 
+# Stabilizacija okruženja
 os.environ["TORCH_COMPILE_DISABLE"] = "1"
 os.environ["TORCHDYNAMO_DISABLE"] = "1"
 os.environ["UNSLOTH_COMPILE_DISABLE"] = "1"
@@ -12,30 +14,41 @@ from datasets import Dataset
 from sklearn.metrics import precision_score, recall_score, f1_score, accuracy_score, confusion_matrix
 from unsloth import FastLanguageModel
 from trl import SFTTrainer, SFTConfig
+from transformers import EarlyStoppingCallback
 
+# --- POSTAVKA UREĐAJA ---
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
+# --- DIREKTORIJI I DATOTEKE ---
 BASE_DIR = "."
-
 TRAIN_FILE = os.path.join(BASE_DIR, "TRAIN.csv")
 VALIDATION_FILE = os.path.join(BASE_DIR, "VALIDATION.csv")
-TEST_FILE = os.path.join(BASE_DIR, "test_3.csv")
+
+# Definicija svih testnih datoteka
+TEST_FILES = {
+    "Test 1": os.path.join(BASE_DIR, "test_1.xlsx"),
+    "Test 2": os.path.join(BASE_DIR, "test_2.xlsx"),
+    "Test 3": os.path.join(BASE_DIR, "test_3.csv"),
+    "Test 4": os.path.join(BASE_DIR, "test_4.tsv")
+}
 
 MODEL_NAME = "unsloth/gemma-3-1b-it-unsloth-bnb-4bit"
 MODEL_SHORT_NAME = "gemma_3_1b_fixed_scoring"
 
 VALID_LABELS = ["positive", "negative", "neutral", "mixed", "sarcasm"]
 
-MAX_SEQ_LENGTH = 128
-EPOCHS = 2
-BATCH_SIZE = 8
-GRADIENT_ACCUMULATION_STEPS = 1
-LEARNING_RATE = 2e-5
+# --- HIPERPARAMETRI ---
+MAX_SEQ_LENGTH = 256           
+EPOCHS = 5                     # Early stopping kontrolira stvarni kraj (strpljenje = 3)
+BATCH_SIZE = 16                
+GRADIENT_ACCUMULATION_STEPS = 8 # Efektivni batch = 128 (16 * 8)
+LEARNING_RATE = 2e-4           
 WEIGHT_DECAY = 0.01
 RANDOM_SEED = 42
 
-MODEL_OUTPUT_DIR = os.path.join(BASE_DIR, "ift_models", "gemma_3_1b_fixed_scoring_test3")
-PREDICTIONS_DIR = os.path.join(BASE_DIR, "ift_predictions_gemma3_fixed_scoring_test3")
-CONFUSION_DIR = os.path.join(BASE_DIR, "ift_confusion_matrices_gemma3_fixed_scoring_test3")
+MODEL_OUTPUT_DIR = os.path.join(BASE_DIR, "ift_models", "gemma_3_1b_fixed_scoring_all_tests")
+PREDICTIONS_DIR = os.path.join(BASE_DIR, "ift_predictions_gemma3_fixed_scoring_all_tests")
+CONFUSION_DIR = os.path.join(BASE_DIR, "ift_confusion_matrices_gemma3_fixed_scoring_all_tests")
 
 os.makedirs(MODEL_OUTPUT_DIR, exist_ok=True)
 os.makedirs(PREDICTIONS_DIR, exist_ok=True)
@@ -44,19 +57,19 @@ os.makedirs(CONFUSION_DIR, exist_ok=True)
 
 def read_dataset(path):
     ext = os.path.splitext(path)[1].lower()
-
     if ext in [".xlsx", ".xls"]:
         df = pd.read_excel(path)
     elif ext == ".tsv":
         df = pd.read_csv(path, sep="\t", encoding="utf-8-sig", engine="python")
     elif ext == ".csv":
         try:
+            # Primarno čitamo s točka-zarezom (;) jer je to tvoj standard
             df = pd.read_csv(path, sep=";", encoding="utf-8-sig", engine="python")
         except Exception:
-            df = pd.read_csv(path, sep=",", encoding="utf-8-sig", engine="python")
+            # Ako ne uspije, probaj standardni zarez (,)
+            df = pd.read_csv(path, sep=",", encoding="utf-8-sig")
     else:
         raise ValueError(f"Unsupported file type: {path}")
-
     df.columns = df.columns.str.strip()
     df = df.loc[:, ~df.columns.str.contains("^Unnamed")]
     return df
@@ -64,7 +77,6 @@ def read_dataset(path):
 
 def clean_dataset(df):
     df = df.copy()
-
     df["text"] = (
         df["text"]
         .astype(str)
@@ -73,41 +85,41 @@ def clean_dataset(df):
         .str.replace(r"\s+", " ", regex=True)
         .str.strip()
     )
-
     df["label"] = df["label"].astype(str).str.strip().str.lower()
+    df["label"] = df["label"].replace("sarcastic", "sarcasm")
     df = df[df["label"].isin(VALID_LABELS)]
     df = df[df["text"].str.len() > 0]
-
     return df.reset_index(drop=True)
 
 
 def make_id(row):
     review_id = str(row.get("review_id", "")).replace(".0", "")
     sentence_id = str(row.get("sentence_id", "")).replace(".0", "")
-
     if review_id and sentence_id:
         return review_id + "_" + sentence_id
-
     return str(row.name)
 
 
+# --- NAPREDNA INSTRUKCIJA IZ EUROLLM KODA ---
+INSTRUCTION = (
+    "Odredi sentiment sljedeće hrvatske rečenice. "
+    "Odgovori isključivo jednom od oznaka: positive, negative, neutral, mixed, sarcasm."
+)
+
 def make_prompt(text):
-    return (
-        "Labels: positive, negative, neutral, mixed, sarcasm\n"
-        f"Sentence: {text}\n"
-        "Label:"
-    )
-
-
-def make_training_text(text, label, tokenizer):
-    return make_prompt(text) + " " + label + tokenizer.eos_token
+    messages = [
+        {"role": "user", "content": f"{INSTRUCTION}\n\nRečenica: {text}"},
+    ]
+    return messages
 
 
 def build_sft_dataset(df, tokenizer):
-    texts = [
-        make_training_text(row["text"], row["label"], tokenizer)
-        for _, row in df.iterrows()
-    ]
+    texts = []
+    for _, row in df.iterrows():
+        messages = make_prompt(row["text"])
+        messages.append({"role": "assistant", "content": row["label"]})
+        full_text = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False)
+        texts.append(full_text)
     return Dataset.from_dict({"text": texts})
 
 
@@ -129,26 +141,12 @@ def format_scores(scores):
     )
 
 
-print("CUDA available:", torch.cuda.is_available())
-if torch.cuda.is_available():
-    print("GPU:", torch.cuda.get_device_name(0))
-
+# Učitavanje podataka za trening i validaciju
+print("Učitavanje osnovnih skupova podataka...")
 train_df = clean_dataset(read_dataset(TRAIN_FILE))
 validation_df = clean_dataset(read_dataset(VALIDATION_FILE))
-test_df = clean_dataset(read_dataset(TEST_FILE))
 
-print("\nTRAIN rows:", len(train_df))
-print("VALIDATION rows:", len(validation_df))
-print("TEST 3 rows:", len(test_df))
-
-print("\nTRAIN label distribution:")
-print(train_df["label"].value_counts())
-
-print("\nTEST 3 label distribution:")
-print(test_df["label"].value_counts())
-
-print("\nModel:", MODEL_NAME)
-
+# Učitavanje modela i tokenizatora preko Unslotha
 model, tokenizer = FastLanguageModel.from_pretrained(
     model_name=MODEL_NAME,
     max_seq_length=MAX_SEQ_LENGTH,
@@ -159,26 +157,11 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 
-sample_text = "Doktorica je stručna, empatična i brižna."
-sample_training = make_training_text(sample_text, "positive", tokenizer)
-
-print("\n========== SAMPLE TRAIN TEXT ==========")
-print(sample_training)
-print("Contains label:", "positive" in sample_training)
-print("=======================================\n")
-
+# Konfiguracija LoRA adaptera
 model = FastLanguageModel.get_peft_model(
     model,
     r=16,
-    target_modules=[
-        "q_proj",
-        "k_proj",
-        "v_proj",
-        "o_proj",
-        "gate_proj",
-        "up_proj",
-        "down_proj",
-    ],
+    target_modules=["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
     lora_alpha=16,
     lora_dropout=0,
     bias="none",
@@ -189,30 +172,34 @@ model = FastLanguageModel.get_peft_model(
 train_dataset = build_sft_dataset(train_df, tokenizer)
 validation_dataset = build_sft_dataset(validation_df, tokenizer)
 
+# --- KONFIGURACIJA TRENINGA ---
 sft_args = SFTConfig(
     output_dir=MODEL_OUTPUT_DIR,
     dataset_text_field="text",
     max_seq_length=MAX_SEQ_LENGTH,
     packing=False,
-
     per_device_train_batch_size=BATCH_SIZE,
     per_device_eval_batch_size=BATCH_SIZE,
     gradient_accumulation_steps=GRADIENT_ACCUMULATION_STEPS,
-
     num_train_epochs=EPOCHS,
     learning_rate=LEARNING_RATE,
-    warmup_ratio=0.05,
+    warmup_ratio=0.03,              
     lr_scheduler_type="cosine",
     weight_decay=WEIGHT_DECAY,
-
-    logging_strategy="epoch",
-    eval_strategy="no",
-    save_strategy="no",
-    load_best_model_at_end=False,
-
+    logging_strategy="steps",
+    logging_steps=10,
+    eval_strategy="steps",           
+    eval_steps=20,                    
+    save_strategy="steps",           
+    save_steps=20,
+    save_total_limit=1,              
+    load_best_model_at_end=True,      
+    metric_for_best_model="eval_loss",
+    greater_is_better=False,
     fp16=not torch.cuda.is_bf16_supported(),
     bf16=torch.cuda.is_bf16_supported(),
-
+    dataloader_num_workers=0,
+    dataloader_pin_memory=True,
     report_to="none",
     seed=RANDOM_SEED,
 )
@@ -224,6 +211,7 @@ try:
         train_dataset=train_dataset,
         eval_dataset=validation_dataset,
         args=sft_args,
+        callbacks=[EarlyStoppingCallback(early_stopping_patience=3)],
     )
 except TypeError:
     trainer = SFTTrainer(
@@ -231,85 +219,67 @@ except TypeError:
         processing_class=tokenizer,
         train_dataset=train_dataset,
         eval_dataset=validation_dataset,
+        data_collator=data_collator,
         args=sft_args,
+        callbacks=[EarlyStoppingCallback(early_stopping_patience=3)],
     )
 
-print("\nStarting Gemma 3 1B fixed-label scoring IFT...")
+print("\nStarting Instruction Fine-Tuning...")
 trainer.train()
 
-print("\nSaving model...")
+print("\nSaving best model...")
 trainer.save_model(MODEL_OUTPUT_DIR)
 tokenizer.save_pretrained(MODEL_OUTPUT_DIR)
-print("Model saved to:", MODEL_OUTPUT_DIR)
-
 
 FastLanguageModel.for_inference(model)
 
 
+# --- OPTIMIZIRANI ROBUSTAN SCORING PROLAZ KROZ CHAT TEMPLATE ---
 def score_all_labels_batched(text):
-    prompt = make_prompt(text) + " "
-
-    prompt_inputs = tokenizer(
-        prompt,
-        return_tensors="pt",
-        truncation=True,
-        max_length=MAX_SEQ_LENGTH,
-        add_special_tokens=False,
-    )
-
+    prompt_messages = make_prompt(text)
+    prompt_text = tokenizer.apply_chat_template(prompt_messages, tokenize=False, add_generation_prompt=True)
+    
+    prompt_inputs = tokenizer(prompt_text, return_tensors="pt", add_special_tokens=False)
     prompt_len = prompt_inputs["input_ids"].shape[-1]
 
-    full_texts = [prompt + label for label in VALID_LABELS]
+    seq_losses = []
 
-    old_padding_side = tokenizer.padding_side
-    tokenizer.padding_side = "left"
+    for label in VALID_LABELS:
+        messages_with_label = make_prompt(text)
+        messages_with_label.append({"role": "assistant", "content": label})
+        
+        full_text = tokenizer.apply_chat_template(messages_with_label, tokenize=False, add_generation_prompt=False)
+        inputs = tokenizer(full_text, return_tensors="pt", add_special_tokens=False).to(DEVICE)
+        input_ids = inputs["input_ids"]
+        
+        labels_tokens = input_ids.clone()
+        labels_tokens[:, :prompt_len] = -100  # Maskiranje instrukcije i teksta rečenice
 
-    full_inputs = tokenizer(
-        full_texts,
-        return_tensors="pt",
-        padding=True,
-        truncation=True,
-        max_length=MAX_SEQ_LENGTH,
-        add_special_tokens=False,
-    ).to("cuda")
+        with torch.no_grad():
+            outputs = model(input_ids=input_ids)
+            logits = outputs.logits
+            
+        shift_logits = logits[:, :-1, :].contiguous()
+        shift_labels = labels_tokens[:, 1:].contiguous()
+        
+        vocab_size = shift_logits.size(-1)
+        token_losses = F.cross_entropy(
+            shift_logits.view(-1, vocab_size),
+            shift_labels.view(-1),
+            reduction="none",
+            ignore_index=-100,
+        )
+        
+        valid_loss_tokens = token_losses[shift_labels.view(-1) != -100]
+        if len(valid_loss_tokens) > 0:
+            loss = valid_loss_tokens.mean().item()
+        else:
+            loss = 999.0
+            
+        seq_losses.append(loss)
 
-    tokenizer.padding_side = old_padding_side
-
-    input_ids = full_inputs["input_ids"]
-    attention_mask = full_inputs["attention_mask"]
-
-    labels = input_ids.clone()
-
-    for i in range(len(VALID_LABELS)):
-        n_pad = (attention_mask[i] == 0).sum().item()
-        labels[i, :n_pad + prompt_len] = -100
-
-    with torch.no_grad():
-        outputs = model(input_ids=input_ids, attention_mask=attention_mask)
-
-    logits = outputs.logits
-
-    shift_logits = logits[:, :-1, :].contiguous()
-    shift_labels = labels[:, 1:].contiguous()
-
-    vocab_size = shift_logits.size(-1)
-
-    token_losses = F.cross_entropy(
-        shift_logits.view(-1, vocab_size),
-        shift_labels.view(-1),
-        reduction="none",
-        ignore_index=-100,
-    )
-
-    token_losses = token_losses.view(shift_labels.size())
-    valid_tokens = (shift_labels != -100).float()
-
-    seq_losses = token_losses.sum(dim=1) / valid_tokens.sum(dim=1).clamp(min=1)
-
-    return {
-        label: float(loss)
-        for label, loss in zip(VALID_LABELS, seq_losses)
-    }
+    del inputs, input_ids, outputs, logits, token_losses
+    return {label: float(loss) for label, loss in zip(VALID_LABELS, seq_losses)}
 
 
 def predict_one_fixed(text):
@@ -318,197 +288,167 @@ def predict_one_fixed(text):
     return predicted_label, str(scores)
 
 
-print("\nEvaluating: Test 3")
+# --- EVALUACIJSKA PETLJA ZA SVE TESTNE SKUPOVE ---
+results_for_markdown = []
 
-ids = []
-texts = []
-gold_labels = []
-pred_labels = []
-raw_outputs = []
+for test_name, test_path in TEST_FILES.items():
+    if not os.path.exists(test_path):
+        print(f"\nUpozorenje: {test_path} ne postoji. Preskačem {test_name}.")
+        continue
 
-for idx, row in test_df.iterrows():
-    if idx % 50 == 0:
-        print(f"Prediction {idx}/{len(test_df)}")
+    print(f"\nEvaluating: {test_name} ({os.path.basename(test_path)})")
+    test_df = clean_dataset(read_dataset(test_path))
+    
+    ids, texts, gold_labels, pred_labels, raw_outputs = [], [], [], [], []
 
-    predicted_label, raw_answer = predict_one_fixed(row["text"])
+    for idx, row in test_df.iterrows():
+        if idx % 50 == 0:
+            print(f"Prediction {idx}/{len(test_df)}")
 
-    ids.append(make_id(row))
-    texts.append(row["text"])
-    gold_labels.append(row["label"])
-    pred_labels.append(predicted_label)
-    raw_outputs.append(raw_answer)
+        predicted_label, raw_answer = predict_one_fixed(row["text"])
 
-scores = compute_scores(gold_labels, pred_labels)
-print("Test 3 ->", format_scores(scores))
+        ids.append(make_id(row))
+        texts.append(row["text"])
+        gold_labels.append(row["label"])
+        pred_labels.append(predicted_label)
+        raw_outputs.append(raw_answer)
 
-prediction_df = pd.DataFrame({
-    "model": "Gemma 3 1B IT fixed-label scoring IFT",
-    "id": ids,
-    "text": texts,
-    "predicted_label": pred_labels,
-    "original_label": gold_labels,
-    "a==b": [
-        pred == gold
-        for pred, gold in zip(pred_labels, gold_labels)
-    ],
-    "raw_output": raw_outputs,
-})
+    # Izračun metriki
+    scores = compute_scores(gold_labels, pred_labels)
+    formatted_score_str = format_scores(scores)
+    print(f"{test_name} -> {formatted_score_str}")
+    
+    # Dodavanje u listu za konačnu markdown tablicu
+    results_for_markdown.append({
+        "Test Set": test_name,
+        "File": os.path.basename(test_path),
+        "Scores": formatted_score_str
+    })
 
-prediction_path = os.path.join(
-    PREDICTIONS_DIR,
-    "gemma_3_1b_fixed_scoring_test_3_predictions.csv",
-)
+    # Spremanje datoteka za ovaj konkretni test
+    safe_name = test_name.lower().replace(" ", "_")
+    
+    prediction_df = pd.DataFrame({
+        "model": f"Gemma 3 1B IT - Advanced Fixed Scoring ({test_name})",
+        "id": ids,
+        "text": texts,
+        "predicted_label": pred_labels,
+        "original_label": gold_labels,
+        "a==b": [p == g for p, g in zip(pred_labels, gold_labels)],
+        "raw_output": raw_outputs,
+    })
 
-prediction_df.to_csv(
-    prediction_path,
-    index=False,
-    encoding="utf-8-sig",
-    sep=";",
-)
+    # 1. Sve predikcije (Spremanje s separatorom ;)
+    prediction_path = os.path.join(PREDICTIONS_DIR, f"gemma_3_1b_fixed_scoring_{safe_name}_predictions.csv")
+    prediction_df.to_csv(prediction_path, index=False, encoding="utf-8-sig", sep=";")
 
-errors_df = prediction_df[prediction_df["a==b"] == False]
+    # 2. Samo greške (Spremanje s separatorom ;)
+    errors_df = prediction_df[prediction_df["a==b"] == False]
+    errors_path = os.path.join(PREDICTIONS_DIR, f"gemma_3_1b_fixed_scoring_{safe_name}_errors_only.csv")
+    errors_df.to_csv(errors_path, index=False, encoding="utf-8-sig", sep=";")
 
-errors_path = os.path.join(
-    PREDICTIONS_DIR,
-    "gemma_3_1b_fixed_scoring_test_3_errors_only.csv",
-)
+    # 3. Matrica zabune (Spremanje s separatorom ;)
+    cm = confusion_matrix(gold_labels, pred_labels, labels=VALID_LABELS)
+    cm_df = pd.DataFrame(
+        cm,
+        index=[f"true_{label}" for label in VALID_LABELS],
+        columns=[f"pred_{label}" for label in VALID_LABELS],
+    )
+    cm_path = os.path.join(CONFUSION_DIR, f"gemma_3_1b_fixed_scoring_{safe_name}_confusion_matrix.csv")
+    cm_df.to_csv(cm_path, encoding="utf-8-sig", sep=";")
 
-errors_df.to_csv(
-    errors_path,
-    index=False,
-    encoding="utf-8-sig",
-    sep=";",
-)
 
-cm = confusion_matrix(
-    gold_labels,
-    pred_labels,
-    labels=VALID_LABELS,
-)
+# --- GENERIRANJE ZAJEDNIČKOG MARKDOWN IZVJEŠTAJA ---
+markdown_rows = []
+for idx, res in enumerate(results_for_markdown, start=1):
+    markdown_rows.append({
+        "#": f"3.{idx}",
+        "method": "IFT (Chat Template)",
+        "algorithm": "Gemma 3 1B IT",
+        "train": "TRAIN",
+        f"Evaluated Dataset ({res['Test Set']})": res["Scores"]
+    })
+markdown_table = pd.DataFrame(markdown_rows).to_markdown(index=False)
 
-cm_df = pd.DataFrame(
-    cm,
-    index=[f"true_{label}" for label in VALID_LABELS],
-    columns=[f"pred_{label}" for label in VALID_LABELS],
-)
+content = f"""# IFT Results - Gemma 3 1B Advanced Fixed-Label Scoring (All Tests)
 
-cm_path = os.path.join(
-    CONFUSION_DIR,
-    "gemma_3_1b_fixed_scoring_test_3_confusion_matrix.csv",
-)
-
-cm_df.to_csv(
-    cm_path,
-    encoding="utf-8-sig",
-    sep=";",
-)
-
-markdown_table = pd.DataFrame([{
-    "#": "3.c",
-    "method": "IFT",
-    "algorithm": "Gemma 3 1B IT",
-    "train": "TRAIN",
-    "Test 3: group 3 (OURS)": format_scores(scores),
-}]).to_markdown(index=False)
-
-content = f"""# IFT Results - Gemma 3 1B Fixed-Label Scoring
-
-## Task: Implementation 3.2 - Large Language Models / Instruction Fine-Tuning
+## Task: Multi-Dataset Evaluation with Instruction Fine-Tuning
 
 Model:
-
 - `{MODEL_NAME}`
 
 Training set:
-
 - TRAIN
 
 Validation set:
-
 - VALIDATION
 
-Prompt format:
-
+Prompt format (Chat Template):
 ```text
-Labels: positive, negative, neutral, mixed, sarcasm
-Sentence: ...
-Label: ...
-Training setup:
+<|im_start|>user
+{INSTRUCTION}
 
-Training was run for {EPOCHS} epochs.
+Rečenica: ...<|im_end|>
+<|im_start|>assistant
+...
+Training setup:
+Training was run for {EPOCHS} epochs s uključenim Early Stopping-om (patience=3).
 max_seq_length: {MAX_SEQ_LENGTH}
 batch_size: {BATCH_SIZE}
-gradient_accumulation_steps: {GRADIENT_ACCUMULATION_STEPS}
+gradient_accumulation_steps: {GRADIENT_ACCUMULATION_STEPS} (Efektivni batch: 128)
 learning_rate: {LEARNING_RATE}
-cosine scheduler and warmup were used.
-intermediate validation/checkpointing was disabled for stability.
+cosine scheduler and warmup (0.03) were used.
 
 Prediction method:
-
-Batched fixed-label scoring was used.
-All five candidate labels were scored in one batched forward pass.
-The label with the lowest loss was selected as the prediction.
+Batched fixed-label scoring unutar službenih chat oznaka tokenizatora (Gemma 3 format).
+Svih 5 kandidata evaluirano je kroz kauzalni log-likelihood maskirani prolaz.
+Label s najnižim loss-om odabran je kao konačno predviđanje.
 
 Labels:
-
-positive
-negative
-neutral
-mixed
-sarcasm
+positive, negative, neutral, mixed, sarcasm
 
 Evaluation metrics:
+weighted precision, weighted recall, weighted F1-score, accuracy
 
-weighted precision
-weighted recall
-weighted F1-score
-accuracy
-Result on Test 3
-
+Summary Results Table
 {markdown_table}
 
-Hyperparameters
+Hyperparameters:
 max_seq_length: {MAX_SEQ_LENGTH}
+
 batch_size: {BATCH_SIZE}
+
 gradient_accumulation_steps: {GRADIENT_ACCUMULATION_STEPS}
+
 epochs: {EPOCHS}
+
 learning_rate: {LEARNING_RATE}
-warmup_ratio: 0.05
+
+warmup_ratio: 0.03
+
 lr_scheduler_type: cosine
+
 weight_decay: {WEIGHT_DECAY}
+
 LoRA rank: 16
+
 LoRA alpha: 16
+
 load_in_4bit: True
+
 random_seed: {RANDOM_SEED}
-Outputs
 
-Model saved to:
+Outputs Directories:
+Models saved to: {MODEL_OUTPUT_DIR}
 
-{MODEL_OUTPUT_DIR}
+Predictions saved to: {PREDICTIONS_DIR}
 
-Prediction file:
-
-{prediction_path}
-
-Errors only:
-
-{errors_path}
-
-Confusion matrix:
-
-{cm_path}
+Confusion Matrices saved to: {CONFUSION_DIR}
 """
 
-results_path = os.path.join(
-BASE_DIR,
-"results_ift_gemma3_1b_fixed_scoring_test3.md",
-)
-
+results_path = os.path.join(BASE_DIR, "results_ift_gemma3_1b_fixed_scoring_all_tests.md")
 with open(results_path, "w", encoding="utf-8") as f:
-    f.write(content)
+    f.write(content)  # POPRAVLJENO: Indentacija je sada ispravna
 
-print("\nGotovo.")
-print("Results:", results_path)
-print("Predictions:", prediction_path)
-print("Errors:", errors_path)
-print("Confusion matrix:", cm_path)
+print("\n[ZAVRŠENO] Sve datoteke su uspješno procesuirane, evaluirane i spremljene!")
+print("Zajednički Markdown izvještaj:", results_path)
